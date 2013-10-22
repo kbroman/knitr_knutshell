@@ -11,7 +11,7 @@ I intend to write a brief guide to knitr covering reports (with
 [asciidoc](http://www.methods.co.nz/asciidoc/)), papers (with
 [LaTeX](http://www.latex-project.org)), and presentations and posters
 (with [LaTeX](http://www.latex-project.org) and
-[Beamer](http://en.wikipedia.org/wiki/Beamer_(LaTeX))).
+[Beamer](http://en.wikipedia.org/wiki/Beamer_(LaTeX)).
 
 Stay tuned.
 
