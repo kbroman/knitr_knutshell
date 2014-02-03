@@ -158,7 +158,7 @@ plot(out.em)
 ```
 
 We can do the genome scan via Haley-Knott regression by calling
-`scanone- with the argument `method="hk"`.  
+`scanone` with the argument `method="hk"`.  
 
 ```{r scanone_hk}
 out.hk <- scanone(sug, method="hk")
@@ -173,7 +173,7 @@ plot(out.em, out.hk, col=c("blue", "red"))
 
 Alternatively, we could do the following (figure not included, for brevity):
 
-```
+```{r plot_em_and_hk_alt, eval=FALSE}
 plot(out.em, col="blue")
 plot(out.hk, col="red", add=TRUE) 
 ```

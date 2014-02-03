@@ -156,7 +156,7 @@ plot(out.em)
 //end.rcode
 
 We can do the genome scan via Haley-Knott regression by calling
-+scanone- with the argument +method="hk"+.  
++scanone+ with the argument +method="hk"+.  
 
 //begin.rcode scanone_hk
 out.hk <- scanone(sug, method="hk")
