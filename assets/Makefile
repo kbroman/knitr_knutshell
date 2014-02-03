@@ -1,13 +1,8 @@
-mypaper.pdf: mypaper.bib mypaper.tex Figs/fig1.pdf Figs/fig2.pdf
-	pdflatex mypaper
-	bibtex mypaper
-	pdflatex mypaper
-	pdflatex mypaper
+all: knitr_example.html knitr_example_asciidoc.html
 
-Figs/fig1.pdf: R/fig1.R
-	cd R;R CMD BATCH fig1.R fig1.Rout
+knitr_example.html: knitr_example.Rmd
+	Rscript -e 'library(knitr);knit2html("knitr_example.Rmd")'
 
-Figs/fig2.pdf: R/fig2.R
-	cd R;R CMD BATCH fig2.R fig2.Rout
-
-
+knitr_example_asciidoc.html: knitr_example.asciidoc
+	Rscript -e 'library(knitr);knit("knitr_example.asciidoc", "knitr_example_asciidoc.txt")'
+	asciidoc -a data-uri -a toc -a toclevels=4 -a num knitr_example_asciidoc.txt

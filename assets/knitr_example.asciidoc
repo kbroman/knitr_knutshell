@@ -1,0 +1,263 @@
+An example Knitr/Asciidoc document
+==================================
+link:http://www.biostat.wisc.edu/~kbroman[Karl W Broman]
+:toc2:
+:numbered:
+:data-uri:
+
+This is a portion of the "link:http://www.rqtl.org/rqtltour2.pdf[A shorter tour of R/qtl]"
+tutorial, developed here in multiple formats to illustrate the use of knitr.
+This particular document is written with link:http://www.methods.co.nz/asciidoc/[asciidoc].
+(See the link:http://powerman.name/doc/asciidoc[asciidoc cheat sheet].)
+
+//begin.rcode knitr_options, include=FALSE
+opts_chunk$set(fig.width=12, fig.height=4, fig.path='AsciidocFigs/', warning=FALSE, message=FALSE)
+//end.rcode
+
+== Preliminaries ==
+
+To install R/qtl, you need to first install the package.
+Type (within R) +install.packages("qtl")+
+(This needs to be done just once.)
+
+You then load the R/qtl package using the +library+ function:
+
+//begin.rcode load_qtl
+library(qtl)
+//end.rcode
+
+This needs to be done every time you start R. (There is a way to
+have the package loaded automatically every time, but we won't discuss
+that here.)
+
+To get help on the functions and data sets in R
+(and in R/qtl), use +help()+ or +?+. For example, to view the help
+file for the +read.cross+ function, type one of the following:
+
+//begin.rcode help, eval=FALSE
+help(read.cross)
+?read.cross
+//end.rcode
+
+== Data import ==
+
+We will consider data from link:http://www.ncbi.nlm.nih.gov/pubmed/12118100[Sugiyama et al., Physiol Genomics 10:5&ndash;12,
+2002]. Load the data into R/qtl as follows.
+
+//begin.rcode load_cross
+sug <- read.cross("csv", "http://www.rqtl.org", "sug.csv",
+                  genotypes=c("CC", "CB", "BB"), alleles=c("C", "B"))
+//end.rcode
+
+
+The function +read.cross+ is for importing data into R/qtl.
++"sug.csv"+ is the name of the file, which we import directly
+from the R/qtl website.  +genotypes+ indicates the codes used for
+the genotypes; +alleles+ indicates single-character codes to be
+used in plots and such.
+
++read.cross+ loads the data from the file and formats it into
+a special cross object, which is then assigned to +sug+ via the
+assignment operator +<-+.
+
+The
+data are from an intercross between BALB/cJ and CBA/CaJ; only male
+offspring were considered.  There are four phenotypes: blood pressure,
+heart rate, body weight, and heart weight.  We will focus on the blood
+pressure phenotype, will consider just the +r nind(sug)+ individuals with
+genotype data and, for simplicity, will focus on the autosomes.
+
+
+== Summaries ==
+
+The data object +sug+ is complex; it contains the genotype
+data, phenotype data and genetic map.  R has a certain amount of
+"object oriented" facilities, so that calls to functions like
++summary+ and +plot+ are interpreted appropriately for the object
+considered.  
+
+The object +sug+ has "class" +"cross"+, and so calls to
++summary+ and +plot+ are actually sent to the functions
++summary.cross+ and +plot.cross+.
+
+Use +summary()+ to get a quick summary of the data.  (This also
+performs a variety of checks of the integrity of the data.)
+
+//begin.rcode summary_cross
+summary(sug)
+//end.rcode
+
+We see that this is an intercross with +r nind(sug)+ individuals.
+There are +r nphe(sug)+ phenotypes, and genotype data at 
++r totmar(sug)+ markers across the +r nchr(sug)+ autosomes.  The genotype
+data is quite complete.
+
+Use +plot()+ to get a summary plot of the data.
+
+//begin.rcode summary_plot, fig.height=8
+plot(sug)
+//end.rcode
+
+The plot in the upper-left shows the pattern of missing genotype data, with
+black pixels corresponding to missing genotypes.  The next plot shows
+the genetic map of the typed markers.  The following plots are
+histograms or bar plots for the six phenotypes.  The last two
+"phenotypes" are sex (with 1 corresponding to males) and mouse ID.
+
+
+== Single-QTL analysis ==
+
+Let's now proceed to QTL mapping via a single-QTL model.  
+
+We first calculate the QTL genotype probabilities, given the
+observed marker data, via the function +calc.genoprob+.  This is
+done at the markers and at a grid along the chromosomes.  The argument
++step+ is the density of the grid (in cM), and defines the
+density of later QTL analyses.
+
+//begin.rcode calc_genoprob
+sug <- calc.genoprob(sug, step=1)
+//end.rcode
+
+The output of +calc.genoprob+ is the same cross object as input,
+with additional information (the QTL genotype probabilities) inserted.  We
+assign this back to the original object (writing over the previous
+data), though it could have also been assigned to a new object.
+
+To perform a single-QTL genome scan, we use the function +scanone+.
+By default, it performs standard interval mapping (that is, maximum
+likelihood via the EM algorithm).  Also, by default, it considers the
+first phenotype in the input cross object (in this case, blood
+pressure).
+
+//begin.rcode scanone
+out.em <- scanone(sug)
+//end.rcode
+
+The output has "class" +"scanone"+.  The +summary+
+function is passed to the function +summary.scanone+, and gives
+the maximum LOD score on each chromosome.
+
+//begin.rcode summary_scanone
+summary(out.em)
+//end.rcode
+
+Alternatively, we can give a threshold, e.g., to only see those
+chromosomes with LOD > 3.
+
+//begin.rcode summary_w_threshold
+summary(out.em, threshold=3)
+//end.rcode
+
+We can plot the results as follows.
+
+//begin.rcode plot_scanone
+plot(out.em)
+//end.rcode
+
+We can do the genome scan via Haley-Knott regression by calling
++scanone- with the argument +method="hk"+.  
+
+//begin.rcode scanone_hk
+out.hk <- scanone(sug, method="hk")
+//end.rcode
+
+We may plot the two sets of LOD curves together in a single call
+to +plot+.
+
+//begin.rcode plot_em_and_hk
+plot(out.em, out.hk, col=c("blue", "red"))
+//end.rcode
+
+Alternatively, we could do the following (figure not included, for brevity):
+
+//begin.rcode plot_em_and_hk_alt, eval=FALSE
+plot(out.em, col="blue")
+plot(out.hk, col="red", add=TRUE) 
+//end.rcode
+
+It's perhaps more informative to plot the differences:
+
+//begin.rcode plot_diff
+plot(out.hk - out.em, ylim=c(-0.3, 0.3), ylab="LOD(HK)-LOD(EM)")
+//end.rcode
+ 
+== Permutation tests ==
+
+To perform a permutation test, to get a genome-wide significance
+threshold or genome-scan-adjusted p-values, we use +scanone+ just as
+before, but with an additional argument, +n.perm+, indicating the
+number of permutation replicates.  It's quickest to use Haley-Knott
+regression.
+
+//begin.rcode scanone_perm
+operm <- scanone(sug, method="hk", n.perm=1000)
+//end.rcode
+
+A histogram of the results (the 1000 genome-wide maximum LOD
+scores) is obtained as follows:
+
+//begin.rcode plot_perm
+plot(operm)
+//end.rcode
+
+Significance thresholds may be obtained via the +summary+
+function:
+
+//begin.rcode summary_perm
+summary(operm)
+summary(operm, alpha=c(0.05, 0.2))
+//end.rcode
+
+The permutation results may be used along with
+the +scanone+ results to have significance thresholds and
+p-values calculated automatically:
+
+//begin.rcode summary_scanone_w_perm
+summary(out.hk, perms=operm, alpha=0.2, pvalues=TRUE)
+//end.rcode
+
+
+== Interval estimates of QTL location ==
+
+For the blood pressure phenotype, we've seen good evidence for QTL on
+chromosomes 7 and 15.  Interval estimates of the location of QTL are
+commonly obtained via 1.5-LOD support intervals, which may be
+calculated via the function +lodint+.  Alternatively, an
+approximate Bayes credible interval may be obtained with
++bayesint+.  
+
+To obtain the 1.5-LOD support interval and 95% Bayes interval
+for the QTL on chromosome 7, type the following.
+The first and last rows define the ends of the intervals; the middle
+row is the estimated QTL location.
+
+//begin.rcode lodint_bayesint
+lodint(out.hk, chr=7)
+bayesint(out.hk, chr=7)
+//end.rcode
+
+It is sometimes useful to identify the closest flanking markers;
+use +expandtomarkers=TRUE+:
+
+//begin.rcode expandtomarkers
+lodint(out.hk, chr=7, expandtomarkers=TRUE)
+bayesint(out.hk, chr=7, expandtomarkers=TRUE)
+//end.rcode
+
+We can calculate the 2-LOD support interval and the 99% Bayes
+interval as follows.
+
+//begin.rcode lodint_2
+lodint(out.hk, chr=7, drop=2)
+bayesint(out.hk, chr=7, prob=0.99)
+//end.rcode
+
+The intervals for the chr 15 locus may be calculated as follows.
+
+//begin.rcode lodint_chr15
+lodint(out.hk, chr=15)
+bayesint(out.hk, chr=15)
+//end.rcode
+
+
