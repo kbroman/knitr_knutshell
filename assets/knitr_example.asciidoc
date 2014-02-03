@@ -58,7 +58,7 @@ used in plots and such.
 
 +read.cross+ loads the data from the file and formats it into
 a special cross object, which is then assigned to +sug+ via the
-assignment operator +<-+.
+assignment operator +`<-`+.
 
 The
 data are from an intercross between BALB/cJ and CBA/CaJ; only male
