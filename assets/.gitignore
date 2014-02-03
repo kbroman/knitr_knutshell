@@ -1,4 +1,9 @@
 AsciidocFigs
 RmdFigs
+RnwFigs
 knitr_example.md
 knitr_example_asciidoc.txt
+*.log
+*.aux
+*.tex
+*.out
