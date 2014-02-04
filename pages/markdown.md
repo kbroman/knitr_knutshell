@@ -224,3 +224,7 @@ And _really_, I do this within a
 [this one](https://github.com/kbroman/knitr_knutshell/blob/gh-pages/assets/Makefile).
 (Also see my [minimal make](http://kbroman.github.io/minimal_make/)
 tutorial.)
+
+### Up next
+
+Now go to heart of this tutorial, [knitr with R Markdown](Rmarkdown.html).
