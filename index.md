@@ -28,6 +28,7 @@ its use with
 - [Knitr with R Markdown](pages/Rmarkdown.html)
 - [Knitr with AsciiDoc](pages/asciidoc.html)
 - [Knitr with LaTeX](pages/latex.html)
+- [Comments on reproducibility](pages/reproducible.html)
 - [Moving from Sweave to Knitr](pages/sweave.html)
 - [Resources](pages/resources.html)
 
