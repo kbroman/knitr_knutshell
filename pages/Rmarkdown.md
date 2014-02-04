@@ -204,7 +204,7 @@ cor(x,y).
 
 #### Rounding
 
-I'm very particularly about the rounding of results. If I've estimated
+I'm very particular about the rounding of results, and you should be too. If I've estimated
 a correlation coefficient with 1000 data points, I don't want to see
 `0.9032738`. I want `0.90`.
 
