@@ -12,6 +12,7 @@ This particular document is written with link:http://www.methods.co.nz/asciidoc/
 
 //begin.rcode knitr_options, include=FALSE
 opts_chunk$set(fig.width=12, fig.height=4, fig.path='AsciidocFigs/', warning=FALSE, message=FALSE)
+set.seed(53079239)
 //end.rcode
 
 == Preliminaries ==

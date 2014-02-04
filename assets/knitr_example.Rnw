@@ -32,6 +32,7 @@ This particular document is written with \href{http://www.latex-project.org}{LaT
 opts_chunk$set(fig.width=12, fig.height=4, fig.path='RnwFigs/',
                warning=FALSE, message=FALSE, tidy=FALSE)
 options(width=60)
+set.seed(53079239)
 @
 
 \bigskip
