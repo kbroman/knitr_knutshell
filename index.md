@@ -31,6 +31,8 @@ its use with
 - [Moving from Sweave to Knitr](pages/sweave.html)
 - [Resources](pages/resources.html)
 
+If you find knitr useful, consider buying
+[Yihui's book](http://www.amazon.com/exec/obidos/ASIN/1482203537/7210-20)!
 
 ---
 
@@ -38,6 +40,5 @@ Also see my
 [git/github guide](http://kbroman.github.io/github_tutorial) and
 [minimal make tutorial](http://kbroman.github.io/minimal_make).
 
-And see the source for this tutorial [here](http://github.com/kbroman/knitr_knutshell).
-
-If you have suggestions or corrections, send a [pull request](https://help.github.com/articles/using-pull-requests)!
+The source for this tutorial is [here](http://github.com/kbroman/knitr_knutshell).
+If you have suggestions or corrections, send a [pull request](https://help.github.com/articles/using-pull-requests).
