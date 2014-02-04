@@ -17,10 +17,10 @@ variant of [Markdown](http://daringfireball.net/projects/markdown/)
 developed by the folks at [Rstudio](http://www.rstudio.com): It's
 Markdown with embedded [R](http://www.r-project.org) code chunks, to
 be used with [knitr](http://yihui.name/knitr/) to make it easy to
-reproducible web-based reports. The Markdown syntax has some
+create reproducible web-based reports. The Markdown syntax has some
 enhancements (see the
-[R Markdown page](http://www.rstudio.com/ide/docs/r_markdown)), and
-you can include LaTeX equations (see the
+[R Markdown page](http://www.rstudio.com/ide/docs/r_markdown)); for example,
+you can include LaTeX equations (see
 [Equations in R Markdown](http://www.rstudio.com/ide/docs/authoring/using_markdown_equations)).
 
 Here's an [example R Markdown document](../assets/knitr_example.Rmd),
@@ -44,9 +44,33 @@ After the code, there'll be a line with just three backticks.
 
     ```
 
-The initial line may also include various options. For example, `echo=FALSE`
-indicates that the code will not be shown in the final document
-(though any results/output would still be displayed).
+It's usually best to give each code chunk a name, like `simulate_data`
+and `chunk_name` above. The name is optional; if included, each code
+chunk needs a distinct name. The advantage of giving each chunk a name
+is that it will be easier to understand where to look for errors,
+should they occur. Also, any figures that are created will be given
+names based on the name of the code chunk that produced them.
+
+When you process the R Markdown document with knitr, each of the code
+chunks will be evaluated, and then the code and/or output will be
+inserted (unless you suppress one or both with _chunk options_, described below). If
+the code produces a figure, that figure will be inserted.
+
+An R Markdown document will have often have _many_ code chunks. They are
+evaluated in order, in a single R session, and the state of the
+various variables in one code chunk are preserved in future
+chunks. It's as if you'd pulled out all of the R code as a single file
+(and you can do
+that, using the `purl` command in knitr) and then
+[source](http://stat.ethz.ch/R-manual/R-devel/library/base/html/source.html)d
+it into R.
+
+
+#### Chunk options
+
+The initial line in a code chunk may include various options. For
+example, `echo=FALSE` indicates that the code will not be shown in the
+final document (though any results/output would still be displayed).
 
     ```{r chunk_name, echo=FALSE}
     x <- rnorm(100)
@@ -64,7 +88,7 @@ would still be displayed).
     ```
     
 You use `include=FALSE` to have the chunk _evaluated_, but neither the
-code nor its output will be displayed.
+code nor its output displayed.
 
     ```{r chunk_name, include=FALSE}
     x <- rnorm(100)
@@ -82,15 +106,6 @@ For figures, you'll want to use options like `fig.width` and
     ```{r scatterplot, fig.width=8, fig.height=6}
     plot(x,y)
     ```
-
-When you process the R Markdown document with knitr, each of the code
-chunks will be evaluated, and then the code and/or output will be
-inserted (unless you suppress one or both with the options above). If
-the code produces a figure, that figure will be inserted.
-
-An R Markdown document will have often have _many_ code chunks. They are
-evaluated in order, in a single R session, and the state of the
-various variables in one code chunk are preserved in future chunks.
 
 There are
 [lots of different possible "chunk options"](http://yihui.name/knitr/options#chunk_options). 
