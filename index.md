@@ -17,16 +17,14 @@ And, admittedly, I don't have very extensive knowledge of knitr.
 Nevertheless, I thought it might be useful to have some of the basic things
 explained again a bit differently.
 
-And so, here is a brief guide to knitr covering reports (with
-[Markdown](http://daringfireball.net/projects/markdown/) and
-[asciidoc](http://www.methods.co.nz/asciidoc/)) and papers (with
-[LaTeX](http://www.latex-project.org)). I intend to later add further
-information on creating presentations and posters
-(with [LaTeX](http://www.latex-project.org) and
-[Beamer](http://en.wikipedia.org/wiki/Beamer_(LaTeX)).
-
+And so, here is a brief guide to knitr, covering the fundamentals of
+its use with
+[Markdown](http://daringfireball.net/projects/markdown/),
+[AsciiDoc](http://www.methods.co.nz/asciidoc/)), and 
+[LaTeX](http://www.latex-project.org)).
 
 - [Overview](pages/overview.html)
+- [Markdown](pages/markdown.html)
 - [Knitr with R Markdown](pages/Rmarkdown.html)
 - [Knitr with AsciiDoc](pages/asciidoc.html)
 - [Knitr with LaTeX](pages/latex.html)

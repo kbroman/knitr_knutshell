@@ -3,14 +3,11 @@
 [Knitr](http://yihui.name/knitr/) is a really important tool for
 reproducible research.
 
-I intend to write a brief guide to knitr covering reports (with
-[Markdown](http://daringfireball.net/projects/markdown/) and
-[asciidoc](http://www.methods.co.nz/asciidoc/)), papers (with
-[LaTeX](http://www.latex-project.org)), and presentations and posters
-(with [LaTeX](http://www.latex-project.org) and
-[Beamer](http://en.wikipedia.org/wiki/Beamer_(LaTeX))).
-
-Stay tuned.
+This brief guide to knitr, covering the fundamentals of
+its use with
+[Markdown](http://daringfireball.net/projects/markdown/),
+[AsciiDoc](http://www.methods.co.nz/asciidoc/)), and 
+[LaTeX](http://www.latex-project.org)).
 
 View the thing [here](http://kbroman.github.io/knitr_knutshell).
 

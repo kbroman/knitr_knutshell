@@ -8,145 +8,11 @@ use [R Markdown](http://www.rstudio.com/ide/docs/r_markdown), a
 variant of [Markdown](http://daringfireball.net/projects/markdown/)
 developed by the folks at [Rstudio](http://www.rstudio.com).
 
-[Markdown](http://daringfireball.net/projects/markdown/) is a system
-for writing simple, readable text, with the sort of marks that you'd
-use in an email message (for example, `**bold**` for **bold** or
-`_italics_` for _italics_), that can be easily converted to
-[html](http://en.wikipedia.org/wiki/HTML).
-
-### HTML
-
-It's helpful to know a bit of html, which is the markup language that
-web pages are written in. html really isn't that hard; it's just
-cumbersome.
-
-An html document contains pairs of tags to indicate content, like
-`<h1>` and `</h1>` to indicate that the enclosed text "level one
-header", or `<em>` and `</em>` to indicate emphasis (generally
-_italics_). A web browser will
-[parse](http://en.wikipedia.org/wiki/Parsing) the html tags and render
-the web page, often using a
-[Cascading style sheet (CSS)](http://en.wikipedia.org/wiki/Cascading_Style_Sheets)
-to define the precise style of the different elements.
-
-But we won't get into all of that; html is great, but the code is
-cumbersome to create directly, as it looks something like this:
-
-    <!DOCTYPE html>
-    <html>
-    <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    </head>
-
-    <body>
-    <h1>Markdown example</h1>
-    
-    <p>This is a simple example of a Markdown document.</p>
-    
-    <p>Use a blank link between paragraphs.
-    You can use a bit of <strong>bold</strong> or <em>italics</em>. Use backticks to indicate
-    <code>code</code> that will be rendered in monospace.</p>
-    
-    <p>Here's a list:</p>
-    
-    <ul>
-    <li>an item in the list</li>
-    <li>another item</li>
-    <li>yet another item</li>
-    </ul>
-    
-    <p>You can include blocks of code using three backticks:</p>
-    
-    <p><code>
-    x &lt;- rnorm(100)
-    y &lt;- 2*x + rnorm(100)
-    </code></p>
-    
-    <p>Or you could indent four spaces:</p>
-    
-    <pre><code>mean(x)
-    sd(x)
-    </code></pre>
-    
-    <p>It'll figure out numbered lists, too:</p>
-    
-    <ol>
-    <li>First item</li>
-    <li>Second item</li>
-    </ol>
-    
-    <p>And it's easy to create links, like to
-    the <a href="http://daringfireball.net/projects/markdown/">Markdown</a>
-    page.</p>
-    </body>
-    </html>
-
-Pretty ugly. That's probably more than you really needed to see. But
-knowing about html gives you a greater appreciation of Markdown.
-
-### Markdown
-
-As I mentioned above,
-[Markdown](http://daringfireball.net/projects/markdown/) is a system
-for writing simple, readable text that is easily converted into
-html. The reason it's useful to know a bit of html is that then you
-have a better idea how the final product will look. (Plus, if you want
-to get fancy, you can just insert a bit of html within the Markdown
-document.)
-
-A Markdown document looks like this:
-
-    # Markdown example
-
-    This is a simple example of a Markdown document.
-
-    Use a blank link between paragraphs.
-    You can use a bit of **bold** or _italics_. Use backticks to indicate
-    `code` that will be rendered in monospace.
-
-    Here's a list:
-
-    - an item in the list
-    - another item
-    - yet another item
-
-    You can include blocks of code using three backticks:
-
-    ```
-    x <- rnorm(100)
-    y <- 2*x + rnorm(100)
-    ```
-
-    Or you could indent four spaces:
-
-        mean(x)
-        sd(x)
-    
-    It'll figure out numbered lists, too:
-
-    1. First item
-    2. Second item
-
-    And it's easy to create links, like to
-    the [Markdown](http://daringfireball.net/projects/markdown/)
-    page.
-
-That bit of Markdown text gets converted to the html code in the
-previous section.
-
-I hope the markup is reasonably self-explanatory. Markdown is just a
-system of marks that will get searched-and-replaced to create an html
-document.
-
-Here's a
-[more extensive example](http://www.unexpected-vortices.com/sw/gouda/quick-markdown-example.html).
-Or look at the [Markdown basics](http://daringfireball.net/projects/markdown/basics) page, 
-and the more complete [Markdown syntax](http://daringfireball.net/projects/markdown/syntax), 
-or just the [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+You should first read the [page about Markdown](markdown.html).
 
 ### R Markdown
 
-[R Markdown](http://www.rstudio.com/ide/docs/r_markdown), a
+[R Markdown](http://www.rstudio.com/ide/docs/r_markdown) is a
 variant of [Markdown](http://daringfireball.net/projects/markdown/)
 developed by the folks at [Rstudio](http://www.rstudio.com): It's
 Markdown with embedded [R](http://www.r-project.org) code chunks, to
@@ -351,3 +217,9 @@ At the start of my R Markdown document, I'd include:
     
 And then later I could write `` `r myround(cor(x,y), 2)` ``
 and it would give `0.90` or `0.00` in the way that I want.
+
+### Converting R Markdown to html
+
+#### Via RStudio
+
+#### Via the command line (or GNU make)

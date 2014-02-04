@@ -162,7 +162,7 @@ evaluated in order, in a single R session, and the state of the
 various variables in one code chunk are preserved in future chunks.
 
 The examples above are taken from longer examples that you can find
-[here](../assets), including an
+[here](https://github.com/kbroman/knitr_knutshell/tree/gh-pages/assets), including an
 [R Markdown example](../assets/knitr_example.Rmd) (and
 [its html product](../assets/knitr_example.html)), an
 [AsciiDoc example](../assets/knitr_example.asciidoc) (and
@@ -193,12 +193,13 @@ That's knitr in a knutshell: chunks of R code inserted within text
 document. When run through knitr, the R code chunks are run and
 results and/or figures inserted.
 
-Now go to my page about [Knitr with R Markdown](Rmarkdown.html). 
+Now go to my pages about [Markdown](markdown.html) and [Knitr with R Markdown](Rmarkdown.html). 
 
 Even if you're mostly interested in [Asciidoc](asciidoc.html) or
-[LaTeX](latex.html), start with [R Markdown page](Rmarkdown.html), as
-I'll give the full details there and will only explain the extra stuff
-in the other two pages.
+[LaTeX](latex.html), start with the [Markdown](markdown.html) and [R Markdown page](Rmarkdown.html), as
+I'll give the full details about knitr there and will only explain the extra stuff
+in the other two pages. Plus, I think you'll find Knitr with R
+Markdown useful, at least for short, informal reports.
 
 If you're an experienced 
 [Sweave](http://leisch.userweb.mwn.de/Sweave/) user, you might look at
