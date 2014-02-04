@@ -3,7 +3,7 @@
 [Knitr](http://yihui.name/knitr/) is a really important tool for
 reproducible research.
 
-This brief guide to knitr, covering the fundamentals of
+This is a brief guide to knitr, covering the fundamentals of
 its use with
 [Markdown](http://daringfireball.net/projects/markdown/),
 [AsciiDoc](http://www.methods.co.nz/asciidoc/)), and 
