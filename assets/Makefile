@@ -1,4 +1,4 @@
-all: knitr_example.html knitr_example_asciidoc.html knitr_example.pdf
+all: knitr_example.html knitr_example_asciidoc.html knitr_example.pdf markdown_example.html
 
 R_OPTS=--no-save --no-restore --no-init-file --no-site-file # vanilla, but with --environ
 
@@ -13,6 +13,8 @@ knitr_example.pdf: knitr_example.Rnw
 	R ${R_OPTS} -e 'library(knitr);knit("knitr_example.Rnw", "knitr_example.tex")'
 	pdflatex knitr_example.tex
 
+markdown_example.html: markdown_example.md
+	R ${R_OPTS} -e 'library(markdown);markdownToHTML("markdown_example.md", "markdown_example.html")'
+
 clean:
 	rm knitr_example.md knitr_example_asciidoc.txt knitr_example.tex
-
