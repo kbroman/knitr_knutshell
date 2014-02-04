@@ -327,14 +327,14 @@ I'm very particularly about the rounding of results. If I've estimated
 a correlation coefficient with 1000 data points, I don't want to see
 `0.9032738`. I want `0.90`.
 
-You could use the R function `round`, like this: `` `r round(cor(x,y), 2)`.
+You could use the R function `round`, like this: `` `r round(cor(x,y), 2)` ``
 But that would produce `0.9` instead of `0.90`.
 
 One solution is to use the `sprintf` function, like so:
 `` `r sprintf("%.2f", cor(x,y))` ``. That's perfectly reasonable,
 right? Well, it is if you're a C programmer.
 
-But a problem arises if the value is `-0.001`. `` `r sprintf("%.2f", -0.001)`
+But a problem arises if the value is `-0.001`. `` `r sprintf("%.2f", -0.001)` ``
 will produce `-0.00`. I don't like that, nor does 
 [Hilary](https://twitter.com/hspter/status/314858331598626816).
 
@@ -351,5 +351,3 @@ At the start of my R Markdown document, I'd include:
     
 And then later I could write `` `r myround(cor(x,y), 2)` ``
 and it would give `0.90` or `0.00` in the way that I want.
-
-**More to come.**
