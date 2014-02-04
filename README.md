@@ -11,6 +11,9 @@ its use with
 
 View the thing [here](http://kbroman.github.io/knitr_knutshell).
 
+If you find knitr useful, consider buying
+[Yihui's book](http://www.amazon.com/exec/obidos/ASIN/1482203537/7210-20).
+
 ---
 
 My parts of this web site are licensed under
