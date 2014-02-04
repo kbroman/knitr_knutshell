@@ -3,7 +3,7 @@ layout: page
 title: Markdown
 ---
 
-My prefered way to construct an informal report describing some data
+My prefered way to construct an informal report describing a data
 analysis project is as a web page. A great advantage is that I don't
 need to worry about page breaks and the placement of figures.
 
@@ -29,7 +29,7 @@ language that web pages are written in. html really isn't that hard;
 it's just cumbersome.
 
 An html document contains pairs of tags to indicate content, like
-`<h1>` and `</h1>` to indicate that the enclosed text "level one
+`<h1>` and `</h1>` to indicate that the enclosed text is a "level one
 header", or `<em>` and `</em>` to indicate emphasis (generally
 _italics_). A web browser will
 [parse](http://en.wikipedia.org/wiki/Parsing) the html tags and render
@@ -92,9 +92,9 @@ cumbersome to create directly, as it looks something like this:
 Pretty ugly. That's probably more than you really needed to see. But
 knowing about html gives you a greater appreciation of Markdown.
 
-It's important to note that there are 6 levels of headers, with tags
+Note that there are six levels of headers, with tags
 `<h1>`, `<h2>`, `<h3>`, ..., `<h6>`. Think of these as the title,
-section, subsection, sub-subsection, ... 
+section, subsection, sub-subsection, &hellip;
 
 A key design principle for creating good html documents (as well as
 Markdown, AsciiDoc, and LaTeX documents), is that you want to focus on
@@ -174,3 +174,53 @@ or just the [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/M
 
 ### Converting Markdown to html
 
+#### Via RStudio
+
+If you use [RStudio](http://www.rstudio.com), the simplest way to
+convert a Markdown document to html is to open the document within
+RStudio. (And really, you probably want to _create_ the document in
+RStudio.) When you open a Markdown document in RStudio, you'll see a
+"Preview HTML" button right above the document. Press this, and
+another window will open, with a preview of the result. You can then
+click "Save As" or even "Publish". The latter will publish the
+document to the web (where it will be viewable by _anyone_).
+
+Another a nice feature in RStudio: when you open a Markdown document,
+you'll see a little "MD" button. Press that, and you'll get see a
+convenient "Markdown Quick Reference" document: a cheat-sheet on the
+Markdown syntax. Like
+[@StrictlyStat](https://twitter.com/StrictlyStat/status/423178160968970240),
+I seem to visit the
+[Markdown](http://daringfireball.net/projects/markdown) almost every
+time I'm writing a Markdown document. If I used RStudio, I'd have
+easier access to this information.
+
+
+#### Via the command line
+
+[Markdown](http://daringfireball.net/projects/markdown) is a
+formatting syntax, but it's also a
+[software tool](http://daringfireball.net/projects/downloads/Markdown_1.0.1.zip);
+in particular, it's a [Perl](http://www.perl.org/) script.
+So one approach to converting a Markdown document to html is to use
+download and use that perl script.
+
+But I prefer to use the
+[markdown package](http://cran.r-project.org/web/packages/markdown/index.html)
+for [R](http://www.r-project.org), which is what RStudio is using.
+
+Within R, you can install the package with
+`install.packages("markdown")`. Then load it with
+`library(markdown)`. And then convert a Markdown document to html with
+
+    markdownToHTML("markdown_example.md", "markdown_example.html")
+
+In practice, I do this on the command line, as so:
+
+    R -e 'library(markdown);markdownToHTML("markdown_example.md", "markdown_example.html")'
+
+And _really_, I do this within a
+[GNU make](http://www.gnu.org/software/make) file, like
+[this one](https://github.com/kbroman/knitr_knutshell/blob/gh-pages/assets/Makefile).
+(Also see my [minimal make](http://kbroman.github.io/minimal_make/)
+tutorial.)
