@@ -351,3 +351,5 @@ At the start of my R Markdown document, I'd include:
     
 And then later I could write `` `r myround(cor(x,y), 2)` ``
 and it would give `0.90` or `0.00` in the way that I want.
+
+**More to come.**
