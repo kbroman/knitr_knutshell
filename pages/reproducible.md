@@ -69,14 +69,12 @@ them to be able to run it and get the same output.
        sessionInfo()
        ```
 
-
 7. If you do any sort of simulation in the document, consider adding a
    call to `set.seed` in the first code chunk.  I usually open R and
    type `runif(1, 0, 10^8)` and then paste the resulting large number
    into `set.seed()` in the first code chunk.  If you do this, then
    the random aspects of your analysis should be repeated the same way
    exactly whenever it is "knit."
-  
 
 I learned these things by experience. That is, I failed to do each of
 these things at various times and was later frustrated by the
