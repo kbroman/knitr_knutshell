@@ -262,3 +262,8 @@ bayesint(out.hk, chr=15)
 //end.rcode
 
 
+== R and package versions used ==
+
+//begin.rcode sessionInfo, include=TRUE, echo=TRUE, results='markup'
+sessionInfo()
+//end.rcode

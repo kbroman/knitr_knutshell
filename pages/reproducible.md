@@ -12,32 +12,60 @@ With that in mind, here are a few comments on how to write portable knitr
 documents: if you give the document and data to someone else, you want
 them to be able to run it and get the same output.
 
-- Avoid absolute paths
+1. Avoid absolute paths. I mean, don't every use something like
+   `/Users/kbroman/Data/blah.csv` or even `~/Data/blah.csv`. When
+   someone else tries to reproduce things, they won't have a
+   `/Users/kbroman` directory, and they make not want to put the data
+   in `~/Data`.
 
-- keep all of the data and code within one
-  branch of your file system directory and its subdirectory
+2. Keep all of the data and code within one branch of your file system
+   directory and its subdirectories. By that I mean, encapsulate the
+   full project into one directory, and use relative paths (like
+   `Data/blah.csv`)
 
-- If you must use absolute paths and have data sets in different
-  places, define the various directories with variables at the
-  top of your knitr document, rather than sprinkling them throughout
-  the document. This way, if someone else wants to run the document,
-  they don't have to create an exact duplicate of the mess you created.
+3. If you must use absolute paths and have data sets in different
+   places, define the various directories with variables at the
+   top of your knitr document, rather than sprinkling them throughout
+   the document. This way, if someone else wants to run the document,
+   they don't have to create an exact duplicate of the mess you
+   created. They can just go in and change those variables to point
+   elsewhere. 
 
-- Use `R --vanilla`. That is, avoid loading `.RData` or `.Rprofile` so
-  that your code doesn't have undocumented dependencies (e.g., on
-  particular options that you use all the time, or on particular
-  packages that you load all the time).
+4. Use `R --vanilla`. That is, avoid loading `.RData` or `~/.Rprofile` so
+   that your code doesn't have undocumented dependencies (e.g., on
+   particular options that you use all the time, or on particular
+   packages that you load all the time). I often use functions in my
+   [R/broman](http://github.com/kbroman/broman) package, and so I load
+   it automatically in my `~/.Rprofile` file. But then I forget to
+   include `library(broman)` at the top of knitr documents where I
+   really need to.
 
-- Value of GNU make (documents how to construct the final product)
+5. Use a [GNU make](http://www.gnu.org/software/make) file to define how to
+   construct the final product. You might be tempted to define some
+   shell shortcut for knitr, but the person trying to reproduce your
+   results won't know about that. What's great about GNU make is that
+   it both automates your workflow _and_ documents it. See my
+   [minimal make](http://kbroman.github.io/minimal_make/) tutorial,
+   and also read [Mike Bostock](http://bost.ocks.org/mike/)'s
+   "[Why Use Make](http://bost.ocks.org/mike/make/)".
 
-- Include session info in your document, perhaps at the bottom.
+6. Include "session info" in your document, preferably at the bottom:
+   this lists the version of R that you're using plus all of the packages
+   you've loaded. In R Markdown, include a code chunk like the
+   following; I include the options so that we're absolutely sure that
+   it will be shown.
+   
+       ```{r sessionInfo, include=TRUE, echo=TRUE, results='markup'}
+       sessionInfo()
+       ```
 
-- If you do any sort of simulation in the document, consider adding a
-  call to `set.seed` in the first code chunk.  I ususally open R and
-  type `runif(1, 0, 10^8)` and then paste the resulting large number
-  into `set.seed()` in the first code chunk.  If you do this, then the
-  random aspects of your analysis should be repeated the same way
-  exactly whenever it is "knit."
+
+7. If you do any sort of simulation in the document, consider adding a
+   call to `set.seed` in the first code chunk.  I usually open R and
+   type `runif(1, 0, 10^8)` and then paste the resulting large number
+   into `set.seed()` in the first code chunk.  If you do this, then
+   the random aspects of your analysis should be repeated the same way
+   exactly whenever it is "knit."
   
 
 I learned these things by experience. That is, I failed to do each of

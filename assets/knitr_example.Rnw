@@ -296,4 +296,12 @@ bayesint(out.hk, chr=15)
 @
 
 
+\bigskip
+{\sffamily \textbf{R and package versions used}}
+\nopagebreak
+
+<<sessionInfo, include=TRUE, echo=TRUE, results='markup'>>=
+sessionInfo()
+@
+
 \end{document}

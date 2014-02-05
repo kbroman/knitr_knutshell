@@ -264,3 +264,8 @@ bayesint(out.hk, chr=15)
 ```
 
 
+### R and package versions used
+
+```{r sessionInfo, include=TRUE, echo=TRUE, results='markup'}
+sessionInfo()
+```
