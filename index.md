@@ -13,7 +13,6 @@ useful
 [examples](https://github.com/yihui/knitr/tree/master/vignettes) and
 [demos](http://yihui.name/knitr/demos), and a very nice
 [book](http://www.amazon.com/exec/obidos/ASIN/1482203537/7210-20).
-And, admittedly, I don't have very extensive knowledge of knitr.
 Nevertheless, I thought it might be useful to have some of the basic things
 explained again a bit differently.
 
