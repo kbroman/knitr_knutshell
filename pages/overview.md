@@ -179,7 +179,7 @@ If you're creating an
 [R Markdown](http://www.rstudio.com/ide/docs/r_markdown) document
 in [RStudio](http://www.rstudio.com), its dead easy: there's a
 button. And it's a particularly cute little button, with a ball of
-yarn and two knitting needles.
+yarn and a knitting needle.
 
 More generally, you'd call R, load the knitr package, and use `knit()`
 or one of its variants, like `knit2html()`. I prefer to create a 

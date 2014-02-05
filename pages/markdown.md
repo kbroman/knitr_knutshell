@@ -178,15 +178,14 @@ or just the [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/M
 
 If you use [RStudio](http://www.rstudio.com), the simplest way to
 convert a Markdown document to html is to open the document within
-RStudio. (And really, you probably want to _create_ the document in
-RStudio.) When you open a Markdown document in RStudio, you'll see a
-"Preview HTML" button right above the document. Press this, and
+RStudio. When you open a Markdown document in RStudio, you'll see a
+"Preview HTML" button just above the document. Click that, and
 another window will open, with a preview of the result. You can then
 click "Save As" or even "Publish". The latter will publish the
 document to the web (where it will be viewable by _anyone_).
 
 Another a nice feature in RStudio: when you open a Markdown document,
-you'll see a little "MD" button. Press that, and you'll get see a
+you'll see a little "MD" button. Click that, and you'll get see a
 convenient "Markdown Quick Reference" document: a cheat-sheet on the
 Markdown syntax. Like
 [@StrictlyStat](https://twitter.com/StrictlyStat/status/423178160968970240),
