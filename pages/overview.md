@@ -44,10 +44,10 @@ better. With knitr, you can mix basically any kind of text with
 basically any kind of code. This is a really big deal, as lots of
 people who should be writing these sorts of
 [literate programming](http://en.wikipedia.org/wiki/Literate_programming)
-documents (e.g., many otherwise sensible statistics graduate students)
+documents (e.g., many statistics graduate students)
 are completely turned off by LaTeX and just skip the whole business.
 
-Now, my informal reports to collaborators are
+Now, I deliver my informal reports to collaborators as
 [html](http://en.wikipedia.org/wiki/HTML) documents that can be viewed
 in a browser. A big advantage to this is that I don't have to worry
 about page breaks. For example, I can have very tall figures, with say
@@ -93,7 +93,7 @@ Here's an example with [R Markdown](http://www.rstudio.com/ide/docs/r_markdown):
     ```
     
 The backticks (`` ` ``) indicate code. The bits like `` `r nind(sug)` ``
-are indicating R code. When run through knitr, they'll be evaluated
+are indicating R code. When processed by knitr, they'll be evaluated
 and replaced by the result. So the first paragraph would end up
 as something like this:
 
@@ -169,6 +169,8 @@ The examples above are taken from longer examples that you can find
 [its html product](../assets/knitr_example_asciidoc.html)), and a
 [LaTeX example](../assets/knitr_example.Rnw) (and
 [its pdf product](../assets/knitr_example.pdf)). 
+All of these examples require installation of my [R/qtl](http://www.rqtl.org)
+package (sorry!). In R, type `install.packages("qtl")`.
 
 ### Compiling the document
 
@@ -177,7 +179,7 @@ R code), how do you use knitr to process it, to create the final document?
 
 If you're creating an 
 [R Markdown](http://www.rstudio.com/ide/docs/r_markdown) document
-in [RStudio](http://www.rstudio.com), its dead easy: there's a
+in [RStudio](http://www.rstudio.com), it's dead easy: there's a
 button. And it's a particularly cute little button, with a ball of
 yarn and a knitting needle.
 
@@ -189,8 +191,8 @@ or one of its variants, like `knit2html()`. I prefer to create a
 
 ### What next?
 
-That's knitr in a knutshell: chunks of R code inserted within text
-document. When run through knitr, the R code chunks are run and
+That's knitr in a knutshell: chunks of R code inserted within a text
+document. When processed by knitr, the R code chunks are executed and
 results and/or figures inserted.
 
 Now go to my pages about [Markdown](markdown.html) and [Knitr with R Markdown](Rmarkdown.html). 
@@ -205,5 +207,3 @@ If you're an experienced
 [Sweave](http://leisch.userweb.mwn.de/Sweave/) user, you might look at
 my [Knitr from Sweave](sweave.html) page, or [Yihui](http://yihui.name/)'s page, 
 [Transition from Sweave to knitr](http://yihui.name/knitr/demo/sweave/).
-
-**More to come.**

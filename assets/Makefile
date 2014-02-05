@@ -1,3 +1,6 @@
+# these examples rely on the R/qtl package, www.rqtl.org
+# install R/qtl package, within R, by typing install.packages("qtl")
+
 all: knitr_example.html knitr_example_asciidoc.html knitr_example.pdf markdown_example.html
 
 R_OPTS=--no-save --no-restore --no-init-file --no-site-file # vanilla, but with --environ
