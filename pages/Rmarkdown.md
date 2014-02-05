@@ -163,7 +163,7 @@ In addition to the chunk options, there are also
 [package options](http://yihui.name/knitr/options#package_options),
 set with something like:
 
-    ```{r package_options, include=FALSE}```
+    ```{r package_options, include=FALSE}
     opts_knit$set(progress = TRUE, verbose = TRUE)
     ```
 
