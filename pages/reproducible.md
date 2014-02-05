@@ -77,8 +77,7 @@ I'm not the only one who fails to meet the reproducible ideal.
 is quite a good book on the principles and tools for reproducible
 research, but its
 [github repository](https://github.com/christophergandrud/Rep-Res-Book)
-has a few problems. I wanted to suggest a couple of minor corrections
-and attempted to construct the book from its source, but I ran into
+has a few problems. I attempted to construct the book from its source but ran into
 difficulties regarding installation of the necessary packages (it uses
 _a lot_), and more importantly with the use of absolute paths (e.g.,
 [here](https://github.com/christophergandrud/Rep-Res-Book/blob/master/Source/Children/FrontMatter/Preface.Rnw#L2)).
@@ -94,6 +93,3 @@ is a really beautiful document, but it says (on page 2):
 > is available upon request from \[author's email\].
 
 And the author didn't respond to my email requesting the source.
-
-
-**More to come.**
