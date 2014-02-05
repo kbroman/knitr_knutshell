@@ -25,9 +25,9 @@ its use with
 - [Overview](pages/overview.html)
 - [Markdown](pages/markdown.html)
 - [Knitr with R Markdown](pages/Rmarkdown.html)
+- [Comments on reproducibility](pages/reproducible.html)
 - [Knitr with AsciiDoc](pages/asciidoc.html)
 - [Knitr with LaTeX](pages/latex.html)
-- [Comments on reproducibility](pages/reproducible.html)
 - [Moving from Sweave to Knitr](pages/sweave.html)
 - [Resources](pages/resources.html)
 
