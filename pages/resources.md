@@ -42,6 +42,7 @@ Here are some examples.
 - [AsciiDoc user guide](http://www.methods.co.nz/asciidoc/userguide.html)
 - [AsciiDoc writers' guide](http://asciidoctor.org/docs/asciidoc-writers-guide/)
 - [AsciiDoc mini manual](http://www.csc.kth.se/~akozlov/asciidoc-mini.html)
+- [ascii package for R](http://eusebe.github.io/ascii/)
 
 ### Related things
 
