@@ -265,6 +265,10 @@ easier access to this information.
 (The above is _almost_ verbatim from the [Markdown page](markdown.html)
 in this tutorial.)
 
+RStudio is especially useful when you're first learning KnitR and R
+Markdown, as it's easy to create and view the corresponding html file,
+and you have access to that Markdown Quick Reference.
+
 #### Via the command line (or GNU make)
 
 In addition to being a system for combining code and text,

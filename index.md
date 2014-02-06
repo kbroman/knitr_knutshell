@@ -27,6 +27,7 @@ its use with
 - [Overview](pages/overview.html)
 - [Markdown](pages/markdown.html)
 - [KnitR with R Markdown](pages/Rmarkdown.html)
+- [Figures and tables](pages/figs_tables.html)
 - [Comments on reproducibility](pages/reproducible.html)
 - [KnitR with AsciiDoc](pages/asciidoc.html)
 - [KnitR with LaTeX](pages/latex.html)
