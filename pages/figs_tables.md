@@ -92,7 +92,7 @@ the `xtable` function in the
 Here's the above example, using xtable:
 
 
-    ```{r kable, results="asis"}
+    ```{r xtable, results="asis"}
     n <- 100
     x <- rnorm(n)
     y <- 2*x + rnorm(n)
