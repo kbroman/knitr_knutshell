@@ -13,7 +13,7 @@ knitr_example_asciidoc.html: knitr_example.asciidoc
 	asciidoc knitr_example_asciidoc.txt
 
 knitr_example.pdf: knitr_example.Rnw
-	R ${R_OPTS} -e 'library(knitr);knit("knitr_example.Rnw", "knitr_example.tex")'
+	R ${R_OPTS} -e 'library(knitr);knit("knitr_example.Rnw")'
 	pdflatex knitr_example.tex
 
 markdown_example.html: markdown_example.md
