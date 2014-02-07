@@ -22,6 +22,87 @@ insert a bit of html code, but it's even better to use a similar
 system with a more rich syntax, like
 [AsciiDoc](http://www.methods.co.nz/asciidoc/).
 
+The syntax for AsciiDoc is similar in style to that of Markdown, but a bit
+different; I'm always getting confused between the two, and look at
+[my example](../assets/knitr_example_asciidoc.html) and the
+[AsciiDoc cheatsheet](http://powerman.name/doc/asciidoc).
+
+KnitR-wise, the main difference when you use asciidoc is that the code
+chunks are delimited differently. Here's an example:
+
+    We see that this is an intercross with +r nind(sug)+ individuals.
+    There are +r nphe(sug)+ phenotypes, and genotype data at 
+    +r totmar(sug)+ markers across the +r nchr(sug)+ autosomes.  The genotype
+    data is quite complete.
+
+    Use +plot()+ to get a summary plot of the data.
+
+    //begin.rcode summary_plot, fig.height=8
+    plot(sug)
+    //end.rcode
+
+The larger code chunks are delimited with `//begin.rcode` and
+`//end.rcode`.
+
+The in-line code chunks are indicated with `+r` and `+`, as AsciiDoc
+uses `+` to mark code, to be shown in a monospace font.
+
+Otherwise, everything about the code chunks and chunk options is the
+same as with R Markdown.
+
+### Floating table of contents and other stuff
+
+The top of
+[my AsciiDoc example](../assets/knitr_example_asciidoc.html) is the
+following:
+
+    An example Knitr/Asciidoc document
+    ==================================
+    link:http://www.biostat.wisc.edu/~kbroman[Karl W Broman]
+    :toc2:
+    :numbered:
+    :data-uri:
+
+`:toc2:` indicates to include a table of contents, floating in the
+left margin.  `:numbered:` indicates to number the sections. 
+`:data-uri:` indicates to embed the images within the html file.
 
 
-**More to come.**
+### Tables
+
+You can't use `kable` or `xtable` with AsciiDoc. Instead, use the
+`ascii` function in the
+[ascii package](http://cran.r-project.org/web/packages/ascii/index.html),
+which has a shocking number of arguments.
+
+
+### Installing AsciiDoc
+
+To use AsciiDoc, you'll need to _install_ AsciiDoc; see
+[this installation page](http://www.methods.co.nz/asciidoc/INSTALL.html).
+A key point: you'll need Python 2 and _not Python 3_.
+
+On my computer, `python` is Python 3; I have to switch to Python 2
+before running AsciiDoc. If I forget to switch, I get the following
+error message:
+
+    File "/usr/local/bin/asciidoc", line 101
+      except KeyError, k: raise AttributeError, k
+                     ^
+    SyntaxError: invalid syntax
+
+
+### Converting R Markdown to html
+
+[RStudio](http://www.rstudio.org) has no facilities for AsciiDoc;
+you'll need to use command-line tools.
+
+You first use `knit` in the knitr package to process the asciidoc/KnitR
+document:
+
+    R -e 'library(knitr);knit("knitr_example.asciidoc", "knitr_example_asciidoc.txt")'
+
+You then use `asciidoc` to convert this to an html file:
+
+    asciidoc knitr_example_asciidoc.txt
+
