@@ -101,3 +101,9 @@ Here's the above example, using xtable:
     tab <- xtable(summary(out)$coef, digits=c(0, 2, 2, 1, 2))
     print(tab, type="html")
     ```
+
+### Up next
+
+Read my [comments on reproducibility](reproducible.html), and
+perhaps about [Knitr with AsciiDoc](asciidoc.html) or
+[Knitr with LaTeX](latex.html).

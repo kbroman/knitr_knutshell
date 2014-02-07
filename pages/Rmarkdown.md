@@ -305,6 +305,7 @@ a bit longer. Write it using [RStudio](http://www.rstudio.com), where
 the knitting process is easy and you have easy access to that
 "Markdown Quick Reference".
 
-Then, read my [comments on reproducibility](reproducible.html), and
+Then, read [a bit about figures and tables](figs_tables.html), my
+[comments on reproducibility](reproducible.html), and
 perhaps about [Knitr with AsciiDoc](asciidoc.html) or
 [Knitr with LaTeX](latex.html).
