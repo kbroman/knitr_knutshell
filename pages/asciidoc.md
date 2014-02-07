@@ -11,9 +11,9 @@ For simple reports, I'm satisfied with
 [R Markdown](http://www.rstudio.com/ide/docs/r_markdown), but for a
 long report with a lot of sections, it's nice to have a sidebar with a
 floating table of contents. (See
-[this example](/Users/kbroman/Docs/github_pages/knitr_knutshell/assets/knitr_example_asciidoc.html)
+[this example](../assets/knitr_example_asciidoc.html)
 and its
-[AsciiDoc source](/Users/kbroman/Docs/github_pages/knitr_knutshell/assets/knitr_example.asciidoc).)
+[AsciiDoc source](../assets/knitr_example.asciidoc).)
 
 An important part of the appeal of Markdown is the limited set of
 simple marks. But sometimes you want just a little bit extra, like
