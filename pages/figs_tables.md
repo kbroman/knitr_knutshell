@@ -34,6 +34,11 @@ produce four image files, each with a pair of panels,
 side-by-side. All four will appear, one on top of the other, in the
 final document.
 
+Here's
+[what that chunk would produce](../assets/short_examples/bunch_o_figs.html),
+plus an
+[R Markdown file with just that chunk](../assets/short_examples/bunch_o_figs.Rmd).
+
 For R Markdown, the default graphics device is `png`. You can choose
 a different device using the chunk option `dev`.
 
@@ -53,6 +58,11 @@ You can pass arguments to the graphics device using the chunk option
 The chunk option `dev.args=list(pointsize=18)` passes `pointsize=18`
 to the `png()` device. This is equivalent to, in R, using
 `png("myfile.png", pointsize=18)`.
+
+Here's
+[what that chunk would produce](../assets/short_examples/bunch_o_figs_2.html),
+plus an
+[R Markdown file with just that chunk](../assets/short_examples/bunch_o_figs_2.Rmd).
 
 For more information on graphics with KnitR, see the
 [Knitr graphics manual](http://yihui.name/knitr/demo/graphics/).
@@ -82,6 +92,11 @@ many options, but in many cases it's sufficient. Here's an example.
 You need to use the chunk option `results="asis"`, as otherwise the
 html code will be printed as if it were R output.
 
+Here's
+[what that chunk would produce](../assets/short_examples/kable.html),
+plus an
+[R Markdown file with just that chunk](../assets/short_examples/kable.Rmd).
+
 #### xtable
 
 If you want more precise control of the appearance of the table, use
@@ -99,6 +114,11 @@ Here's the above example, using xtable:
     tab <- xtable(summary(out)$coef, digits=c(0, 2, 2, 1, 2))
     print(tab, type="html")
     ```
+
+Here's
+[what that chunk would produce](../assets/short_examples/xtable.html),
+plus an
+[R Markdown file with just that chunk](../assets/short_examples/xtable.Rmd).
 
 ### Up next
 
