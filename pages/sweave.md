@@ -4,7 +4,7 @@ title: Knitr from Sweave
 ---
 
 If you have experience using [Sweave](http://leisch.userweb.mwn.de/Sweave/) with
-[Latex](http://www.latex-project.org), you'll find that it will be an
+[LaTeX](http://www.latex-project.org), you'll find that it will be an
 easy transition from Sweave to [KnitR](http://yihui.name/knitr/), and
 one well worth making. A number of Sweave annoyances have been
 eliminated, but I think the big feature is that for less formal
@@ -20,7 +20,7 @@ I'll just give a thumbnail sketch.
 Chunks are still delimited with `<<>>=` and `@`, and in-line code
 still uses `\Sexpr{ }`. 
 
-Here are the new things in knitr:
+Here are some of the new things in knitr:
 
 1. A number of chunk options have been changed, and for good
 reason: In knitr, all of the chunk options are valid R code. So you
