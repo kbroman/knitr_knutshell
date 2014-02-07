@@ -94,7 +94,7 @@ error message:
     SyntaxError: invalid syntax
 
 
-### Converting R Markdown to html
+### Converting AsciiDoc to html
 
 [RStudio](http://www.rstudio.org) has no facilities for AsciiDoc;
 you'll need to use command-line tools.
