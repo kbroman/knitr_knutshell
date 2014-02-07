@@ -808,7 +808,7 @@ by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
 <pre><tt>help<span style="color: #990000">(</span>read<span style="color: #990000">.</span>cross<span style="color: #990000">)</span>
-`<span style="color: #990000">?</span>`<span style="color: #990000">(</span>read<span style="color: #990000">.</span>cross<span style="color: #990000">)</span></tt></pre></div></div>
+<span style="color: #990000">?</span>read<span style="color: #990000">.</span>cross</tt></pre></div></div>
 </div>
 </div>
 <div class="sect1">
@@ -821,8 +821,8 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>sug <span style="color: #990000">&lt;-</span> read<span style="color: #990000">.</span>cross<span style="color: #990000">(</span><span style="color: #FF0000">"csv"</span><span style="color: #990000">,</span> <span style="color: #FF0000">"http://www.rqtl.org"</span><span style="color: #990000">,</span> <span style="color: #FF0000">"sug.csv"</span><span style="color: #990000">,</span> genotypes <span style="color: #990000">=</span> c<span style="color: #990000">(</span><span style="color: #FF0000">"CC"</span><span style="color: #990000">,</span>
-    <span style="color: #FF0000">"CB"</span><span style="color: #990000">,</span> <span style="color: #FF0000">"BB"</span><span style="color: #990000">),</span> alleles <span style="color: #990000">=</span> c<span style="color: #990000">(</span><span style="color: #FF0000">"C"</span><span style="color: #990000">,</span> <span style="color: #FF0000">"B"</span><span style="color: #990000">))</span></tt></pre></div></div>
+<pre><tt>sug <span style="color: #990000">&lt;-</span> read<span style="color: #990000">.</span>cross<span style="color: #990000">(</span><span style="color: #FF0000">"csv"</span><span style="color: #990000">,</span> <span style="color: #FF0000">"http://www.rqtl.org"</span><span style="color: #990000">,</span> <span style="color: #FF0000">"sug.csv"</span><span style="color: #990000">,</span>
+                  genotypes<span style="color: #990000">=</span>c<span style="color: #990000">(</span><span style="color: #FF0000">"CC"</span><span style="color: #990000">,</span> <span style="color: #FF0000">"CB"</span><span style="color: #990000">,</span> <span style="color: #FF0000">"BB"</span><span style="color: #990000">),</span> alleles<span style="color: #990000">=</span>c<span style="color: #990000">(</span><span style="color: #FF0000">"C"</span><span style="color: #990000">,</span> <span style="color: #FF0000">"B"</span><span style="color: #990000">))</span></tt></pre></div></div>
 <div class="listingblock">
 <div class="content">
 <pre><code>##  --Read the following data:
@@ -1729,7 +1729,7 @@ density of later QTL analyses.</p></div>
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>sug <span style="color: #990000">&lt;-</span> calc<span style="color: #990000">.</span>genoprob<span style="color: #990000">(</span>sug<span style="color: #990000">,</span> step <span style="color: #990000">=</span> <span style="color: #993399">1</span><span style="color: #990000">)</span></tt></pre></div></div>
+<pre><tt>sug <span style="color: #990000">&lt;-</span> calc<span style="color: #990000">.</span>genoprob<span style="color: #990000">(</span>sug<span style="color: #990000">,</span> step<span style="color: #990000">=</span><span style="color: #993399">1</span><span style="color: #990000">)</span></tt></pre></div></div>
 <div class="paragraph"><p>The output of <code>calc.genoprob</code> is the same cross object as input,
 with additional information (the QTL genotype probabilities) inserted.  We
 assign this back to the original object (writing over the previous
@@ -1784,7 +1784,7 @@ chromosomes with LOD &gt; 3.</p></div>
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>summary<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>em<span style="color: #990000">,</span> threshold <span style="color: #990000">=</span> <span style="color: #993399">3</span><span style="color: #990000">)</span></tt></pre></div></div>
+<pre><tt>summary<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>em<span style="color: #990000">,</span> threshold<span style="color: #990000">=</span><span style="color: #993399">3</span><span style="color: #990000">)</span></tt></pre></div></div>
 <div class="listingblock">
 <div class="content">
 <pre><code>##          chr  pos  lod
@@ -2226,7 +2226,7 @@ AQhAAAIQgAAEIAABCEAAAhCAAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAAAnUm8P8BicdW
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk <span style="color: #990000">&lt;-</span> scanone<span style="color: #990000">(</span>sug<span style="color: #990000">,</span> method <span style="color: #990000">=</span> <span style="color: #FF0000">"hk"</span><span style="color: #990000">)</span></tt></pre></div></div>
+<pre><tt><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk <span style="color: #990000">&lt;-</span> scanone<span style="color: #990000">(</span>sug<span style="color: #990000">,</span> method<span style="color: #990000">=</span><span style="color: #FF0000">"hk"</span><span style="color: #990000">)</span></tt></pre></div></div>
 <div class="paragraph"><p>We may plot the two sets of LOD curves together in a single call
 to <code>plot</code>.</p></div>
 <div class="listingblock">
@@ -2234,7 +2234,7 @@ to <code>plot</code>.</p></div>
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>plot<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>em<span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> col <span style="color: #990000">=</span> c<span style="color: #990000">(</span><span style="color: #FF0000">"blue"</span><span style="color: #990000">,</span> <span style="color: #FF0000">"red"</span><span style="color: #990000">))</span></tt></pre></div></div>
+<pre><tt>plot<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>em<span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> col<span style="color: #990000">=</span>c<span style="color: #990000">(</span><span style="color: #FF0000">"blue"</span><span style="color: #990000">,</span> <span style="color: #FF0000">"red"</span><span style="color: #990000">))</span></tt></pre></div></div>
 <div class="imageblock">
 <div class="content">
 <img alt="plot of chunk plot_em_and_hk"
@@ -2794,15 +2794,15 @@ EGgzgf8DMyxlF07UMbkAAAAASUVORK5CYII=" />
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>plot<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>em<span style="color: #990000">,</span> col <span style="color: #990000">=</span> <span style="color: #FF0000">"blue"</span><span style="color: #990000">)</span>
-plot<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> col <span style="color: #990000">=</span> <span style="color: #FF0000">"red"</span><span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #0000FF">add</span></span> <span style="color: #990000">=</span> TRUE<span style="color: #990000">)</span></tt></pre></div></div>
+<pre><tt>plot<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>em<span style="color: #990000">,</span> col<span style="color: #990000">=</span><span style="color: #FF0000">"blue"</span><span style="color: #990000">)</span>
+plot<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> col<span style="color: #990000">=</span><span style="color: #FF0000">"red"</span><span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #0000FF">add</span></span><span style="color: #990000">=</span>TRUE<span style="color: #990000">)</span></tt></pre></div></div>
 <div class="paragraph"><p>It&#8217;s perhaps more informative to plot the differences:</p></div>
 <div class="listingblock">
 <div class="content"><!-- Generator: GNU source-highlight 3.1.7
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>plot<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk <span style="color: #990000">-</span> <span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>em<span style="color: #990000">,</span> ylim <span style="color: #990000">=</span> c<span style="color: #990000">(-</span><span style="color: #993399">0.3</span><span style="color: #990000">,</span> <span style="color: #993399">0.3</span><span style="color: #990000">),</span> ylab <span style="color: #990000">=</span> <span style="color: #FF0000">"LOD(HK)-LOD(EM)"</span><span style="color: #990000">)</span></tt></pre></div></div>
+<pre><tt>plot<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk <span style="color: #990000">-</span> <span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>em<span style="color: #990000">,</span> ylim<span style="color: #990000">=</span>c<span style="color: #990000">(-</span><span style="color: #993399">0.3</span><span style="color: #990000">,</span> <span style="color: #993399">0.3</span><span style="color: #990000">),</span> ylab<span style="color: #990000">=</span><span style="color: #FF0000">"LOD(HK)-LOD(EM)"</span><span style="color: #990000">)</span></tt></pre></div></div>
 <div class="imageblock">
 <div class="content">
 <img alt="plot of chunk plot_diff"
@@ -3272,7 +3272,7 @@ regression.</p></div>
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>operm <span style="color: #990000">&lt;-</span> scanone<span style="color: #990000">(</span>sug<span style="color: #990000">,</span> method <span style="color: #990000">=</span> <span style="color: #FF0000">"hk"</span><span style="color: #990000">,</span> n<span style="color: #990000">.</span>perm <span style="color: #990000">=</span> <span style="color: #993399">1000</span><span style="color: #990000">)</span></tt></pre></div></div>
+<pre><tt>operm <span style="color: #990000">&lt;-</span> scanone<span style="color: #990000">(</span>sug<span style="color: #990000">,</span> method<span style="color: #990000">=</span><span style="color: #FF0000">"hk"</span><span style="color: #990000">,</span> n<span style="color: #990000">.</span>perm<span style="color: #990000">=</span><span style="color: #993399">1000</span><span style="color: #990000">)</span></tt></pre></div></div>
 <div class="listingblock">
 <div class="content">
 <pre><code>## Doing permutation in batch mode ...</code></pre>
@@ -3564,7 +3564,7 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>summary<span style="color: #990000">(</span>operm<span style="color: #990000">,</span> alpha <span style="color: #990000">=</span> c<span style="color: #990000">(</span><span style="color: #993399">0.05</span><span style="color: #990000">,</span> <span style="color: #993399">0.2</span><span style="color: #990000">))</span></tt></pre></div></div>
+<pre><tt>summary<span style="color: #990000">(</span>operm<span style="color: #990000">,</span> alpha<span style="color: #990000">=</span>c<span style="color: #990000">(</span><span style="color: #993399">0.05</span><span style="color: #990000">,</span> <span style="color: #993399">0.2</span><span style="color: #990000">))</span></tt></pre></div></div>
 <div class="listingblock">
 <div class="content">
 <pre><code>## LOD thresholds (1000 permutations)
@@ -3580,7 +3580,7 @@ p-values calculated automatically:</p></div>
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>summary<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> perms <span style="color: #990000">=</span> operm<span style="color: #990000">,</span> alpha <span style="color: #990000">=</span> <span style="color: #993399">0.2</span><span style="color: #990000">,</span> pvalues <span style="color: #990000">=</span> TRUE<span style="color: #990000">)</span></tt></pre></div></div>
+<pre><tt>summary<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> perms<span style="color: #990000">=</span>operm<span style="color: #990000">,</span> alpha<span style="color: #990000">=</span><span style="color: #993399">0.2</span><span style="color: #990000">,</span> pvalues<span style="color: #990000">=</span>TRUE<span style="color: #990000">)</span></tt></pre></div></div>
 <div class="listingblock">
 <div class="content">
 <pre><code>##          chr  pos  lod  pval
@@ -3607,7 +3607,7 @@ row is the estimated QTL location.</p></div>
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>lodint<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> chr <span style="color: #990000">=</span> <span style="color: #993399">7</span><span style="color: #990000">)</span></tt></pre></div></div>
+<pre><tt>lodint<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> chr<span style="color: #990000">=</span><span style="color: #993399">7</span><span style="color: #990000">)</span></tt></pre></div></div>
 <div class="listingblock">
 <div class="content">
 <pre><code>##          chr   pos   lod
@@ -3620,7 +3620,7 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>bayesint<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> chr <span style="color: #990000">=</span> <span style="color: #993399">7</span><span style="color: #990000">)</span></tt></pre></div></div>
+<pre><tt>bayesint<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> chr<span style="color: #990000">=</span><span style="color: #993399">7</span><span style="color: #990000">)</span></tt></pre></div></div>
 <div class="listingblock">
 <div class="content">
 <pre><code>##          chr   pos   lod
@@ -3635,7 +3635,7 @@ use <code>expandtomarkers=TRUE</code>:</p></div>
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>lodint<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> chr <span style="color: #990000">=</span> <span style="color: #993399">7</span><span style="color: #990000">,</span> expandtomarkers <span style="color: #990000">=</span> TRUE<span style="color: #990000">)</span></tt></pre></div></div>
+<pre><tt>lodint<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> chr<span style="color: #990000">=</span><span style="color: #993399">7</span><span style="color: #990000">,</span> expandtomarkers<span style="color: #990000">=</span>TRUE<span style="color: #990000">)</span></tt></pre></div></div>
 <div class="listingblock">
 <div class="content">
 <pre><code>##          chr   pos   lod
@@ -3648,7 +3648,7 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>bayesint<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> chr <span style="color: #990000">=</span> <span style="color: #993399">7</span><span style="color: #990000">,</span> expandtomarkers <span style="color: #990000">=</span> TRUE<span style="color: #990000">)</span></tt></pre></div></div>
+<pre><tt>bayesint<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> chr<span style="color: #990000">=</span><span style="color: #993399">7</span><span style="color: #990000">,</span> expandtomarkers<span style="color: #990000">=</span>TRUE<span style="color: #990000">)</span></tt></pre></div></div>
 <div class="listingblock">
 <div class="content">
 <pre><code>##          chr   pos   lod
@@ -3663,7 +3663,7 @@ interval as follows.</p></div>
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>lodint<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> chr <span style="color: #990000">=</span> <span style="color: #993399">7</span><span style="color: #990000">,</span> drop <span style="color: #990000">=</span> <span style="color: #993399">2</span><span style="color: #990000">)</span></tt></pre></div></div>
+<pre><tt>lodint<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> chr<span style="color: #990000">=</span><span style="color: #993399">7</span><span style="color: #990000">,</span> drop<span style="color: #990000">=</span><span style="color: #993399">2</span><span style="color: #990000">)</span></tt></pre></div></div>
 <div class="listingblock">
 <div class="content">
 <pre><code>##          chr   pos   lod
@@ -3676,7 +3676,7 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>bayesint<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> chr <span style="color: #990000">=</span> <span style="color: #993399">7</span><span style="color: #990000">,</span> prob <span style="color: #990000">=</span> <span style="color: #993399">0.99</span><span style="color: #990000">)</span></tt></pre></div></div>
+<pre><tt>bayesint<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> chr<span style="color: #990000">=</span><span style="color: #993399">7</span><span style="color: #990000">,</span> prob<span style="color: #990000">=</span><span style="color: #993399">0.99</span><span style="color: #990000">)</span></tt></pre></div></div>
 <div class="listingblock">
 <div class="content">
 <pre><code>##          chr   pos   lod
@@ -3690,7 +3690,7 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>lodint<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> chr <span style="color: #990000">=</span> <span style="color: #993399">15</span><span style="color: #990000">)</span></tt></pre></div></div>
+<pre><tt>lodint<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> chr<span style="color: #990000">=</span><span style="color: #993399">15</span><span style="color: #990000">)</span></tt></pre></div></div>
 <div class="listingblock">
 <div class="content">
 <pre><code>##           chr   pos   lod
@@ -3703,7 +3703,7 @@ http://www.gnu.org/software/src-highlite -->
 by Lorenzo Bettini
 http://www.lorenzobettini.it
 http://www.gnu.org/software/src-highlite -->
-<pre><tt>bayesint<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> chr <span style="color: #990000">=</span> <span style="color: #993399">15</span><span style="color: #990000">)</span></tt></pre></div></div>
+<pre><tt>bayesint<span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">out</span></span><span style="color: #990000">.</span>hk<span style="color: #990000">,</span> chr<span style="color: #990000">=</span><span style="color: #993399">15</span><span style="color: #990000">)</span></tt></pre></div></div>
 <div class="listingblock">
 <div class="content">
 <pre><code>##           chr   pos   lod
@@ -3735,7 +3735,7 @@ http://www.gnu.org/software/src-highlite -->
 ## [8] base
 ##
 ## other attached packages:
-## [1] qtl_1.30-4 knitr_1.5
+## [1] qtl_1.29-2   knitr_1.5.22
 ##
 ## loaded via a namespace (and not attached):
 ## [1] evaluate_0.5.1 formatR_0.10   stringr_0.6.2  tools_3.0.2</code></pre>
@@ -3746,7 +3746,7 @@ http://www.gnu.org/software/src-highlite -->
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2014-02-06 19:44:16 CST
+Last updated 2014-02-07 16:15:17 CST
 </div>
 </div>
 </body>
