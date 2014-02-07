@@ -82,8 +82,11 @@ which has a shocking number of arguments.
 
 To use AsciiDoc, you'll need to _install_ AsciiDoc; see
 [this installation page](http://www.methods.co.nz/asciidoc/INSTALL.html).
-A key point: you'll need Python 2 and _not Python 3_.
 
+On Mac OSX, I recommend using [Homebrew](http://brew.sh/); then you
+just type `brew install asciidoc`.
+
+A key point: you'll need Python 2 and _not Python 3_.
 On my computer, `python` is Python 3; I have to switch to Python 2
 before running AsciiDoc. If I forget to switch, I get the following
 error message:
@@ -92,6 +95,8 @@ error message:
       except KeyError, k: raise AttributeError, k
                      ^
     SyntaxError: invalid syntax
+
+I'd also recommend installing the [ascii package]((http://cran.r-project.org/web/packages/ascii/index.html)) for [R](http://www.r-project.org). 
 
 
 ### Converting AsciiDoc to html
