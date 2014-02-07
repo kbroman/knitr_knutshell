@@ -98,6 +98,13 @@ PDF" that acts just like "Knit HTML" for R Markdown
 files. (Unfortunately, though, it's not a cute button, like the yarn
 one.) Click that button, and a preview window will open.
 
+#### LyX
+
+[Yihui Xie](http://yihui.name/) recommends [LyX](http://www.lyx.org/),
+a graphical front-end for LaTeX that includes support for knitr. See
+[Using knitr with LyX](http://yihui.name/knitr/demo/lyx/).
+
+
 #### Command-line
 
 To convert a `.Rnw` file to pdf from the command-line (or within a

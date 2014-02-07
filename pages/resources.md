@@ -46,6 +46,12 @@ Here are some examples.
 - [AsciiDoc mini manual](http://www.csc.kth.se/~akozlov/asciidoc-mini.html)
 - [ascii package for R](http://eusebe.github.io/ascii/)
 
+### LaTeX
+
+- [LaTeX project page](http://www.latex-project.org)
+- [LyX](http://www.lyx.org/), a graphical front-end for LaTeX
+- [Using knitr with LyX](http://yihui.name/knitr/demo/lyx/)
+
 ### Related things
 
 - [xtable](http://cran.r-project.org/web/packages/xtable/index.html),
