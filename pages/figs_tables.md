@@ -98,6 +98,6 @@ Here's the above example, using xtable:
     y <- 2*x + rnorm(n)
     out <- lm(y ~ x)
     library(xtable)
-    xtable(summary(out)$coef, digits=c(0, 2, 2, 1, 2))
+    tab <- xtable(summary(out)$coef, digits=c(0, 2, 2, 1, 2))
     print(tab, type="html")
     ```
