@@ -19,8 +19,10 @@ Here are some examples.
   from users
 - [Dynamic Documents with R and knitr (book)](http://www.amazon.com/exec/obidos/ASIN/1482203537/7210-20)
 - [Getting started with R Markdown and Knitr](http://jeromyanglim.blogspot.com/2012/05/getting-started-with-r-markdown-knitr.html)
+- [KnitR graphics manual](http://yihui.name/knitr/demo/graphics/)
 - [knitrBootstrap](http://jimhester.github.io/knitrBootstrap/) for nice-looking reports (see
   [L. Collado-Torres's post](http://lcolladotor.github.io/2013/12/10/knitrBootstrap/#.UuntzXddXVQ))
+
 
 ### Markdown
 
