@@ -91,7 +91,6 @@ the `xtable` function in the
 
 Here's the above example, using xtable:
 
-
     ```{r xtable, results="asis"}
     n <- 100
     x <- rnorm(n)
