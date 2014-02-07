@@ -27,6 +27,8 @@ different; I'm always getting confused between the two, and look at
 [my example](../assets/knitr_example_asciidoc.html) and the
 [AsciiDoc cheatsheet](http://powerman.name/doc/asciidoc).
 
+### Code chunk delimiters
+
 KnitR-wise, the main difference when you use asciidoc is that the code
 chunks are delimited differently. Here's an example:
 
