@@ -77,6 +77,26 @@ You can't use `kable` or `xtable` with AsciiDoc. Instead, use the
 [ascii package](http://cran.r-project.org/web/packages/ascii/index.html),
 which has a shocking number of arguments.
 
+Here's a simple example:
+
+    //begin.rcode table, results="asis", warning=FALSE
+    x <- rnorm(100, 10, 5)
+    y <- 2*x + rnorm(100, 0, 2)
+    out <- lm(y ~ x)
+    coef_tab <- summary(out)$coef
+    library(ascii)
+    ascii(coef_tab, include.rownames=TRUE, include.colnames=TRUE,
+          header=TRUE)
+    //end.rcode
+
+Note the use of `results="asis"`. I used `warning=FALSE` to suppress a
+warning message.
+
+Here's
+[what that chunk would produce](../assets/short_examples/asciitab.html),
+plus an
+[AsciiDoc file with just that chunk](../assets/short_examples/asciitab.asciidoc).
+
 
 ### Installing AsciiDoc
 

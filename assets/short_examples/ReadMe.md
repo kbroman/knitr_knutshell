@@ -5,7 +5,9 @@ used in the
 [page about figures and tables](http://kbroman.github.io/knitr_knutshell/pages/figs_tables.html),
 plus the resulting html files.
 
+There's also an example AsciiDoc table.
+
 `Makefile` is a [Gnu make](http://www.gnu.org/software/make) file for
-compiling the Rmd to html.
+compiling the Rmd/asciidoc to html.
 
 
