@@ -1,0 +1,8 @@
+```{r kable, results="asis"}
+n <- 100
+x <- rnorm(n)
+y <- 2*x + rnorm(n)
+out <- lm(y ~ x)
+kable(summary(out)$coef, format="html",
+      digits=2)
+```

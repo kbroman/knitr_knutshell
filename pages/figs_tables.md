@@ -35,25 +35,24 @@ side-by-side. All four will appear, one on top of the other, in the
 final document.
 
 For R Markdown, the default graphics device is `png`. You can choose
-a differnt device using the chunk option `dev`.
+a different device using the chunk option `dev`.
 
 You can pass arguments to the graphics device using the chunk option
 `dev.args`, which takes a list.  For example:
 
-    ```{r bunch_o_figs, fig.height=4, fig.width=8, dev.args=list(pointsize=18)}
+    ```{r bunch_o_figs_2, fig.height=4, fig.width=8, dev.args=list(pointsize=18)}
     n <- 100
     x <- rnorm(n)
     par(mfrow=c(1,2), las=1)
-    par(cex.lab=1.5, cex.axis=1.5)
     for(i in 1:8) {
       y <- i*x + rnorm(n)
       plot(x, y, main=i)
     }
     ```
 
-The chunk option `dev.args=list(pointsize=18)` increases the size of
-the points, but it seems that to increase the size of the axis labels,
-you also need to use `par(cex.lab=1.5, cex.axis=1.5)`.
+The chunk option `dev.args=list(pointsize=18)` passes `pointsize=18`
+to the `png()` device. This is equivalent to, in R, using
+`png("myfile.png", pointsize=18)`.
 
 For more information on graphics with KnitR, see the
 [Knitr graphics manual](http://yihui.name/knitr/demo/graphics/).

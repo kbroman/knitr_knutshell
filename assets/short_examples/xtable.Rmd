@@ -1,0 +1,9 @@
+```{r xtable, results="asis"}
+n <- 100
+x <- rnorm(n)
+y <- 2*x + rnorm(n)
+out <- lm(y ~ x)
+library(xtable)
+tab <- xtable(summary(out)$coef, digits=c(0, 2, 2, 1, 2))
+print(tab, type="html")
+```

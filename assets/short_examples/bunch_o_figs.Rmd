@@ -1,0 +1,9 @@
+```{r bunch_o_figs, fig.height=4, fig.width=8}
+n <- 100
+x <- rnorm(n)
+par(mfrow=c(1,2), las=1)
+for(i in 1:8) {
+  y <- i*x + rnorm(n)
+  plot(x, y, main=i)
+}
+```
