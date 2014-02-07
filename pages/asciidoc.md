@@ -50,7 +50,7 @@ The in-line code chunks are indicated with `+r` and `+`, as AsciiDoc
 uses `+` to mark code, to be shown in a monospace font.
 
 Otherwise, everything about the code chunks and chunk options is the
-same as with R Markdown.
+same as with [R Markdown](Rmarkdown.html).
 
 ### Floating table of contents and other stuff
 
