@@ -22,10 +22,9 @@ still uses `\Sexpr{ }`.
 
 Here are some of the new things in knitr:
 
-1. A number of chunk options have been changed, and for good
-reason: In knitr, all of the chunk options are valid R code. So you
-use `results="hide"` rather than `results=hide`, and `eval=TRUE`
-rather than `eval=true`.
+1. A number of chunk options have been changed, and for good reason:
+In knitr, all of the chunk options are valid R code. So, for example,
+you use `results="hide"` rather than `results=hide`.
 
 2. The chunk options `width` and `height` were changed to `fig.width`
 and `fig.height`, respectively. Again, see Yihui's page on
@@ -40,7 +39,7 @@ knitr, if two chunks have the same label, knitr halts with an error.
 This is a _good thing_!
 
 4. You don't have to indicate that a chunk is going to
-produce a figure. If the chunk produces a figure, knitr will include
+produce a figure (the old `fig=TRUE`). If the chunk produces a figure, knitr will include
 the figure.
 
 5. A chunk can produce more than one figure. Multiple image files will
