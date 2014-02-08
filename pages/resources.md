@@ -58,6 +58,8 @@ Here are some examples.
   an [R](http://www.r-project.org) package for creating LaTeX and html tables
 - [pandoc](http://johnmacfarlane.net/pandoc/), for converting
   among markup formats, including markdown to PDF
+- [pander](http://rapporter.github.io/pander/), an R package with
+  helper functions for creating pandoc's markdown format
 - [Reproducible Research with R and RStudio](http://www.amazon.com/exec/obidos/ASIN/1466572841/7210-20)
   (book)
 
