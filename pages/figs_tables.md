@@ -40,12 +40,31 @@ plus an
 [R Markdown file with just that chunk](../assets/short_examples/bunch_o_figs.Rmd).
 
 For R Markdown, the default graphics device is `png`. You can choose
-a different device using the chunk option `dev`.
+a different device using the chunk option `dev`. For example, to use
+the `svg` device (for
+[Scalable Vector Graphics](http://en.wikipedia.org/wiki/Scalable_Vector_Graphics),
+which may look better in a web page as they can be scaled without loss
+of quality), you would use `dev='svg'`, as follows:
+
+    ```{r bunch_o_figs_svg, fig.height=4, fig.width=8, dev='svg'}
+    n <- 100
+    x <- rnorm(n)
+    par(mfrow=c(1,2), las=1)
+    for(i in 1:8) {
+      y <- i*x + rnorm(n)
+      plot(x, y, main=i)
+    }
+    ```
+
+Here's
+[what that chunk would produce](../assets/short_examples/bunch_o_figs_svg.html),
+plus an
+[R Markdown file with just that chunk](../assets/short_examples/bunch_o_figs_svg.Rmd).
 
 You can pass arguments to the graphics device using the chunk option
 `dev.args`, which takes a list.  For example:
 
-    ```{r bunch_o_figs_2, fig.height=4, fig.width=8, dev.args=list(pointsize=18)}
+    ```{r bunch_o_figs_pointsize, fig.height=4, fig.width=8, dev.args=list(pointsize=18)}
     n <- 100
     x <- rnorm(n)
     par(mfrow=c(1,2), las=1)
@@ -60,9 +79,9 @@ to the `png()` device. This is equivalent to, in R, using
 `png("myfile.png", pointsize=18)`.
 
 Here's
-[what that chunk would produce](../assets/short_examples/bunch_o_figs_2.html),
+[what that chunk would produce](../assets/short_examples/bunch_o_figs_pointsize.html),
 plus an
-[R Markdown file with just that chunk](../assets/short_examples/bunch_o_figs_2.Rmd).
+[R Markdown file with just that chunk](../assets/short_examples/bunch_o_figs_pointsize.Rmd).
 
 For more information on graphics with KnitR, see the
 [Knitr graphics manual](http://yihui.name/knitr/demo/graphics/).
