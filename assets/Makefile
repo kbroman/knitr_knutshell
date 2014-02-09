@@ -9,8 +9,8 @@ knitr_example.html: knitr_example.Rmd
 	R ${R_OPTS} -e 'library(knitr);knit2html("knitr_example.Rmd")'
 
 knitr_example_asciidoc.html: knitr_example.Rasciidoc
-	R ${R_OPTS} -e 'library(knitr);knit("knitr_example.Rasciidoc", "knitr_example.asciidoc")'
-	asciidoc -o knitr_example_asciidoc.html knitr_example.asciidoc
+	R ${R_OPTS} -e 'library(knitr);knit("knitr_example.Rasciidoc")'
+	asciidoc -o knitr_example_asciidoc.html knitr_example.txt
 
 knitr_example.pdf: knitr_example.Rnw
 	R ${R_OPTS} -e 'library(knitr);knit("knitr_example.Rnw")'

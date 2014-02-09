@@ -2,7 +2,7 @@ AsciidocFigs
 RmdFigs
 RnwFigs
 knitr_example.md
-knitr_example.asciidoc
+knitr_example.txt
 *.log
 *.aux
 *.tex

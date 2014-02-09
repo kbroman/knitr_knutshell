@@ -6,5 +6,5 @@ R_OPTS=--no-save --no-restore --no-init-file --no-site-file # vanilla, but with 
 	R ${R_OPTS} -e 'library(knitr);knit2html("$^")'
 
 asciitab.html: asciitab.Rasciidoc
-	R ${R_OPTS} -e 'library(knitr);knit("asciitab.Rasciidoc", "asciitab.asciidoc")'
-	asciidoc -o asciitab.html asciitab.asciidoc
+	R ${R_OPTS} -e 'library(knitr);knit("asciitab.Rasciidoc")'
+	asciidoc asciitab.txt
