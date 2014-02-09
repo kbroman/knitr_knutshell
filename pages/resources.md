@@ -68,7 +68,7 @@ Here are some examples.
 - [Directory of examples](https://github.com/kbroman/knitr_knutshell/tree/gh-pages/assets)
 - [R Markdown example](../assets/knitr_example.Rmd), and
   [its html product](../assets/knitr_example.html)
-- [AsciiDoc example](../assets/knitr_example.asciidoc), and
+- [AsciiDoc example](../assets/knitr_example.Rasciidoc), and
   [Its html product](../assets/knitr_example_asciidoc.html)
 - [LaTeX example](../assets/knitr_example.Rnw), and
   [its pdf product](../assets/knitr_example.pdf)

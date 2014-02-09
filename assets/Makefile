@@ -8,9 +8,9 @@ R_OPTS=--no-save --no-restore --no-init-file --no-site-file # vanilla, but with 
 knitr_example.html: knitr_example.Rmd
 	R ${R_OPTS} -e 'library(knitr);knit2html("knitr_example.Rmd")'
 
-knitr_example_asciidoc.html: knitr_example.asciidoc
-	R ${R_OPTS} -e 'library(knitr);knit("knitr_example.asciidoc", "knitr_example_asciidoc.txt")'
-	asciidoc knitr_example_asciidoc.txt
+knitr_example_asciidoc.html: knitr_example.Rasciidoc
+	R ${R_OPTS} -e 'library(knitr);knit("knitr_example.Rasciidoc", "knitr_example.asciidoc")'
+	asciidoc -o knitr_example_asciidoc.html knitr_example.asciidoc
 
 knitr_example.pdf: knitr_example.Rnw
 	R ${R_OPTS} -e 'library(knitr);knit("knitr_example.Rnw")'

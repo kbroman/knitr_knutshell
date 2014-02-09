@@ -6,7 +6,7 @@ is an [R Markdown](http://www.rstudio.com/ide/docs/r_markdown) file, using [RStu
 [`knitr_example.html`](https://github.com/kbroman/knitr_knutshell/blob/gh-pages/assets/knitr_example.html)
 is the resulting html file.
 
-[`knitr_example.asciidoc`](https://github.com/kbroman/knitr_knutshell/blob/gh-pages/assets/knitr_example.asciidoc)
+[`knitr_example.Rasciidoc`](https://github.com/kbroman/knitr_knutshell/blob/gh-pages/assets/knitr_example.Rasciidoc)
 is an [asciidoc](http://www.methods.co.nz/asciidoc/)
 file. [`knitr_example_asciidoc.html`](https://github.com/kbroman/knitr_knutshell/blob/gh-pages/assets/knitr_example_asciidoc.html)
 is the resulting html file.

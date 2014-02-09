@@ -13,7 +13,7 @@ long report with a lot of sections, it's nice to have a sidebar with a
 floating table of contents. (See
 [this example](../assets/knitr_example_asciidoc.html)
 and its
-[AsciiDoc source](../assets/knitr_example.asciidoc).)
+[AsciiDoc source](../assets/knitr_example.Rasciidoc).)
 
 An important part of the appeal of Markdown is the limited set of
 simple marks. But sometimes you want just a little bit extra, like
@@ -95,7 +95,7 @@ warning message.
 Here's
 [what that chunk would produce](../assets/short_examples/asciitab.html),
 plus an
-[AsciiDoc file with just that chunk](../assets/short_examples/asciitab.asciidoc).
+[AsciiDoc file with just that chunk](../assets/short_examples/asciitab.Rasciidoc).
 
 
 ### Installing AsciiDoc
@@ -127,9 +127,8 @@ you'll need to use command-line tools.
 You first use `knit` in the knitr package to process the asciidoc/KnitR
 document:
 
-    R -e 'library(knitr);knit("knitr_example.asciidoc", "knitr_example_asciidoc.txt")'
+    R -e 'library(knitr);knit("knitr_example.Rasciidoc", "knitr_example.asciidoc")'
 
 You then use `asciidoc` to convert this to an html file:
 
-    asciidoc knitr_example_asciidoc.txt
-
+    asciidoc knitr_example.asciidoc

@@ -165,7 +165,7 @@ The examples above are taken from longer examples that you can find
 [here](https://github.com/kbroman/knitr_knutshell/tree/gh-pages/assets), including an
 [R Markdown example](../assets/knitr_example.Rmd) (and
 [its html product](../assets/knitr_example.html)), an
-[AsciiDoc example](../assets/knitr_example.asciidoc) (and
+[AsciiDoc example](../assets/knitr_example.Rasciidoc) (and
 [its html product](../assets/knitr_example_asciidoc.html)), and a
 [LaTeX example](../assets/knitr_example.Rnw) (and
 [its pdf product](../assets/knitr_example.pdf)). 
