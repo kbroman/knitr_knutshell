@@ -62,6 +62,8 @@ Here are some examples.
   helper functions for creating pandoc's markdown format
 - [Reproducible Research with R and RStudio](http://www.amazon.com/exec/obidos/ASIN/1466572841/7210-20)
   (book)
+- [polymode](https://github.com/vitoshka/polymode), an emacs mode that
+  handles R Markdown nicely
 
 ### Karl's examples
 
