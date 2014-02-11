@@ -193,37 +193,33 @@ hr {
 x &lt;- rnorm(n)
 y &lt;- 2*x + rnorm(n)
 out &lt;- lm(y ~ x)
-kable(summary(out)$coef, format=&quot;html&quot;,
-      digits=2)
+kable(summary(out)$coef, digits = 2)
 </code></pre>
 
-<table>
- <thead>
-  <tr>
-   <th align="left">   </th>
-   <th align="right"> Estimate </th>
-   <th align="right"> Std. Error </th>
-   <th align="right"> t value </th>
-   <th align="right"> Pr(>|t|) </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td align="left"> (Intercept) </td>
-   <td align="right"> -0.16 </td>
-   <td align="right">  0.09 </td>
-   <td align="right"> -1.74 </td>
-   <td align="right">  0.08 </td>
-  </tr>
-  <tr>
-   <td align="left"> x </td>
-   <td align="right">  2.00 </td>
-   <td align="right">  0.08 </td>
-   <td align="right"> 24.01 </td>
-   <td align="right">  0.00 </td>
-  </tr>
-</tbody>
-</table>
+<table><thead>
+<tr>
+<th align="left"></th>
+<th align="right">Estimate</th>
+<th align="right">Std. Error</th>
+<th align="right">t value</th>
+<th align="right">Pr(&gt;&#124;t&#124;)</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">(Intercept)</td>
+<td align="right">0.08</td>
+<td align="right">0.10</td>
+<td align="right">0.81</td>
+<td align="right">0.42</td>
+</tr>
+<tr>
+<td align="left">x</td>
+<td align="right">2.03</td>
+<td align="right">0.11</td>
+<td align="right">19.16</td>
+<td align="right">0.00</td>
+</tr>
+</tbody></table>
 
 </body>
 
