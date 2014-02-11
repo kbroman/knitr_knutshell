@@ -104,8 +104,7 @@ many options, but in many cases it's sufficient. Here's an example.
     x <- rnorm(n)
     y <- 2*x + rnorm(n)
     out <- lm(y ~ x)
-    kable(summary(out)$coef, format="html",
-          digits=2)
+    kable(summary(out)$coef, digits=2)
     ```
 
 You need to use the chunk option `results="asis"`, as otherwise the
