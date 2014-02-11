@@ -100,4 +100,5 @@ is a really beautiful document, but it says (on page 2):
 > ...all details are visible in the source code (`feversupp.Rnw`), which
 > is available upon request from \[author's email\].
 
-And the author didn't respond to my email requesting the source.
+It'd be better to have it on [GitHub](http://github.com),
+[Figshare](http://figshare.com), or even a personal web page. 
