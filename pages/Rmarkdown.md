@@ -107,6 +107,11 @@ For figures, you'll want to use options like `fig.width` and
     plot(x,y)
     ```
 
+Note that if `include=FALSE`, all of the code, results, and figures
+will be suppressed. If `include=TRUE` and `results="hide"`, the results
+will be hidden but figures will still be shown. To hide the figures,
+use `fig.show="hide"`.
+
 There are
 [lots of different possible "chunk options"](http://yihui.name/knitr/options#chunk_options). 
 Each must be real R code, as R will be used to evaluate them. So
