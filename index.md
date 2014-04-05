@@ -39,10 +39,11 @@ If you find KnitR useful, consider buying
 
 ---
 
+The source for this tutorial is [here](http://github.com/kbroman/knitr_knutshell).
+If you have suggestions or corrections, send a [pull request](https://help.github.com/articles/using-pull-requests).
+
 Also see my
 [git/github guide](http://kbroman.github.io/github_tutorial),
 [minimal make tutorial](http://kbroman.github.io/minimal_make), and
 [simple site tutorial](http://kbroman.github.io/simple_site).
 
-The source for this tutorial is [here](http://github.com/kbroman/knitr_knutshell).
-If you have suggestions or corrections, send a [pull request](https://help.github.com/articles/using-pull-requests).
