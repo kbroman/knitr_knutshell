@@ -60,7 +60,7 @@ following:
 
     An example Knitr/Asciidoc document
     ==================================
-    link:http://www.biostat.wisc.edu/~kbroman[Karl W Broman]
+    link:http://kbroman.org[Karl W Broman]
     :toc2:
     :numbered:
     :data-uri:

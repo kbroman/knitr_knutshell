@@ -3,7 +3,7 @@
 
 ## An example Knitr/R Markdown document
 
-[Karl W Broman](http://www.biostat.wisc.edu/~kbroman)
+[Karl W Broman](http://kbroman.org)
 
 This is a portion of the "[A shorter tour of R/qtl](http://www.rqtl.org/rqtltour2.pdf)"
 tutorial, developed here in multiple formats to illustrate the use of knitr.

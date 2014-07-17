@@ -22,7 +22,7 @@
 
 {\sffamily \textbf{An example Knitr/R Markdown document}}
 
-\href{http://www.biostat.wisc.edu/~kbroman}{Karl W Broman}
+\href{http://kbroman.org}{Karl W Broman}
 
 This is a portion of the ``\href{http://www.rqtl.org/rqtltour2.pdf}{A shorter tour of R/qtl}''
 tutorial, developed here in multiple formats to illustrate the use of knitr.
@@ -75,7 +75,7 @@ follows.
 
 <<load_cross>>=
 sug <- read.cross("csv", "http://www.rqtl.org", "sug.csv",
-                  genotypes=c("CC", "CB", "BB"), 
+                  genotypes=c("CC", "CB", "BB"),
                   alleles=c("C", "B"))
 @
 
@@ -105,7 +105,7 @@ The data object {\tt sug} is complex; it contains the genotype
 data, phenotype data and genetic map.  R has a certain amount of
 ``object oriented'' facilities, so that calls to functions like
 {\tt summary} and {\tt plot} are interpreted appropriately for the object
-considered.  
+considered.
 
 The object {\tt sug} has ``class'' {\tt "cross"}, and so calls to
 {\tt summary} and {\tt plot} are actually sent to the functions
@@ -119,7 +119,7 @@ summary(sug)
 @
 
 We see that this is an intercross with \Sexpr{nind(sug)} individuals.
-There are \Sexpr{nphe(sug)} phenotypes, and genotype data at 
+There are \Sexpr{nphe(sug)} phenotypes, and genotype data at
 \Sexpr{totmar(sug)} markers across the \Sexpr{nchr(sug)} autosomes.  The genotype
 data is quite complete.
 
@@ -140,7 +140,7 @@ histograms or bar plots for the six phenotypes.  The last two
 {\sffamily \textbf{Single-QTL analysis}}
 \nopagebreak
 
-Let's now proceed to QTL mapping via a single-QTL model.  
+Let's now proceed to QTL mapping via a single-QTL model.
 
 We first calculate the QTL genotype probabilities, given the
 observed marker data, via the function {\tt calc.genoprob}.  This is
@@ -189,7 +189,7 @@ plot(out.em)
 @
 
 We can do the genome scan via Haley-Knott regression by calling
-{\tt scanone} with the argument {\tt method="hk"}.  
+{\tt scanone} with the argument {\tt method="hk"}.
 
 <<scanone_hk>>=
 out.hk <- scanone(sug, method="hk")
@@ -206,16 +206,16 @@ Alternatively, we could do the following (figure not included, for brevity):
 
 <<plot_em_and_hk_alt, eval=FALSE>>=
 plot(out.em, col="blue")
-plot(out.hk, col="red", add=TRUE) 
+plot(out.hk, col="red", add=TRUE)
 @
 
 It's perhaps more informative to plot the differences:
 
 <<plot_diff>>=
-plot(out.hk - out.em, ylim=c(-0.3, 0.3), 
+plot(out.hk - out.em, ylim=c(-0.3, 0.3),
      ylab="LOD(HK)-LOD(EM)")
 @
- 
+
 \bigskip
 {\sffamily \textbf{Permutation tests}}
 \nopagebreak
@@ -262,7 +262,7 @@ chromosomes 7 and 15.  Interval estimates of the location of QTL are
 commonly obtained via 1.5-LOD support intervals, which may be
 calculated via the function {\tt lodint}.  Alternatively, an
 approximate Bayes credible interval may be obtained with
-{\tt bayesint}.  
+{\tt bayesint}.
 
 To obtain the 1.5-LOD support interval and 95\% Bayes interval
 for the QTL on chromosome 7, type the following.
