@@ -2,7 +2,7 @@
 
 This directory contains R Markdown files with the example code chunks
 used in the
-[page about figures and tables](http://kbroman.github.io/knitr_knutshell/pages/figs_tables.html),
+[page about figures and tables](http://kbroman.org/knitr_knutshell/pages/figs_tables.html),
 plus the resulting html files.
 
 There's also an example AsciiDoc table.

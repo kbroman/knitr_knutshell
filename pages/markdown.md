@@ -221,7 +221,7 @@ In practice, I do this on the command line, as so:
 And _really_, I do this within a
 [GNU make](http://www.gnu.org/software/make) file, like
 [this one](https://github.com/kbroman/knitr_knutshell/blob/gh-pages/assets/Makefile).
-(Also see my [minimal make](http://kbroman.github.io/minimal_make/)
+(Also see my [minimal make](http://kbroman.org/minimal_make/)
 tutorial.)
 
 ### Up next

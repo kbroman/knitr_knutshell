@@ -187,7 +187,7 @@ More generally, you'd call R, load the knitr package, and use `knit()`
 or one of its variants, like `knit2html()`. I prefer to create a 
 [GNU make](http://www.gnu.org/software/make) file, like 
 [this one](../assets/Makefile), for the examples I'd mentioned above.
-(See also my [minimal make](http://kbroman.github.io/minimal_make) tutorial.)
+(See also my [minimal make](http://kbroman.org/minimal_make) tutorial.)
 
 ### What next?
 

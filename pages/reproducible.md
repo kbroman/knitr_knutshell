@@ -55,7 +55,7 @@ them to be able to run it and get the same output.
    shell shortcut for knitr, but the person trying to reproduce your
    results won't know about that. What's great about GNU make is that
    it both _automates_ your workflow and _documents_ it. See my
-   [minimal make](http://kbroman.github.io/minimal_make/) tutorial,
+   [minimal make](http://kbroman.org/minimal_make/) tutorial,
    and also read [Mike Bostock](http://bost.ocks.org/mike/)'s
    "[Why Use Make](http://bost.ocks.org/mike/make/)".
 
