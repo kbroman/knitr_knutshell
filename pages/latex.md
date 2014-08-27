@@ -85,16 +85,29 @@ Markdown.
 But the default in RStudio is still to use
 [Sweave](http://leisch.userweb.mwn.de/Sweave/), so you first need to
 [change that default](https://www.rstudio.com/ide/docs/authoring/rnw_weave).
-Go to the RStudio Preferences and select Sweave on the left. Then
+Go to the RStudio (on menu bar) &rarr; Preferences and select Sweave on the left. Then
 change the selection for "Weave Rnw files using:" from Sweave to
 knitr. You also have a choice of using pdfLaTeX or
 [XeLaTeX](http://wiki.xelatex.org/doku.php).
+
+**Note**: There is another places in RStudio that you can select knitr
+vs Sweave: Tools (on menu bar) &rarr; Project Options and select
+Sweave on left, then again change the selection for "Weave Rnw files
+using:" from Sweave to knitr. (From Tools on menu bar, you'll also see
+"Global Options"; this seems to be the same as RStudio &rarr;
+Preferences.) It seems like the selection within Project Options
+overrides the selection within Global Options/Preferences.
 
 Now, if you open a `.Rnw` file in RStudio, or if you create a new one
 with File &rarr; New &rarr; R Sweave, there will be a button "Compile
 PDF" that acts just like "Knit HTML" for R Markdown
 files. (Unfortunately, though, it's not a cute button, like the yarn
 one.) Click that button, and a preview window will open.
+
+**Note**: If you opened the new `.Rnw` file while the options were still set to
+Sweave (rather than knitr), the new file will have a line with
+`\SweaveOpts{concordance=TRUE}`.
+But if you're using knitr, you'll need to delete this line.
 
 #### LyX
 
