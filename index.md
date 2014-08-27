@@ -1,7 +1,7 @@
 ---
 layout: page
 title: knitr in a knutshell
-tagline: Karl's minimal tutorial
+tagline: a minimal tutorial
 ---
 
 [KnitR](http://yihui.name/knitr/) is a really important tool for
