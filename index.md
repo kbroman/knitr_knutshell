@@ -46,6 +46,8 @@ send a [pull request](https://help.github.com/articles/using-pull-requests).
 
 Also see my
 [git/github guide](http://kbroman.org/github_tutorial),
-[minimal make tutorial](http://kbroman.org/minimal_make), and
+[minimal make tutorial](http://kbroman.org/minimal_make),
+[R package primer](http://kbroman.org/pkg_primer),
+and
 [simple site tutorial](http://kbroman.org/simple_site).
 
