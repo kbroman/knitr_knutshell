@@ -40,7 +40,9 @@ If you find KnitR useful, consider buying
 ---
 
 The source for this tutorial is [here](http://github.com/kbroman/knitr_knutshell).
-If you have suggestions or corrections, send a [pull request](https://help.github.com/articles/using-pull-requests).
+If you have suggestions or corrections,
+[submit an issue](https://github.com/kbroman/knitr_knutshell/issues) or
+send a [pull request](https://help.github.com/articles/using-pull-requests).
 
 Also see my
 [git/github guide](http://kbroman.org/github_tutorial),
