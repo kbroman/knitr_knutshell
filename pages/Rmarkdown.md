@@ -14,8 +14,7 @@ You should first read the [page about Markdown](markdown.html).
 
 [R Markdown](http://www.rstudio.com/ide/docs/r_markdown) is a
 variant of [Markdown](http://daringfireball.net/projects/markdown/)
-developed by the folks at [Rstudio](http://www.rstudio.com): It's
-Markdown with embedded [R](http://www.r-project.org) code chunks, to
+that has embedded [R](http://www.r-project.org) code chunks, to
 be used with [knitr](http://yihui.name/knitr/) to make it easy to
 create reproducible web-based reports. The Markdown syntax has some
 enhancements (see the
@@ -36,7 +35,7 @@ The key thing for us to focus on are the code chunks, which look like this:
     ```
 
 In the midst of an otherwise plain Markdown document, you'll have a
-bit of R code that is initiated by a line like this
+bit of R code that is initiated by a line like this:
 
     ```{r chunk_name}
 
@@ -115,7 +114,7 @@ use `fig.show="hide"`.
 There are
 [lots of different possible "chunk options"](http://yihui.name/knitr/options#chunk_options). 
 Each must be real R code, as R will be used to evaluate them. So
-`results=hide` is wrong; you need `results="hide"`
+`results=hide` is wrong; you need `results="hide"`.
 
 #### Global chunk options
 
@@ -147,8 +146,8 @@ with `Figs` as the initial part of their names.
 
 The global chunk options become the defaults for the rest of the
 document. Then if you want a particular chunk to have a different
-behavior, for example, to have a different figure height, you'd use
-define a different option within that chunk. For example:
+behavior, for example, to have a different figure height, you'd
+specify a different option within that chunk. For example:
 
     ```{r a_taller_figure, fig.height=32}
     par(mfrow=c(8,2))
@@ -205,7 +204,6 @@ The bit of R code between them is evaluated and the result inserted.
 **An important point**: you need to be sure that these in-line bits of
 code aren't split across lines in your document. Othewise you'll just
 see the raw code and not the result that you want.
-cor(x,y).
 
 #### Rounding
 
