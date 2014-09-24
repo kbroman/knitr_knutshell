@@ -49,7 +49,7 @@ same as with [R Markdown](Rmarkdown.html).
 ### Tables
 
 To produce LaTeX tables, you can use `kable` and `xtable`
-[much as you would do with R Markdown](figs_tables.md). And the
+[much as you would do with R Markdown](figs_tables.html). And the
 results look considerably nicer than the html tables.
 Here's a `kable` example.
 
