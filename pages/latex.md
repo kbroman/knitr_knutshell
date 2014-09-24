@@ -90,7 +90,7 @@ change the selection for "Weave Rnw files using:" from Sweave to
 knitr. You also have a choice of using pdfLaTeX or
 [XeLaTeX](http://wiki.xelatex.org/doku.php).
 
-**Note**: There is another places in RStudio that you can select knitr
+**Note**: There is another place in RStudio that you can select knitr
 vs Sweave: Tools (on menu bar) &rarr; Project Options and select
 Sweave on left, then again change the selection for "Weave Rnw files
 using:" from Sweave to knitr. (From Tools on menu bar, you'll also see
