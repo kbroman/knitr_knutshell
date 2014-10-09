@@ -157,7 +157,7 @@ In [LaTeX](http://www.latex-project.org), it would be:
 [Yihui](http://yihui.name/) would probably yell at me for the `{\tt }`
 bit, but that seemed easiest for me.
 
-A knitr document will have often have _many_ code chunks. They are
+A knitr document will often have _many_ code chunks. They are
 evaluated in order, in a single R session, and the state of the
 various variables in one code chunk are preserved in future chunks.
 
