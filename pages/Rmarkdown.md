@@ -145,9 +145,10 @@ in a subdirectory called `figure/`, and `Figs` is more my style.)
 `fig.path='Figs'` then the figures would go in the main directory but
 with `Figs` as the initial part of their names.
 
-**Another note**: I'm not sure why `library(knitr)` is needed there,
-  but it does seem necessary with
-  [the new R Markdown](http://rmarkdown.rstudio.com/).
+**Another note**: The `library(knitr)` seems
+  necessary with
+  [R Markdown](http://rmarkdown.rstudio.com/) via
+  [RStudio](http://rstudio.com); I'm not entirely sure why.
 
 The global chunk options become the defaults for the rest of the
 document. Then if you want a particular chunk to have a different
