@@ -4,7 +4,7 @@ title: Knitr with R Markdown
 ---
 
 The simplest way to write a quick report, mixing in a bit of R, is to
-use [R Markdown](http://www.rstudio.com/ide/docs/r_markdown), a
+use [R Markdown](http://rmarkdown.rstudio.com), a
 variant of [Markdown](http://daringfireball.net/projects/markdown/)
 developed by the folks at [Rstudio](http://www.rstudio.com).
 
@@ -12,13 +12,13 @@ You should first read the [page about Markdown](markdown.html).
 
 ### R Markdown
 
-[R Markdown](http://www.rstudio.com/ide/docs/r_markdown) is a
+[R Markdown](http://rmarkdown.rstudio.com) is a
 variant of [Markdown](http://daringfireball.net/projects/markdown/)
 that has embedded [R](http://www.r-project.org) code chunks, to
 be used with [knitr](http://yihui.name/knitr/) to make it easy to
 create reproducible web-based reports. The Markdown syntax has some
 enhancements (see the
-[R Markdown page](http://www.rstudio.com/ide/docs/r_markdown)); for example,
+[R Markdown page](http://rmarkdown.rstudio.com)); for example,
 you can include LaTeX equations (see
 [Equations in R Markdown](http://www.rstudio.com/ide/docs/authoring/using_markdown_equations)).
 
