@@ -76,7 +76,7 @@ final document (though any results/output would still be displayed).
     y <- 2*x + rnorm(100)
     cor(x, y)
     ```
-    
+
 You use `results="hide"` to hide the results/output (but here the code
 would still be displayed).
 
@@ -85,7 +85,7 @@ would still be displayed).
     y <- 2*x + rnorm(100)
     cor(x, y)
     ```
-    
+
 You use `include=FALSE` to have the chunk _evaluated_, but neither the
 code nor its output displayed.
 
@@ -112,7 +112,7 @@ will be hidden but figures will still be shown. To hide the figures,
 use `fig.show="hide"`.
 
 There are
-[lots of different possible "chunk options"](http://yihui.name/knitr/options#chunk_options). 
+[lots of different possible "chunk options"](http://yihui.name/knitr/options#chunk_options).
 Each must be real R code, as R will be used to evaluate them. So
 `results=hide` is wrong; you need `results="hide"`.
 
@@ -138,7 +138,7 @@ I snuck a few additional options in there: `warning=FALSE` and
 `message=FALSE` suppress any R warnings or messages from being included in
 the final document, and `fig.path='Figs/'` makes it so the figure
 files get placed in the `Figs` subdirectory. (By default, they'd go
-in a subdirectory called `figure/`, and `Figs` is more my style.) 
+in a subdirectory called `figure/`, and `Figs` is more my style.)
 
 **Note**: the ending slash in `Figs/` is critical. If you used
 `fig.path='Figs'` then the figures would go in the main directory but
@@ -179,13 +179,13 @@ chunk options defined via `opts_chunk$set`.
 
 
 #### In-line code
-    
+
 A key motivation for knitr is
 [reproducible research](http://en.wikipedia.org/wiki/Reproducibility#Reproducible_research):
 that our results are accompanied by the data and code needed to
 produce them.
 
-Thus, your report should never explicitly include numbers that are 
+Thus, your report should never explicitly include numbers that are
 derived from the data. You'd never say "There are 168 individuals."
 Rather, you'd insert in place of the 168 a bit of code that, when
 evaluated, gives the number of individuals.
@@ -197,9 +197,9 @@ That's the point of the in-line code. You'd write something like this:
 Another example:
 
     The estimated correlation between x and y was `r cor(x,y)`.
-    
+
 In R Markdown, in-line code is indicated with `` `r  `` and `` ` ``.
-The bit of R code between them is evaluated and the result inserted.    
+The bit of R code between them is evaluated and the result inserted.
 
 **An important point**: you need to be sure that these in-line bits of
 code aren't split across lines in your document. Othewise you'll just
@@ -219,7 +219,7 @@ One solution is to use the `sprintf` function, like so:
 right? Well, it is if you're a C programmer.
 
 But a problem arises if the value is `-0.001`. `` `r sprintf("%.2f", -0.001)` ``
-will produce `-0.00`. I don't like that, nor does 
+will produce `-0.00`. I don't like that, nor does
 [Hilary](https://twitter.com/hspter/status/314858331598626816).
 
 My solution to this problem is the
@@ -232,7 +232,7 @@ At the start of my R Markdown document, I'd include:
     ```{r load_packages, include=FALSE}
     library(broman)
     ```
-    
+
 And then later I could write `` `r myround(cor(x,y), 2)` ``
 and it would give `0.90` or `0.00` in the way that I want.
 
@@ -287,7 +287,7 @@ code and creates a Markdown file (plus any figures). The
 [markdown package](http://cran.r-project.org/web/packages/markdown/index.html))
 then converts this Markdown file to html. The `knit2html` function
 combines these two things, so that's the function to use.
-    
+
     knit2html("knitr_example.Rmd")
 
 In practice, I do this on the command line, as so:
