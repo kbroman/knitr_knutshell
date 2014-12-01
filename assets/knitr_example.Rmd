@@ -1,5 +1,5 @@
 <link href="http://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
-<link href="http://www.biostat.wisc.edu/~kbroman/markdown_modified.css" rel="stylesheet"></link>
+<link href="http://kbroman.org/qtlcharts/assets/vignettes/markdown_modified.css" rel="stylesheet"></link>
 
 ## An example Knitr/R Markdown document
 
@@ -12,6 +12,7 @@ This particular document is written with [R Markdown](http://www.rstudio.com/ide
 site.)
 
 ```{r knitr_options, include=FALSE}
+library(knitr)
 opts_chunk$set(fig.width=12, fig.height=4, fig.path='RmdFigs/',
                warning=FALSE, message=FALSE)
 set.seed(53079239)
