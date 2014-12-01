@@ -130,6 +130,7 @@ and `fig.height=6` if I generally want those sizes for my figures.
 I'd set such options by having an initial code chunk like this:
 
     ```{r global_options, include=FALSE}
+    library(knitr)
     opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/',
                    echo=FALSE, warning=FALSE, message=FALSE)
     ```
@@ -143,6 +144,10 @@ in a subdirectory called `figure/`, and `Figs` is more my style.)
 **Note**: the ending slash in `Figs/` is critical. If you used
 `fig.path='Figs'` then the figures would go in the main directory but
 with `Figs` as the initial part of their names.
+
+**Another note**: I'm not sure why `library(knitr)` is needed there,
+  but it does seem necessary with
+  [the new R Markdown](http://rmarkdown.rstudio.com/).
 
 The global chunk options become the defaults for the rest of the
 document. Then if you want a particular chunk to have a different
