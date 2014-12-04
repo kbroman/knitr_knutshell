@@ -21,7 +21,7 @@ explained again a bit differently.
 And so, here is a brief guide to KnitR, covering the fundamentals of
 its use with
 [Markdown](http://daringfireball.net/projects/markdown/),
-[AsciiDoc](http://www.methods.co.nz/asciidoc/), and 
+[AsciiDoc](http://www.methods.co.nz/asciidoc/), and
 [LaTeX](http://www.latex-project.org).
 
 - [Overview](pages/overview.html)
@@ -48,6 +48,5 @@ Also see my
 [git/github guide](http://kbroman.org/github_tutorial),
 [minimal make tutorial](http://kbroman.org/minimal_make),
 [R package primer](http://kbroman.org/pkg_primer),
-and
-[simple site tutorial](http://kbroman.org/simple_site).
-
+[simple site tutorial](http://kbroman.org/simple_site),
+and [initial steps towards reproducible research](http://kbroman.org/steps2rr).
