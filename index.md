@@ -2,6 +2,7 @@
 layout: page
 title: knitr in a knutshell
 tagline: a minimal tutorial
+description: A minimal tutorial on the literate programming tool, knitr
 ---
 
 [KnitR](http://yihui.name/knitr/) is a really important tool for
