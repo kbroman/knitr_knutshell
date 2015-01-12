@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Knitr with R Markdown
+overview: How to use knitr with R Markdown
 ---
 
 The simplest way to write a quick report, mixing in a bit of R, is to
