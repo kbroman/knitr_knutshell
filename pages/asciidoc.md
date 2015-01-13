@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Knitr with asciidoc
+description: How to use knitr with asciidoc
 ---
 
 [AsciiDoc](http://www.methods.co.nz/asciidoc/) is similar to
