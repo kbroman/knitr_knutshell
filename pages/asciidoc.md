@@ -33,7 +33,7 @@ KnitR-wise, the main difference when you use asciidoc is that the code
 chunks are delimited differently. Here's an example:
 
     We see that this is an intercross with +r nind(sug)+ individuals.
-    There are +r nphe(sug)+ phenotypes, and genotype data at 
+    There are +r nphe(sug)+ phenotypes, and genotype data at
     +r totmar(sug)+ markers across the +r nchr(sug)+ autosomes.  The genotype
     data is quite complete.
 
@@ -66,7 +66,7 @@ following:
     :data-uri:
 
 `:toc2:` indicates to include a table of contents, floating in the
-left margin.  `:numbered:` indicates to number the sections. 
+left margin.  `:numbered:` indicates to number the sections.
 `:data-uri:` indicates to embed the images within the html file.
 
 
@@ -116,7 +116,7 @@ error message:
                      ^
     SyntaxError: invalid syntax
 
-I'd also recommend installing the [ascii package]((http://cran.r-project.org/web/packages/ascii/index.html)) for [R](http://www.r-project.org). 
+I'd also recommend installing the [ascii package]((http://cran.r-project.org/web/packages/ascii/index.html)) for [R](http://www.r-project.org).
 
 
 ### Converting AsciiDoc to html
