@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Figures and tables
+description: Figures and tables with knitr and R Markdown.
 ---
 
 Figures are really easy in KnitR. Tables are not quite so easy, but
