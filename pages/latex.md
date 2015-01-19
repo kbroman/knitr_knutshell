@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Knitr with Latex
+title: Knitr with LaTeX
+description: How to use knitr with LaTeX
 ---
 
 If you want precise control of a document,
@@ -18,7 +19,7 @@ but it's maybe not for beginners),
 and then coming back to this.
 
 The first thing to note, with KnitR and LaTeX, is that the file that
-mixes R code chunks and LaTeX should have the extension `.Rnw`. That 
+mixes R code chunks and LaTeX should have the extension `.Rnw`. That
 stands for "R noweb". [Noweb](http://www.cs.tufts.edu/~nr/noweb/) was
 an early system (still used) for
 [literate programming](http://en.wikipedia.org/wiki/Literate_programming)
@@ -33,7 +34,7 @@ put the code inside the curly braces).  Here's a bit from
 [my example](../assets/knitr_example.Rnw):
 
     We see that this is an intercross with \Sexpr{nind(sug)} individuals.
-    There are \Sexpr{nphe(sug)} phenotypes, and genotype data at 
+    There are \Sexpr{nphe(sug)} phenotypes, and genotype data at
     \Sexpr{totmar(sug)} markers across the \Sexpr{nchr(sug)} autosomes.  The genotype
     data is quite complete.
 
@@ -124,7 +125,7 @@ To convert a `.Rnw` file to pdf from the command-line (or within a
 create a `.tex` file:
 
     R -e 'library(knitr);knit("knitr_example.Rnw")'
-    
+
 You then the usual latex, pdflatex, or xelatex command to convert the
 `.tex` file to a PDF. If you need to submit sources to a journal, you
 can send them that intermediate `.tex` file that's created.
