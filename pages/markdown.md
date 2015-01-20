@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Markdown
+description: Introduction to Markdown
 ---
 
 My prefered way to construct an informal report describing a data
@@ -48,41 +49,41 @@ cumbersome to create directly, as it looks something like this:
 
     <body>
     <h1>Markdown example</h1>
-    
+
     <p>This is a simple example of a Markdown document.</p>
-    
+
     <p>Use a blank link between paragraphs.
     You can use a bit of <strong>bold</strong> or <em>italics</em>. Use backticks to indicate
     <code>code</code> that will be rendered in monospace.</p>
-    
+
     <p>Here's a list:</p>
-    
+
     <ul>
     <li>an item in the list</li>
     <li>another item</li>
     <li>yet another item</li>
     </ul>
-    
+
     <p>You can include blocks of code using three backticks:</p>
-    
+
     <p><code>
     x &lt;- rnorm(100)
     y &lt;- 2*x + rnorm(100)
     </code></p>
-    
+
     <p>Or you could indent four spaces:</p>
-    
+
     <pre><code>mean(x)
     sd(x)
     </code></pre>
-    
+
     <p>It'll figure out numbered lists, too:</p>
-    
+
     <ol>
     <li>First item</li>
     <li>Second item</li>
     </ol>
-    
+
     <p>And it's easy to create links, like to
     the <a href="http://daringfireball.net/projects/markdown/">Markdown</a>
     page.</p>
@@ -144,7 +145,7 @@ A Markdown document looks like this:
 
         mean(x)
         sd(x)
-    
+
     It'll figure out numbered lists, too:
 
     1. First item
@@ -168,8 +169,8 @@ much more human-readable.
 
 Here's a
 [more extensive Markdown example](http://www.unexpected-vortices.com/sw/gouda/quick-markdown-example.html).
-Also look at the [Markdown basics](http://daringfireball.net/projects/markdown/basics) page, 
-and the more complete [Markdown syntax](http://daringfireball.net/projects/markdown/syntax), 
+Also look at the [Markdown basics](http://daringfireball.net/projects/markdown/basics) page,
+and the more complete [Markdown syntax](http://daringfireball.net/projects/markdown/syntax),
 or just the [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 ### Converting Markdown to html
