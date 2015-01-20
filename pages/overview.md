@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Knitr overview
+description: Overview of knitr
 ---
 
 ### Writing reports
@@ -65,7 +66,7 @@ both Markdown and Asciidoc allow the figures to be embedded within the
 html document, so you only need to email the one file to your
 collaborator.
 
-Technically, I'm not using 
+Technically, I'm not using
 [Markdown](http://daringfireball.net/projects/markdown/) but rather
 [R Markdown](http://www.rstudio.com/ide/docs/r_markdown), a variant of
 Markdown developed by the folks at [RStudio](http://www.rstudio.com).
@@ -74,7 +75,7 @@ Enough blather; now how does this work?
 
 ### Code chunks
 
-The basic idea in knitr (and sweave before that, and 
+The basic idea in knitr (and sweave before that, and
 [literate programming](http://en.wikipedia.org/wiki/Literate_programming)
 more generally) is that your regular text document will be interrupted
 by chunks of code delimited in a special way.
@@ -82,7 +83,7 @@ by chunks of code delimited in a special way.
 Here's an example with [R Markdown](http://www.rstudio.com/ide/docs/r_markdown):
 
     We see that this is an intercross with `r nind(sug)` individuals.
-    There are `r nphe(sug)` phenotypes, and genotype data at 
+    There are `r nphe(sug)` phenotypes, and genotype data at
     `r totmar(sug)` markers across the `r nchr(sug)` autosomes.  The genotype
     data is quite complete.
 
@@ -91,14 +92,14 @@ Here's an example with [R Markdown](http://www.rstudio.com/ide/docs/r_markdown):
     ```{r summary_plot, fig.height=8}
     plot(sug)
     ```
-    
+
 The backticks (`` ` ``) indicate code. The bits like `` `r nind(sug)` ``
 are indicating R code. When processed by knitr, they'll be evaluated
 and replaced by the result. So the first paragraph would end up
 as something like this:
 
 > We see that this is an intercross with 163 individuals.
-> There are 6 phenotypes, and genotype data at 
+> There are 6 phenotypes, and genotype data at
 > 93 markers across the 19 autosomes.  The genotype
 > data is quite complete.
 
@@ -124,14 +125,14 @@ A code chunk ends with a line that is just three backticks:
 In knitr, different types of text (e.g., R Markdown, AsciiDoc, LaTeX)
 have different ways of delimiting the code chunks (as well as the
 in-line bits of code). This is because
-knitr is basically doing a search-and-replace for these chunks 
+knitr is basically doing a search-and-replace for these chunks
 and depending on the type of text, different patterns will be easier
 to find.
 
 In [AsciiDoc](http://www.methods.co.nz/asciidoc/), the above would be written as follows:
 
     We see that this is an intercross with +r nind(sug)+ individuals.
-    There are +r nphe(sug)+ phenotypes, and genotype data at 
+    There are +r nphe(sug)+ phenotypes, and genotype data at
     +r totmar(sug)+ markers across the +r nchr(sug)+ autosomes.  The genotype
     data is quite complete.
 
@@ -144,7 +145,7 @@ In [AsciiDoc](http://www.methods.co.nz/asciidoc/), the above would be written as
 In [LaTeX](http://www.latex-project.org), it would be:
 
     We see that this is an intercross with \Sexpr{nind(sug)} individuals.
-    There are \Sexpr{nphe(sug)} phenotypes, and genotype data at 
+    There are \Sexpr{nphe(sug)} phenotypes, and genotype data at
     \Sexpr{totmar(sug)} markers across the \Sexpr{nchr(sug)} autosomes.  The genotype
     data is quite complete.
 
@@ -168,7 +169,7 @@ The examples above are taken from longer examples that you can find
 [AsciiDoc example](../assets/knitr_example.Rasciidoc) (and
 [its html product](../assets/knitr_example_asciidoc.html)), and a
 [LaTeX example](../assets/knitr_example.Rnw) (and
-[its pdf product](../assets/knitr_example.pdf)). 
+[its pdf product](../assets/knitr_example.pdf)).
 All of these examples require installation of my [R/qtl](http://www.rqtl.org)
 package (sorry!). In R, type `install.packages("qtl")`.
 
@@ -177,15 +178,15 @@ package (sorry!). In R, type `install.packages("qtl")`.
 Once you've created a knitr document (e.g., R Markdown with chunks of
 R code), how do you use knitr to process it, to create the final document?
 
-If you're creating an 
+If you're creating an
 [R Markdown](http://www.rstudio.com/ide/docs/r_markdown) document
 in [RStudio](http://www.rstudio.com), it's dead easy: there's a
 button. And it's a particularly cute little button, with a ball of
 yarn and a knitting needle.
 
 More generally, you'd call R, load the knitr package, and use `knit()`
-or one of its variants, like `knit2html()`. I prefer to create a 
-[GNU make](http://www.gnu.org/software/make) file, like 
+or one of its variants, like `knit2html()`. I prefer to create a
+[GNU make](http://www.gnu.org/software/make) file, like
 [this one](../assets/Makefile), for the examples I'd mentioned above.
 (See also my [minimal make](http://kbroman.org/minimal_make) tutorial.)
 
@@ -195,7 +196,7 @@ That's knitr in a knutshell: chunks of R code inserted within a text
 document. When processed by knitr, the R code chunks are executed and
 results and/or figures inserted.
 
-Now go to my pages about [Markdown](markdown.html) and [Knitr with R Markdown](Rmarkdown.html). 
+Now go to my pages about [Markdown](markdown.html) and [Knitr with R Markdown](Rmarkdown.html).
 
 Even if you're mostly interested in [Asciidoc](asciidoc.html) or
 [LaTeX](latex.html), start with the [Markdown](markdown.html) and [R Markdown page](Rmarkdown.html), as
@@ -203,7 +204,7 @@ I'll give the full details about knitr there and will only explain the extra stu
 in the other two pages. Plus, I think you'll find Knitr with R
 Markdown useful, at least for short, informal reports.
 
-If you're an experienced 
+If you're an experienced
 [Sweave](http://leisch.userweb.mwn.de/Sweave/) user, you might look at
-my [Knitr from Sweave](sweave.html) page, or [Yihui](http://yihui.name/)'s page, 
+my [Knitr from Sweave](sweave.html) page, or [Yihui](http://yihui.name/)'s page,
 [Transition from Sweave to knitr](http://yihui.name/knitr/demo/sweave/).
