@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Knitr from Sweave
+description: Switch from Sweave to knitr.
 ---
 
 If you have experience using [Sweave](http://leisch.userweb.mwn.de/Sweave/) with
@@ -18,7 +19,7 @@ web page.
 I'll just give a thumbnail sketch.
 
 Chunks are still delimited with `<<>>=` and `@`, and in-line code
-still uses `\Sexpr{ }`. 
+still uses `\Sexpr{ }`.
 
 Here are some of the new things in knitr:
 
