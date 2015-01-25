@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Comments on reproducibility
+description: Comments on reproducibility
 ---
 
 A key motivation for [knitr](http://yihui.name/knitr/) is
@@ -61,12 +62,18 @@ them to be able to run it and get the same output.
 
 6. Include "session info" in your document, preferably at the bottom:
    this lists the version of R that you're using plus all of the packages
-   you've loaded. In R Markdown, include a code chunk like the
+   you've loaded. There's a `sessionInfo()` that's included with
+   base R (in the utils package), but I recommend instead using
+   `session_info()` from the
+   [devtools](https://github.com/hadley/devtools) package as it
+   provides more detailed information in a nicer layout.
+
+   In R Markdown, include a code chunk like the
    following; I include the options so that we're absolutely sure that
    it will be shown.
-   
-       ```{r sessionInfo, include=TRUE, echo=TRUE, results='markup'}
-       sessionInfo()
+
+       ```{r session_info, include=TRUE, echo=TRUE, results='markup'}
+       devtools::session_info()
        ```
 
 7. If you do any sort of simulation in the document, consider adding a
@@ -101,4 +108,4 @@ is a really beautiful document, but it says (on page 2):
 > is available upon request from \[author's email\].
 
 It'd be better to have it on [GitHub](http://github.com),
-[Figshare](http://figshare.com), or even a personal web page. 
+[Figshare](http://figshare.com), or even a personal web page.
