@@ -1,13 +1,14 @@
 ---
 layout: page
 title: knitr resources
+description: Resources on knitr and related tools.
 ---
 
 This tutorial is minimal.  It's probably considerably less than
 minimal.  But there are lots of great tutorials and other resources
 for learning to use [knitr](http://yihui.name/knitr/), [markdown](http://daringfireball.net/projects/markdown/),
 and [asciidoc](http://www.methods.co.nz/asciidoc/), and I'm not even trying to cover [latex](http://www.latex-project.org)
-properly. 
+properly.
 
 Here are some examples.
 
