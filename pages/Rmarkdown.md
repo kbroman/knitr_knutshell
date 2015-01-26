@@ -120,7 +120,7 @@ Each must be real R code, as R will be used to evaluate them. So
 #### Global chunk options
 
 You may be inclined to use largely the same set of chunk options
-throughout a document. That'd be a pain to retype in every chunk. Thus, you want to set some
+throughout a document. But it would be a pain to retype those options in every chunk. Thus, you want to set some
 global chunk options at the top of your document.
 
 For example, I might use `include=FALSE` or at least `echo=FALSE`
