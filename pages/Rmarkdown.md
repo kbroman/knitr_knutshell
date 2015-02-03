@@ -162,14 +162,15 @@ produce figures. Then the code would be suppressed throughout, and any output
 would be suppressed except in the figure chunks (where I used
 `include=TRUE`), which would produce just the figures.
 
-**Technical aside**: In setting the global chunk options with `opts_chunk$set()`,
-you'll need to use `knitr::` (or to have first loaded the knitr package with
-`library(knitr)`). As we'll discuss below, we'll use the
-[rmarkdown package](https://github.com/rstudio/rmarkdown)
-(specifically `rmarkdown::render()`) to process the document, first
-with knitr and then with [pandoc](http://johnmacfarlane.net/pandoc/),
-and `rmarkdown::render()` will use `knitr::knit()` but won't load the
-knitr package.
+**Technical aside**: In setting the global chunk options with
+`opts_chunk$set()`, you'll need to use `knitr::` (or to have first
+loaded the knitr package with `library(knitr)`). As we'll discuss
+below, we'll use the
+[rmarkdown package](https://github.com/rstudio/rmarkdown) to process
+the document, first with knitr and then with
+[pandoc](http://johnmacfarlane.net/pandoc/), and
+`rmarkdown::render()` will use `knitr::knit()` but won't load
+the knitr package.
 
 
 #### Package options
@@ -185,8 +186,9 @@ set with something like:
 I was confused about this at first: I'd use `opts_knit$set` when I
 really wanted `opts_chunk$set`.  knitr includes _a lot_ of options; if
 you're getting fancy you may need these package options, but initially
-you'd just be using the chunk options and, particularly, the global
-chunk options defined via `opts_chunk$set`.
+you'll just be using the chunk options and, particularly, the global
+chunk options defined via `opts_chunk$set`. So mostly **ignore**
+`opts_knit$set()` in favor of `opts_chunk$set()`.
 
 
 #### In-line code
@@ -197,8 +199,8 @@ that our results are accompanied by the data and code needed to
 produce them.
 
 Thus, your report should never explicitly include numbers that are
-derived from the data. You'd never say "There are 168 individuals."
-Rather, you'd insert in place of the 168 a bit of code that, when
+derived from the data. Don't write "There are 168 individuals."
+Rather, insert a bit of code that, when
 evaluated, gives the number of individuals.
 
 That's the point of the in-line code. You'd write something like this:
