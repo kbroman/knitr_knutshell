@@ -17,7 +17,9 @@ knitr_example.pdf: knitr_example.Rnw
 	pdflatex knitr_example.tex
 
 markdown_example.html: markdown_example.md
-	R ${R_OPTS} -e "library(markdown);markdownToHTML('markdown_example.md', 'markdown_example.html')"
+	R ${R_OPTS} -e "rmarkdown::render('markdown_example.md')"
+# Note that you could also use
+#	R ${R_OPTS} -e "markdown::markdownToHTML('markdown_example.md', 'markdown_example.html')"
 
 clean:
 	rm knitr_example.md knitr_example_asciidoc.txt knitr_example.tex
