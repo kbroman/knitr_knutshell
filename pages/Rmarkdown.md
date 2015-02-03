@@ -218,6 +218,41 @@ The bit of R code between them is evaluated and the result inserted.
 code aren't split across lines in your document. Othewise you'll just
 see the raw code and not the result that you want.
 
+#### YAML header
+
+Insert, at the top of your R Markdown document, a bit of text like the
+following:
+
+    ---
+    title: "An example Knitr/R Markdown document"
+    author: "Karl Broman"
+    date: "3 Feb 2015"
+    output: html_document
+    ---
+
+The final document will then contain a nicely formated title, along
+with the author name and date. You can include hyperlinks in there:
+
+    author: "[Karl Broman](http://kbroman.org)"
+
+and even R code:
+
+    date: "`r Sys.Date()`"
+
+This is called the [YAML](http://www.yaml.org) header. YAML is a
+simple text-based language for specifying data, sort of like
+[JSON](http://www.json.org) but more human-readable.
+
+You can leave off the author and date if you want; you can leave off
+the title, too. Actually, you don't need to include any of this. But
+`output: html_document` tells the
+[rmarkdown package](https://github.com/rstudio/rmarkdown) to convert
+the document to html. That's the default, but you could also use
+`output: pdf_document` or even `output: word_document`, in which case
+your document will be converted to a PDF or Word `.docx` file,
+respectively.
+
+
 #### Rounding
 
 I'm very particular about the rounding of results, and you should be too. If I've estimated
