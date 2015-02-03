@@ -175,23 +175,29 @@ or just the [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/M
 
 ### Converting Markdown to html
 
+You can skip this section and move on to
+[knitr with R Markdown](Rmarkdown.html), but for completeness let me
+explain how to convert a Markdown document to html.
+
 #### Via RStudio
 
 If you use [RStudio](http://www.rstudio.com), the simplest way to
 convert a Markdown document to html is to open the document within
-RStudio. When you open a Markdown document in RStudio, you'll see a
-"Preview HTML" button just above the document. Click that, and
-another window will open, with a preview of the result. You can then
-click "Save As" or even "Publish". The latter will publish the
-document to the web (where it will be viewable by _anyone_).
+RStudio. You'll see a
+"Preview HTML" button just above the document. Click that, and another
+window will open, with a preview of the result. (The resulting `.html`
+file will be placed in the same directory as your `.md` file.)  You
+can click "Open in browser" to open the document in your web browser,
+or "Publish" to publish the document to the web (where it will be
+viewable by _anyone_).
 
 Another a nice feature in RStudio: when you open a Markdown document,
-you'll see a little "MD" button. Click that, and you'll get see a
-convenient "Markdown Quick Reference" document: a cheat-sheet on the
+you'll see a little button with a question mark. Click that, and then
+"Markdown Quick Reference," and you'll get a cheat-sheet on the
 Markdown syntax. Like
 [@StrictlyStat](https://twitter.com/StrictlyStat/status/423178160968970240),
 I seem to visit the
-[Markdown](http://daringfireball.net/projects/markdown) almost every
+[Markdown](http://daringfireball.net/projects/markdown) site almost every
 time I'm writing a Markdown document. If I used RStudio, I'd have
 easier access to this information.
 
@@ -202,28 +208,55 @@ easier access to this information.
 formatting syntax, but it's also a
 [software tool](http://daringfireball.net/projects/downloads/Markdown_1.0.1.zip);
 in particular, it's a [Perl](http://www.perl.org/) script.
-So one approach to converting a Markdown document to html is to use
+So one approach to converting a Markdown document to html is to
 download and use that perl script.
 
 But I prefer to use the
 [markdown package](http://cran.r-project.org/web/packages/markdown/index.html)
-for [R](http://www.r-project.org), which is what RStudio is using.
+for [R](http://www.r-project.org).
 
 Within R, you can install the package with
 `install.packages("markdown")`. Then load it with
 `library(markdown)`. And then convert a Markdown document to html with
 
-    markdownToHTML("markdown_example.md", "markdown_example.html")
+    markdownToHTML('markdown_example.md', 'markdown_example.html')
 
 In practice, I do this on the command line, as so:
 
-    R -e 'library(markdown);markdownToHTML("markdown_example.md", "markdown_example.html")'
+    R -e "markdown::markdownToHTML('markdown_example.md', 'markdown_example.html')"
 
 And _really_, I do this within a
 [GNU make](http://www.gnu.org/software/make) file, like
 [this one](https://github.com/kbroman/knitr_knutshell/blob/gh-pages/assets/Makefile).
 (Also see my [minimal make](http://kbroman.org/minimal_make/)
 tutorial.)
+
+RStudio uses the
+[rmarkdown package](https://github.com/rstudio/rmarkdown) package to
+convert from Markdown to html. This uses
+[pandoc](http://johnmacfarlane.net/pandoc/) for the actual
+conversion. The
+[RStudio Desktop software](http://www.rstudio.com/products/rstudio/#Desk)
+includes pandoc, so if you install RStudio, you won't need to install
+pandoc separately; you just need to include it within your `PATH`. On
+a Mac, you'd use:
+
+    export PATH=$PATH:/Applications/RStudio.app/Contents/MacOS/pandoc
+
+In Windows, you'd include `"c:\Program Files\RStudio\bin\pandoc"` in
+your `Path` system environment variable.
+
+To convert your Markdown document to HTML, you'd then use
+
+    R -e "rmarkdown::render('markdown_example.md')"
+
+(I still sort of prefer the
+[markdown package](http://cran.r-project.org/web/packages/markdown/index.html)
+to the use of the [rmarkdown](https://github.com/rstudio/rmarkdown)
+package and [pandoc](http://johnmacfarlane.net/pandoc/); the output
+file is **a lot** larger with the latter. But it's best to follow the
+RStudio folks on this.
+
 
 ### Up next
 
