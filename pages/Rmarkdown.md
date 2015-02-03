@@ -291,30 +291,29 @@ and it would give `0.90` or `0.00` in the way that I want.
 If you use [RStudio](http://www.rstudio.com), the simplest way to
 convert an R Markdown document to html is to open the document within
 RStudio. (And really, you probably want to _create_ the document in
-RStudio: click File &rarr; New &rarr; R Markdown, or click the little
-icon with a green plus symbol in the top left and then select R
-Markdown.) When you open an R Markdown document in RStudio, you'll see
+RStudio: click File &rarr; New File &rarr; R Markdown.)
+When you open an R Markdown document in RStudio, you'll see
 a "Knit HTML" button just above the document. (It's a particularly
 cute little button, with a ball of yarn and a knitting needle.)  Click
 that, and another window will open, and you'll see knitr in action,
 executing each code chunk and each bit of in-line code, to compile the R
 Markdown to a Markdown document. This will then be converted to html,
-with a preview of the result. You can then click "Save As" or even
-"Publish". The latter will publish the document to the web (where it
-will be viewable by _anyone_).
+with a preview of the result.  (The resulting `.html` file will be
+placed in the same directory as your `.Rmd` file.)  You can click
+"Open in browser" to open the document in your web browser, or
+"Publish" to publish the document to the web (where it will be
+viewable by _anyone_).
 
-Another a nice feature in RStudio: when you open an R Markdown document,
-you'll see a little "MD" button. Click that, and you'll get see a
-convenient "Markdown Quick Reference" document: a cheat-sheet on the
-Markdown syntax. Like
+Another a nice feature in RStudio: when you open an R Markdown
+document, you'll see a little question mark button, with links to
+"[Using R Markdown](http://rmarkdown.rstudio.com)" and to a Markdown
+Quick Reference.  convenient "Markdown Quick Reference" document: a
+cheat-sheet on the Markdown syntax. Like
 [@StrictlyStat](https://twitter.com/StrictlyStat/status/423178160968970240),
 I seem to visit the
-[Markdown](http://daringfireball.net/projects/markdown) almost every
-time I'm writing a Markdown document. If I used RStudio, I'd have
-easier access to this information.
-
-(The above is _almost_ verbatim from the [Markdown page](markdown.html)
-in this tutorial.)
+[Markdown](http://daringfireball.net/projects/markdown) website almost
+every time I'm writing a Markdown document. If I used RStudio, I'd
+have easier access to this information.
 
 RStudio is especially useful when you're first learning KnitR and R
 Markdown, as it's easy to create and view the corresponding html file,
@@ -322,27 +321,33 @@ and you have access to that Markdown Quick Reference.
 
 #### Via the command line (or GNU make)
 
-In addition to being a system for combining code and text,
-[knitr](http://yihui.name/knitr/) is a software tool. In particular,
-knitr is an [R](http://www.r-project.org) package. If you're not using
-RStudio, you'll need to install the package. The simplest way is by
-typing, within R, `install.packages("knitr")`.
+To process an R Markdown document, you need the
+[rmarkdown package](https://github.com/rstudio/rmarkdown) (which in
+turn will make use of the
+[knitr package](http://cran.r-project.org/web/packages/knitr/) plus a
+bunch of other packages), as well as
+[pandoc](http://johnmacfarlane.net/pandoc/).
 
-To compile an R Markdown file to html, we first use the `knit`
-function in knitr, which executes all of the R code chunks and in-line
-code and creates a Markdown file (plus any figures). The
-`markdownToHTML` function (in the
-[markdown package](http://cran.r-project.org/web/packages/markdown/index.html))
-then converts this Markdown file to html. The `knit2html` function
-combines these two things, so that's the function to use.
+To install the rmarkdown package, use `install.packages(rmarkdown)`.
 
-    knit2html("knitr_example.Rmd")
+The simplest way to install pandoc is to just install the
+[RStudio Desktop software](http://www.rstudio.com/products/rstudio/#Desk),
+which includes pandoc, and then include pandoc without your `PATH`.
+On a Mac, you'd use:
 
-In practice, I do this on the command line, as so:
+    export PATH=$PATH:/Applications/RStudio.app/Contents/MacOS/pandoc
 
-    R -e 'library(knitr);knit2html("knitr_example.Rmd")'
+In Windows, you'd include `"c:\Program Files\RStudio\bin\pandoc"` in
+your `Path` system environment variable.
 
-And _really_, I do this within a
+To convert your Markdown document to HTML, you'd then use
+
+    R -e "rmarkdown::render('knitr_example.Rmd')"
+
+(Note that in Windows, it's important to use double-quotes on the
+outside and single-quotes inside, rather than the other way around.)
+
+Rather than actually type that line, I use a
 [GNU make](http://www.gnu.org/software/make) file, like
 [this one](https://github.com/kbroman/knitr_knutshell/blob/gh-pages/assets/Makefile).
 (Also see my [minimal make](http://kbroman.org/minimal_make/)
