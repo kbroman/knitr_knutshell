@@ -131,9 +131,8 @@ and `fig.height=6` if I generally want those sizes for my figures.
 I'd set such options by having an initial code chunk like this:
 
     ```{r global_options, include=FALSE}
-    library(knitr)
-    opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/',
-                   echo=FALSE, warning=FALSE, message=FALSE)
+    knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/',
+                          echo=FALSE, warning=FALSE, message=FALSE)
     ```
 
 I snuck a few additional options in there: `warning=FALSE` and
@@ -145,11 +144,6 @@ in a subdirectory called `figure/`, and `Figs` is more my style.)
 **Note**: the ending slash in `Figs/` is critical. If you used
 `fig.path='Figs'` then the figures would go in the main directory but
 with `Figs` as the initial part of their names.
-
-**Another note**: The `library(knitr)` seems
-  necessary with
-  [R Markdown](http://rmarkdown.rstudio.com/) via
-  [RStudio](http://rstudio.com); I'm not entirely sure why.
 
 The global chunk options become the defaults for the rest of the
 document. Then if you want a particular chunk to have a different
@@ -168,6 +162,16 @@ produce figures. Then the code would be suppressed throughout, and any output
 would be suppressed except in the figure chunks (where I used
 `include=TRUE`), which would produce just the figures.
 
+**Technical aside**: In setting the global chunk options with `opts_chunk$set()`,
+you'll need to use `knitr::` (or to have first loaded the knitr package with
+`library(knitr)`). As we'll discuss below, we'll use the
+[rmarkdown package](https://github.com/rstudio/rmarkdown)
+(specifically `rmarkdown::render()`) to process the document, first
+with knitr and then with [pandoc](http://johnmacfarlane.net/pandoc/),
+and `rmarkdown::render()` will use `knitr::knit()` but won't load the
+knitr package.
+
+
 #### Package options
 
 In addition to the chunk options, there are also
@@ -175,7 +179,7 @@ In addition to the chunk options, there are also
 set with something like:
 
     ```{r package_options, include=FALSE}
-    opts_knit$set(progress = TRUE, verbose = TRUE)
+    knitr::opts_knit$set(progress = TRUE, verbose = TRUE)
     ```
 
 I was confused about this at first: I'd use `opts_knit$set` when I
