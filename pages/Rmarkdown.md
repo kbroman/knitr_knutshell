@@ -240,7 +240,7 @@ and even R code:
     date: "`r Sys.Date()`"
 
 This is called the [YAML](http://www.yaml.org) header. YAML is a
-simple text-based language for specifying data, sort of like
+simple text-based format for specifying data, sort of like
 [JSON](http://www.json.org) but more human-readable.
 
 You can leave off the author and date if you want; you can leave off
