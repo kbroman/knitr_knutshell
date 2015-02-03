@@ -338,7 +338,9 @@ On a Mac, you'd use:
     export PATH=$PATH:/Applications/RStudio.app/Contents/MacOS/pandoc
 
 In Windows, you'd include `"c:\Program Files\RStudio\bin\pandoc"` in
-your `Path` system environment variable.
+your `Path` system environment variable. (For example, see
+[this page](http://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/),
+though it's a bit ad-heavy.)
 
 To convert your Markdown document to HTML, you'd then use
 
