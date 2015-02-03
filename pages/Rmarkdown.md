@@ -349,7 +349,7 @@ To convert your Markdown document to HTML, you'd then use
 (Note that in Windows, it's important to use double-quotes on the
 outside and single-quotes inside, rather than the other way around.)
 
-Rather than actually type that line, I use a
+Rather than actually type that line, I include it within a
 [GNU make](http://www.gnu.org/software/make) file, like
 [this one](https://github.com/kbroman/knitr_knutshell/blob/gh-pages/assets/Makefile).
 (Also see my [minimal make](http://kbroman.org/minimal_make/)
