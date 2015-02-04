@@ -50,17 +50,21 @@ same as with [R Markdown](Rmarkdown.html).
 ### Tables
 
 To produce LaTeX tables, you can use `kable` and `xtable`
-[much as you would do with R Markdown](figs_tables.html). And the
-results look considerably nicer than the html tables.
+[much as you would do with R Markdown](figs_tables.html).  And the
+results look considerably nicer than the html tables.  (You can't use
+[pander package](http://rapporter.github.io/pander/) within LaTeX.)
+
 Here's a `kable` example.
 
-    <<kable, results="asis">>=
+    <<kable>>=
     n <- 100
     x <- rnorm(n)
     y <- 2*x + rnorm(n)
     out <- lm(y ~ x)
+    library(knitr)
     kable(summary(out)$coef, digits=2)
     @
+
 
 And here's the `xtable` version. It's simpler than the html version,
 where we assigned the output of `xtable` to an object and then printed
