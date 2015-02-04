@@ -32,7 +32,7 @@ Consider this example:
 The `par(mfrow=c(1,2))` makes multi-panel figures that have one row
 and two columns. But the `for` loop makes 8 figures, so this will
 produce four image files, each with a pair of panels,
-side-by-side. All four will appear, one on top of the other, in the
+side-by-side. All four will appear, one by one, in the
 final document.
 
 Here's
@@ -100,21 +100,43 @@ If you want to make a somewhat nicer table, the simplest approach is
 to use the `kable` function in the `knitr` package. It doesn't have
 many options, but in many cases it's sufficient. Here's an example.
 
-    ```{r kable, results="asis"}
+    ```{r kable}
     n <- 100
     x <- rnorm(n)
     y <- 2*x + rnorm(n)
     out <- lm(y ~ x)
+    library(knitr)
     kable(summary(out)$coef, digits=2)
     ```
-
-You need to use the chunk option `results="asis"`, as otherwise the
-html code will be printed as if it were R output.
 
 Here's
 [what that chunk would produce](../assets/short_examples/kable.html),
 plus an
 [R Markdown file with just that chunk](../assets/short_examples/kable.Rmd).
+
+#### pander
+
+Another good option is the
+[pander package](http://rapporter.github.io/pander/).
+It allows more customization, and if you give it the output of `lm()`,
+it will automatically produce the table of regression coefficients
+that we're interested in.
+
+    ```{r pander}
+    n <- 100
+    x <- rnorm(n)
+    y <- 2*x + rnorm(n)
+    out <- lm(y ~ x)
+    library(pander)
+    panderOptions("digits", 2)
+    pander(out)
+    ```
+
+Here's
+[what that chunk would produce](../assets/short_examples/pander.html),
+plus an
+[R Markdown file with just that chunk](../assets/short_examples/pander.Rmd).
+
 
 #### xtable
 
@@ -133,6 +155,9 @@ Here's the above example, using xtable:
     tab <- xtable(summary(out)$coef, digits=c(0, 2, 2, 1, 2))
     print(tab, type="html")
     ```
+
+Here you need to use the chunk option `results="asis"`, as otherwise the
+html code will be printed as if it were R output.
 
 Here's
 [what that chunk would produce](../assets/short_examples/xtable.html),
