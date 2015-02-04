@@ -1,0 +1,9 @@
+```{r pander}
+n <- 100
+x <- rnorm(n)
+y <- 2*x + rnorm(n)
+out <- lm(y ~ x)
+library(pander)
+panderOptions("digits", 2)
+pander(out)
+```
