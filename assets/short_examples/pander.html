@@ -61,15 +61,15 @@ img {
 
 
 
-<pre class="r"><code>library(pander)
-n &lt;- 100
+<pre class="r"><code>n &lt;- 100
 x &lt;- rnorm(n)
 y &lt;- 2*x + rnorm(n)
 out &lt;- lm(y ~ x)
+library(pander)
 panderOptions(&quot;digits&quot;, 2)
-pander(out, caption=&quot;Regression coefficients&quot;)</code></pre>
+pander(out)</code></pre>
 <table>
-<caption>Regression coefficients</caption>
+<caption>Fitting linear model: y ~ x</caption>
 <colgroup>
 <col width="25%"></col>
 <col width="15%"></col>
@@ -89,17 +89,17 @@ pander(out, caption=&quot;Regression coefficients&quot;)</code></pre>
 <tbody>
 <tr class="odd">
 <td align="center"><strong>x</strong></td>
-<td align="center">1.9</td>
-<td align="center">0.089</td>
-<td align="center">22</td>
-<td align="center">2.8e-39</td>
+<td align="center">2.1</td>
+<td align="center">0.099</td>
+<td align="center">21</td>
+<td align="center">1.9e-38</td>
 </tr>
 <tr class="even">
 <td align="center"><strong>(Intercept)</strong></td>
-<td align="center">-0.077</td>
-<td align="center">0.095</td>
-<td align="center">-0.81</td>
-<td align="center">0.42</td>
+<td align="center">0.046</td>
+<td align="center">0.11</td>
+<td align="center">0.43</td>
+<td align="center">0.66</td>
 </tr>
 </tbody>
 </table>
