@@ -77,4 +77,4 @@ Here are some examples.
   [its pdf product](../assets/knitr_example.pdf)
 - [Markdown example](../assets/markdown_example.md),
   and [its html product](../assets/markdown_example.html)
-- [Gnu make file](../assets/Makefile) for the above
+- [GNU Make file](../assets/Makefile) for the above
