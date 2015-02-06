@@ -138,10 +138,10 @@ I'd set such options by having an initial code chunk like this:
 I snuck a few additional options in there: `warning=FALSE` and
 `message=FALSE` suppress any R warnings or messages from being included in
 the final document, and `fig.path='Figs/'` makes it so the figure
-files get placed in the `Figs` subdirectory. (By default, they'd go
-in a subdirectory called `figure/`, and `Figs` is more my style.)
+files get placed in the `Figs` subdirectory. (By default, they are not
+saved at all.)
 
-**Note**: the ending slash in `Figs/` is critical. If you used
+**Note**: the ending slash in `Figs/` is important. If you used
 `fig.path='Figs'` then the figures would go in the main directory but
 with `Figs` as the initial part of their names.
 
