@@ -57,7 +57,7 @@ Here are some examples.
 
 - [xtable](http://cran.r-project.org/web/packages/xtable/index.html),
   an [R](http://www.r-project.org) package for creating LaTeX and html tables
-- [pandoc](http://johnmacfarlane.net/pandoc/), for converting
+- [pandoc](http://pandoc.org), for converting
   among markup formats, including markdown to PDF
 - [pander](http://rapporter.github.io/pander/), an R package with
   helper functions for creating pandoc's markdown format

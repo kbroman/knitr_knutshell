@@ -237,7 +237,7 @@ tutorial.)
 RStudio uses the
 [rmarkdown package](https://github.com/rstudio/rmarkdown) package to
 convert from Markdown to html. This uses
-[pandoc](http://johnmacfarlane.net/pandoc/) for the actual
+[pandoc](http://pandoc.org) for the actual
 conversion. The
 [RStudio Desktop software](http://www.rstudio.com/products/rstudio/#Desk)
 includes pandoc, so if you install RStudio, you won't need to install
@@ -258,7 +258,7 @@ To convert your Markdown document to HTML, you'd then use
 (I still sort of prefer the
 [markdown package](http://cran.r-project.org/web/packages/markdown/index.html)
 to the use of the [rmarkdown](https://github.com/rstudio/rmarkdown)
-package and [pandoc](http://johnmacfarlane.net/pandoc/); the output
+package and [pandoc](http://pandoc.org); the output
 file is **a lot** larger with the latter. But it's best to follow the
 RStudio folks on this.
 

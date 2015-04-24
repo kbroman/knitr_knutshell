@@ -168,7 +168,7 @@ loaded the knitr package with `library(knitr)`). As we'll discuss
 below, we'll use the
 [rmarkdown package](https://github.com/rstudio/rmarkdown) to process
 the document, first with knitr and then with
-[pandoc](http://johnmacfarlane.net/pandoc/), and
+[pandoc](http://pandoc.org), and
 `rmarkdown::render()` will use `knitr::knit()` but won't load
 the knitr package.
 
@@ -326,7 +326,7 @@ To process an R Markdown document, you need the
 turn will make use of the
 [knitr package](http://cran.r-project.org/web/packages/knitr/) plus a
 bunch of other packages), as well as
-[pandoc](http://johnmacfarlane.net/pandoc/).
+[pandoc](http://pandoc.org).
 
 To install the rmarkdown package, use `install.packages(rmarkdown)`.
 
