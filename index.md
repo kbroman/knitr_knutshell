@@ -42,12 +42,11 @@ If you find KnitR useful, consider buying
 
 The source for this tutorial is [here](http://github.com/kbroman/knitr_knutshell).
 If you have suggestions or corrections,
-[submit an issue](https://github.com/kbroman/knitr_knutshell/issues) or
-send a [pull request](https://help.github.com/articles/using-pull-requests).
+please [submit an issue](https://github.com/kbroman/knitr_knutshell/issues).
 
-Also see my
-[git/github guide](http://kbroman.org/github_tutorial),
-[minimal make tutorial](http://kbroman.org/minimal_make),
-[R package primer](http://kbroman.org/pkg_primer),
-[simple site tutorial](http://kbroman.org/simple_site),
-and [initial steps towards reproducible research](http://kbroman.org/steps2rr).
+Also see my [tutorials](http://kbroman.org/pages/tutorials) on
+[git/github](http://kbroman.org/github_tutorial),
+[GNU make](http://kbroman.org/minimal_make),
+[R packages](http://kbroman.org/pkg_primer),
+[making a web site with GitHub Pages](http://kbroman.org/simple_site),
+and [reproducible research](http://kbroman.org/steps2rr).
