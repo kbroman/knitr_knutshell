@@ -23,7 +23,8 @@ Here are some examples.
 - [KnitR graphics manual](http://yihui.name/knitr/demo/graphics/)
 - [knitrBootstrap](http://jimhester.github.io/knitrBootstrap/) for nice-looking reports (see
   [L. Collado-Torres's post](http://lcolladotor.github.io/2013/12/10/knitrBootstrap/#.UuntzXddXVQ))
-
+- [Troubleshooting](http://stat545-ubc.github.io/block007_first-use-rmarkdown.html#troubleshooting)
+  from [Stat 545](http://stat545-ubc.github.io)
 
 ### Markdown
 
