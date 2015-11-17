@@ -88,14 +88,18 @@ these things at various times and was later frustrated by the
 sloppiness of my prior self.
 
 I'm not the only one who fails to meet the reproducible ideal.
-[Reproducible Research with R and RStudio](http://www.amazon.com/exec/obidos/ASIN/1466572841/7210-20)
+[Reproducible Research with R and RStudio](http://www.amazon.com/exec/obidos/ASIN/1498715370/7210-20)
 is quite a good book on the principles and tools for reproducible
 research, but its
 [github repository](https://github.com/christophergandrud/Rep-Res-Book)
-has a few problems. I attempted to construct the book from its source but ran into
+(at least for the first edition of the book)
+had a few problems. I attempted to construct the book from its source but ran into
 difficulties regarding installation of the necessary packages (it uses
-_a lot_), and more importantly with the use of absolute paths (e.g.,
-[here](https://github.com/christophergandrud/Rep-Res-Book/blob/master/Source/Children/FrontMatter/Preface.Rnw#L2)).
+_a lot_), and more importantly with the use of absolute paths.
+Much of this appears to be corrected with the second edition, but
+there are still at least a few
+[absolute paths](https://github.com/christophergandrud/Rep-Res-Book/blob/master/BookMake.R#L22)
+(and some examples in the book use absolute paths).
 
 Also, if the data and source code are not readily available, then the
 work isn't really reproducible.  For example, the
