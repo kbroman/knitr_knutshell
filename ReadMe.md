@@ -12,7 +12,7 @@ its use with
 View the thing [here](http://kbroman.org/knitr_knutshell).
 
 If you find knitr useful, consider buying
-[Yihui's book](http://www.amazon.com/exec/obidos/ASIN/1482203537/7210-20).
+[Yihui's book](http://www.amazon.com/exec/obidos/ASIN/1498716962/7210-20).
 
 ---
 
