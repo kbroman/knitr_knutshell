@@ -6,7 +6,7 @@ reproducible research.
 This is a brief guide to knitr, covering the fundamentals of
 its use with
 [Markdown](http://daringfireball.net/projects/markdown/),
-[AsciiDoc](http://www.methods.co.nz/asciidoc/), and 
+[AsciiDoc](http://www.methods.co.nz/asciidoc/), and
 [LaTeX](http://www.latex-project.org).
 
 View the thing [here](http://kbroman.org/knitr_knutshell).
