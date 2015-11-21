@@ -15,7 +15,7 @@ clear and thorough [documentation](http://yihui.name/knitr/), many
 useful
 [examples](https://github.com/yihui/knitr/tree/master/vignettes) and
 [demos](http://yihui.name/knitr/demos), and a very nice
-[book](http://www.amazon.com/exec/obidos/ASIN/1482203537/7210-20).
+[book](http://www.amazon.com/exec/obidos/ASIN/1498716962/7210-20).
 Nevertheless, I thought it might be useful to have some of the basic things
 explained again a bit differently.
 
@@ -36,7 +36,7 @@ its use with
 - [Resources](pages/resources.html)
 
 If you find KnitR useful, consider buying
-[Yihui's book](http://www.amazon.com/exec/obidos/ASIN/1482203537/7210-20).
+[Yihui's book](http://www.amazon.com/exec/obidos/ASIN/1498716962/7210-20).
 
 ---
 
