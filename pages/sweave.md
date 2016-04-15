@@ -58,4 +58,4 @@ Here are some of the new things in knitr:
    you use the `knit()` function in the knitr package rather than
    `Sweave()`.
 
-       R -e 'library(knit);knit("my_file.Rnw")'
+       R -e 'library(knitr);knit("my_file.Rnw")'
