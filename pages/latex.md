@@ -14,7 +14,7 @@ precision.
 I'm assuming here that you already know how to write a LaTeX
 document. If you don't, I'd suggesting focusing first on using knitr
 with markdown, study LaTeX elsewhere (I like
-[this book](http://www.amazon.com/exec/obidos/ASIN/0321173856/7210-20),
+[this book](https://www.amazon.com/gp/product/0321173856?ie=UTF8&tag=7210-20),
 but it's maybe not for beginners),
 and then coming back to this.
 

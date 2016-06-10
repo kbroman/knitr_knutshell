@@ -18,7 +18,7 @@ Here are some examples.
 - [knitr demos](http://yihui.name/knitr/demos)
 - [knitr showcase](http://yihui.name/knitr/demo/showcase/): Examples
   from users
-- [Dynamic Documents with R and knitr (book)](http://www.amazon.com/exec/obidos/ASIN/1498716962/7210-20)
+- [Dynamic Documents with R and knitr (book)](https://www.amazon.com/gp/product/1498716962?ie=UTF8&tag=7210-20)
 - [Getting started with R Markdown and Knitr](http://jeromyanglim.blogspot.com/2012/05/getting-started-with-r-markdown-knitr.html)
 - [KnitR graphics manual](http://yihui.name/knitr/demo/graphics/)
 - [knitrBootstrap](http://jimhester.github.io/knitrBootstrap/) for nice-looking reports (see
@@ -62,7 +62,7 @@ Here are some examples.
   among markup formats, including markdown to PDF
 - [pander](http://rapporter.github.io/pander/), an R package with
   helper functions for creating pandoc's markdown format
-- [Reproducible Research with R and RStudio](http://www.amazon.com/exec/obidos/ASIN/1498715370/7210-20)
+- [Reproducible Research with R and RStudio](https://www.amazon.com/gp/product/1498715370?ie=UTF8&tag=7210-20)
   (book)
 - [polymode](https://github.com/vitoshka/polymode), an emacs mode that
   handles R Markdown nicely

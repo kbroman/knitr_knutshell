@@ -88,7 +88,7 @@ these things at various times and was later frustrated by the
 sloppiness of my prior self.
 
 I'm not the only one who fails to meet the reproducible ideal.
-[Reproducible Research with R and RStudio](http://www.amazon.com/exec/obidos/ASIN/1498715370/7210-20)
+[Reproducible Research with R and RStudio](https://www.amazon.com/gp/product/1498715370?ie=UTF8&tag=7210-20)
 is quite a good book on the principles and tools for reproducible
 research, but its
 [github repository](https://github.com/christophergandrud/Rep-Res-Book)
