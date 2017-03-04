@@ -184,8 +184,9 @@ in [RStudio](http://www.rstudio.com), it's dead easy: there's a
 button. And it's a particularly cute little button, with a ball of
 yarn and a knitting needle.
 
-More generally, you'd call R, load the knitr package, and use `knit()`
-or one of its variants, like `knit2html()`. I prefer to create a
+More generally, you'd call R and use the `render()` function in the
+[rmarkdown](https://cran.r-project.org/package=rmarkdown) package.
+I prefer to create a
 [GNU make](http://www.gnu.org/software/make) file, like
 [this one](../assets/Makefile), for the examples I'd mentioned above.
 (See also my [minimal make](http://kbroman.org/minimal_make) tutorial.)
@@ -207,4 +208,4 @@ Markdown useful, at least for short, informal reports.
 If you're an experienced
 [Sweave](http://leisch.userweb.mwn.de/Sweave/) user, you might look at
 my [Knitr from Sweave](sweave.html) page, or [Yihui](http://yihui.name/)'s page,
-[Transition from Sweave to knitr](http://yihui.name/knitr/demo/sweave/).
+[transition from Sweave to knitr](http://yihui.name/knitr/demo/sweave/).
