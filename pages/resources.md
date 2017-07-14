@@ -31,13 +31,11 @@ Here are some examples.
 - [Markdown](http://daringfireball.net/projects/markdown/) main page
 - [Markdown tutorial](http://www.markdowntutorial.com/)
 - [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-- [Quick Markdown example](http://www.unexpected-vortices.com/sw/gouda/quick-markdown-example.html)
 
 ### R Markdown
 
-- [R Markdown](http://www.rstudio.com/ide/docs/r_markdown) main page
-- [Using R Markdown with RStudio](http://www.rstudio.com/ide/docs/authoring/using_markdown)
-- [Equations in R Markdown](http://www.rstudio.com/ide/docs/authoring/using_markdown_equations)
+- [R Markdown](http://rmarkdown.rstudio.com/) main page
+- [R Markdown Quick Tour (video)](http://rmarkdown.rstudio.com/authoring_quick_tour.html)
 
 ### AsciiDoc
 
@@ -45,7 +43,6 @@ Here are some examples.
 - [AsciiDoc cheat sheet](http://powerman.name/doc/asciidoc)
 - [AsciiDoc user guide](http://www.methods.co.nz/asciidoc/userguide.html)
 - [AsciiDoc writers' guide](http://asciidoctor.org/docs/asciidoc-writers-guide/)
-- [AsciiDoc mini manual](http://www.csc.kth.se/~akozlov/asciidoc-mini.html)
 - [ascii package for R](http://eusebe.github.io/ascii/)
 
 ### LaTeX
