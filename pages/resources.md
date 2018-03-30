@@ -36,6 +36,7 @@ Here are some examples.
 
 - [R Markdown](http://rmarkdown.rstudio.com/) main page
 - [R Markdown Quick Tour (video)](http://rmarkdown.rstudio.com/authoring_quick_tour.html)
+- [Tips for images and figures in R Markdown](https://www.zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/)
 
 ### AsciiDoc
 
