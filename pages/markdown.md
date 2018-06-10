@@ -9,9 +9,9 @@ analysis project is as a web page. A great advantage is that I don't
 need to worry about page breaks and the placement of figures.
 
 Web pages are written in
-[html](http://en.wikipedia.org/wiki/HTML). But html is cumbersome to
+[html](https://en.wikipedia.org/wiki/HTML). But html is cumbersome to
 write directly, and so for analysis reports, I'll generally use either
-[Markdown](http://daringfireball.net/projects/markdown/) or
+[Markdown](https://daringfireball.net/projects/markdown/) or
 [AsciiDoc](http://www.methods.co.nz/asciidoc/). These are two systems
 for writing simple, readable text, with the sort of marks that you'd
 use in an email message (for example, `**bold**` for **bold** or
@@ -19,13 +19,13 @@ use in an email message (for example, `**bold**` for **bold** or
 
 Here, I'll discuss Markdown. This is a prerequisite for [what comes
 next](Rmarkdown.html):
-[R Markdown](http://www.rstudio.com/ide/docs/r_markdown)
-with [knitr](http://yihui.name/knitr/).
+[R Markdown](https://rmarkdown.rstudio.com)
+with [knitr](https://yihui.name/knitr/).
 
 ### HTML
 
 It's helpful to know a bit of
-[html](http://en.wikipedia.org/wiki/HTML), which is the markup
+[html](https://en.wikipedia.org/wiki/HTML), which is the markup
 language that web pages are written in. html really isn't that hard;
 it's just cumbersome.
 
@@ -33,9 +33,9 @@ An html document contains pairs of tags to indicate content, like
 `<h1>` and `</h1>` to indicate that the enclosed text is a "level one
 header", or `<em>` and `</em>` to indicate emphasis (generally
 _italics_). A web browser will
-[parse](http://en.wikipedia.org/wiki/Parsing) the html tags and render
+[parse](https://en.wikipedia.org/wiki/Parsing) the html tags and render
 the web page, often using a
-[Cascading style sheet (CSS)](http://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+[Cascading style sheet (CSS)](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 to define the precise style of the different elements.
 
 But we won't get into all of that; html is great, but the code is
@@ -85,7 +85,7 @@ cumbersome to create directly, as it looks something like this:
     </ol>
 
     <p>And it's easy to create links, like to
-    the <a href="http://daringfireball.net/projects/markdown/">Markdown</a>
+    the <a href="https://daringfireball.net/projects/markdown/">Markdown</a>
     page.</p>
     </body>
     </html>
@@ -104,14 +104,14 @@ which the material is to be presented. So focus on things like
 "section" or "heading" rather than "large and bold".  The reason for
 this, is that you're giving the web browser more information about the
 material, and also you can more easily revise, externally (with
-[Cascading Style Sheets (CSS)](http://en.wikipedia.org/wiki/Cascading_Style_Sheets)),
+[Cascading Style Sheets (CSS)](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)),
 the style in which the material is to be presented without having to
 go in and revise the html code.
 
 ### Markdown
 
 As I mentioned above,
-[Markdown](http://daringfireball.net/projects/markdown/) is a system
+[Markdown](https://daringfireball.net/projects/markdown/) is a system
 for writing simple, readable text that is easily converted into
 html. The reason it's useful to know a bit of html is that then you
 have a better idea how the final product will look. (Plus, if you want
@@ -152,7 +152,7 @@ A Markdown document looks like this:
     2. Second item
 
     And it's easy to create links, like to
-    the [Markdown](http://daringfireball.net/projects/markdown/)
+    the [Markdown](https://daringfireball.net/projects/markdown/)
     page.
 
 That bit of Markdown text gets converted to the html code in the
@@ -167,10 +167,8 @@ document. A big advantage of the Markdown marks is that the source
 document is much like what you might write in an email, and so it's
 much more human-readable.
 
-Here's a
-[more extensive Markdown example](http://www.unexpected-vortices.com/sw/gouda/quick-markdown-example.html).
-Also look at the [Markdown basics](http://daringfireball.net/projects/markdown/basics) page,
-and the more complete [Markdown syntax](http://daringfireball.net/projects/markdown/syntax),
+Take a look at the [Markdown basics](https://daringfireball.net/projects/markdown/basics) page,
+and the more complete [Markdown syntax](https://daringfireball.net/projects/markdown/syntax),
 or just the [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 ### Converting Markdown to html
@@ -181,7 +179,7 @@ explain how to convert a Markdown document to html.
 
 #### Via RStudio
 
-If you use [RStudio](http://www.rstudio.com), the simplest way to
+If you use [RStudio](https://www.rstudio.com), the simplest way to
 convert a Markdown document to html is to open the document within
 RStudio. You'll see a
 "Preview HTML" button just above the document. Click that, and another
@@ -197,23 +195,23 @@ you'll see a little button with a question mark. Click that, and then
 Markdown syntax. Like
 [@StrictlyStat](https://twitter.com/StrictlyStat/status/423178160968970240),
 I seem to visit the
-[Markdown](http://daringfireball.net/projects/markdown) site almost every
+[Markdown](https://daringfireball.net/projects/markdown) site almost every
 time I'm writing a Markdown document. If I used RStudio, I'd have
 easier access to this information.
 
 
 #### Via the command line
 
-[Markdown](http://daringfireball.net/projects/markdown) is a
+[Markdown](https://daringfireball.net/projects/markdown) is a
 formatting syntax, but it's also a
-[software tool](http://daringfireball.net/projects/downloads/Markdown_1.0.1.zip);
-in particular, it's a [Perl](http://www.perl.org/) script.
+[software tool](https://daringfireball.net/projects/downloads/Markdown_1.0.1.zip);
+in particular, it's a [Perl](https://www.perl.org/) script.
 So one approach to converting a Markdown document to html is to
 download and use that perl script.
 
 But I prefer to use the
-[markdown package](http://cran.r-project.org/web/packages/markdown/index.html)
-for [R](http://www.r-project.org).
+[markdown package](https://cran.r-project.org/package=markdown)
+for [R](https://www.r-project.org).
 
 Within R, you can install the package with
 `install.packages("markdown")`. Then load it with
@@ -229,17 +227,17 @@ In practice, I do this on the command line, as so:
 outside and single-quotes inside, rather than the other way around.)
 
 Rather than actually type that line, I include it within a
-[GNU make](http://www.gnu.org/software/make) file, like
+[GNU make](https://www.gnu.org/software/make) file, like
 [this one](https://github.com/kbroman/knitr_knutshell/blob/gh-pages/assets/Makefile).
-(Also see my [minimal make](http://kbroman.org/minimal_make/)
+(Also see my [minimal make](https://kbroman.org/minimal_make/)
 tutorial.)
 
 RStudio uses the
 [rmarkdown package](https://github.com/rstudio/rmarkdown) package to
 convert from Markdown to html. This uses
-[pandoc](http://pandoc.org) for the actual
+[pandoc](https://pandoc.org) for the actual
 conversion. The
-[RStudio Desktop software](http://www.rstudio.com/products/rstudio/#Desk)
+[RStudio Desktop software](https://www.rstudio.com/products/rstudio/#Desk)
 includes pandoc, so if you install RStudio, you won't need to install
 pandoc separately; you just need to include it within your `PATH`. On
 a Mac, you'd use:
@@ -248,7 +246,7 @@ a Mac, you'd use:
 
 In Windows, you'd include `"c:\Program Files\RStudio\bin\pandoc"` in
 your `Path` system environment variable. (For example, see
-[this page](http://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/),
+[this page](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/),
 though it's a bit ad-heavy.)
 
 To convert your Markdown document to HTML, you'd then use
@@ -256,9 +254,9 @@ To convert your Markdown document to HTML, you'd then use
     R -e "rmarkdown::render('markdown_example.md')"
 
 (I still sort of prefer the
-[markdown package](http://cran.r-project.org/web/packages/markdown/index.html)
+[markdown package](https://cran.r-project.org/package=markdown)
 to the use of the [rmarkdown](https://github.com/rstudio/rmarkdown)
-package and [pandoc](http://pandoc.org); the output
+package and [pandoc](https://pandoc.org); the output
 file is **a lot** larger with the latter. But it's best to follow the
 RStudio folks on this.
 

@@ -4,8 +4,8 @@ title: Comments on reproducibility
 description: Comments on reproducibility
 ---
 
-A key motivation for [knitr](http://yihui.name/knitr/) is
-[reproducible research](http://en.wikipedia.org/wiki/Reproducibility#Reproducible_research):
+A key motivation for [knitr](https://yihui.name/knitr/) is
+[reproducible research](https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research):
 that our results are accompanied by the data and code needed to
 produce them.
 
@@ -27,7 +27,7 @@ them to be able to run it and get the same output.
 3. If you must use absolute paths and have data sets in different
    places, define the various directories with variables at the
    top of your knitr document (or
-   [GNU make](http://www.gnu.org/software/make) file), rather than
+   [GNU make](https://www.gnu.org/software/make) file), rather than
    sprinkling them throughout
    the document. This way, if someone else wants to run the document,
    they don't have to create an exact duplicate of the mess you
@@ -38,7 +38,7 @@ them to be able to run it and get the same output.
    that your code doesn't have undocumented dependencies (e.g., on
    particular options that you use all the time, or on particular
    packages that you load all the time). I often use functions in my
-   [R/broman](http://github.com/kbroman/broman) package, and so I load
+   [R/broman](https://github.com/kbroman/broman) package, and so I load
    it automatically in my `~/.Rprofile` file. But then I forget to
    include `library(broman)` at the top of knitr documents where I
    really need to.
@@ -51,14 +51,14 @@ them to be able to run it and get the same output.
 
    (That is, `R --vanilla` but without the `--no-environ`.)
 
-5. Use a [GNU make](http://www.gnu.org/software/make) file to define how to
+5. Use a [GNU make](https://www.gnu.org/software/make) file to define how to
    construct the final product. You might be tempted to define some
    shell shortcut for knitr, but the person trying to reproduce your
    results won't know about that. What's great about GNU make is that
    it both _automates_ your workflow and _documents_ it. See my
-   [minimal make](http://kbroman.org/minimal_make/) tutorial,
-   and also read [Mike Bostock](http://bost.ocks.org/mike/)'s
-   "[Why Use Make](http://bost.ocks.org/mike/make/)".
+   [minimal make](https://kbroman.org/minimal_make/) tutorial,
+   and also read [Mike Bostock](https://bost.ocks.org/mike/)'s
+   "[Why Use Make](https://bost.ocks.org/mike/make/)".
 
 6. Include "session info" in your document, preferably at the bottom:
    this lists the version of R that you're using plus all of the packages
@@ -103,13 +103,13 @@ there are still at least a few
 
 Also, if the data and source code are not readily available, then the
 work isn't really reproducible.  For example, the
-[supplement](http://rspb.royalsocietypublishing.org/content/281/1778/20132570/suppl/DC1)
+[supplement](https://rspb.royalsocietypublishing.org/content/281/1778/20132570/suppl/DC1)
 to
-[Earn et al. (2014) Proc Roy Soc B 281(1778):20132570](http://rspb.royalsocietypublishing.org/content/281/1778/20132570.abstract)
+[Earn et al. (2014) Proc Roy Soc B 281(1778):20132570](https://doi.org/10.1098/rspb.2013.2570)
 is a really beautiful document, but it says (on page 2):
 
 > ...all details are visible in the source code (`feversupp.Rnw`), which
 > is available upon request from \[author's email\].
 
-It'd be better to have it on [GitHub](http://github.com),
-[Figshare](http://figshare.com), or even a personal web page.
+It'd be better to have it on [GitHub](https://github.com),
+[Figshare](https://figshare.com), or even a personal web page.

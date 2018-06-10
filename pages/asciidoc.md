@@ -5,11 +5,11 @@ description: How to use knitr with asciidoc
 ---
 
 [AsciiDoc](http://www.methods.co.nz/asciidoc/) is similar to
-[Markdown](http://daringfireball.net/projects/markdown/): a simple,
-readable text markup that can be converted to [html](http://en.wikipedia.org/wiki/HTML).
+[Markdown](https://daringfireball.net/projects/markdown/): a simple,
+readable text markup that can be converted to [html](https://en.wikipedia.org/wiki/HTML).
 
 For simple reports, I'm satisfied with
-[R Markdown](http://www.rstudio.com/ide/docs/r_markdown), but for a
+[R Markdown](https://rmarkdown.rstudio.com), but for a
 long report with a lot of sections, it's nice to have a sidebar with a
 floating table of contents. (See
 [this example](../assets/knitr_example_asciidoc.html)
@@ -26,7 +26,7 @@ system with a more rich syntax, like
 The syntax for AsciiDoc is similar in style to that of Markdown, but a bit
 different; I'm always getting confused between the two, and look at
 [my example](../assets/knitr_example_asciidoc.html) and the
-[AsciiDoc cheatsheet](http://powerman.name/doc/asciidoc).
+[AsciiDoc cheatsheet](https://powerman.name/doc/asciidoc).
 
 ### Code chunk delimiters
 
@@ -61,7 +61,7 @@ following:
 
     An example Knitr/Asciidoc document
     ==================================
-    link:http://kbroman.org[Karl W Broman]
+    link:https://kbroman.org[Karl W Broman]
     :toc2:
     :numbered:
     :data-uri:
@@ -75,7 +75,7 @@ left margin.  `:numbered:` indicates to number the sections.
 
 You can't use `kable` or `xtable` with AsciiDoc. Instead, use the
 `ascii` function in the
-[ascii package](http://cran.r-project.org/web/packages/ascii/index.html),
+[ascii package](https://cran.r-project.org/package=ascii),
 which has a shocking number of arguments.
 
 Here's a simple example:
@@ -104,7 +104,7 @@ plus an
 To use AsciiDoc, you'll need to _install_ AsciiDoc; see
 [this installation page](http://www.methods.co.nz/asciidoc/INSTALL.html).
 
-On Mac OSX, I recommend using [Homebrew](http://brew.sh/); then you
+On Mac OSX, I recommend using [Homebrew](https://brew.sh/); then you
 just type `brew install asciidoc`.
 
 A key point: you'll need Python 2 and _not Python 3_.
@@ -117,12 +117,12 @@ error message:
                      ^
     SyntaxError: invalid syntax
 
-I'd also recommend installing the [ascii package]((http://cran.r-project.org/web/packages/ascii/index.html)) for [R](http://www.r-project.org).
+I'd also recommend installing the [ascii package]((https://cran.r-project.org/package=ascii)) for [R](https://www.r-project.org).
 
 
 ### Converting AsciiDoc to html
 
-[RStudio](http://www.rstudio.org) has no facilities for AsciiDoc;
+[RStudio](https://www.rstudio.org) has no facilities for AsciiDoc;
 you'll need to use command-line tools.
 
 You first use `knit` in the knitr package to process the asciidoc/KnitR

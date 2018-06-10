@@ -5,9 +5,9 @@ description: How to use knitr with LaTeX
 ---
 
 If you want precise control of a document,
-[LaTeX](http://www.latex-project.org) is a great way to go. It's much
+[LaTeX](https://www.latex-project.org) is a great way to go. It's much
 more complicated than
-[Markdown](http://daringfireball.net/projects/markdown/), but if you're
+[Markdown](https://daringfireball.net/projects/markdown/), but if you're
 writing a journal article, thesis, or book, you may want the extra
 precision.
 
@@ -20,9 +20,9 @@ and then coming back to this.
 
 The first thing to note, with KnitR and LaTeX, is that the file that
 mixes R code chunks and LaTeX should have the extension `.Rnw`. That
-stands for "R noweb". [Noweb](http://www.cs.tufts.edu/~nr/noweb/) was
+stands for "R noweb". [Noweb](https://www.cs.tufts.edu/~nr/noweb/) was
 an early system (still used) for
-[literate programming](http://en.wikipedia.org/wiki/Literate_programming)
+[literate programming](https://en.wikipedia.org/wiki/Literate_programming)
 (mixing code and text).
 
 ### Code chunk delimiters
@@ -52,7 +52,7 @@ same as with [R Markdown](Rmarkdown.html).
 To produce LaTeX tables, you can use `kable` and `xtable`
 [much as you would do with R Markdown](figs_tables.html).  And the
 results look considerably nicer than the html tables.  (You can't use
-[pander package](http://rapporter.github.io/pander/) within LaTeX.)
+[pander package](https://rapporter.github.io/pander/) within LaTeX.)
 
 Here's a `kable` example.
 
@@ -83,7 +83,7 @@ it with `type="html"`.
 
 #### RStudio
 
-You can use [RStudio](http://www.rstudio.com) to convert a `.Rnw` file
+You can use [RStudio](https://www.rstudio.com) to convert a `.Rnw` file
 to PDF and preview the result, in the same way you worked with R
 Markdown.
 
@@ -93,7 +93,7 @@ But the default in RStudio is still to use
 Go to the RStudio (on menu bar) &rarr; Preferences and select Sweave on the left. Then
 change the selection for "Weave Rnw files using:" from Sweave to
 knitr. You also have a choice of using pdfLaTeX or
-[XeLaTeX](http://wiki.xelatex.org/doku.php).
+[XeLaTeX](https://www.sharelatex.com/learn/XeLaTeX).
 
 **Note**: There is another place in RStudio that you can select knitr
 vs Sweave: Tools (on menu bar) &rarr; Project Options and select
@@ -116,15 +116,15 @@ But if you're using knitr, you'll need to delete this line.
 
 #### LyX
 
-[Yihui Xie](http://yihui.name/) recommends [LyX](http://www.lyx.org/),
+[Yihui Xie](https://yihui.name/) recommends [LyX](https://www.lyx.org/),
 a graphical front-end for LaTeX that includes support for knitr. See
-[Using knitr with LyX](http://yihui.name/knitr/demo/lyx/).
+[Using knitr with LyX](https://yihui.name/knitr/demo/lyx/).
 
 
 #### Command-line
 
 To convert a `.Rnw` file to pdf from the command-line (or within a
-[GNU make](http://www.gnu.org/software/make) file), you first use the
+[GNU make](https://www.gnu.org/software/make) file), you first use the
 `knit` function in the knitr package to process the code chunks and
 create a `.tex` file:
 

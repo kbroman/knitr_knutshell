@@ -6,59 +6,59 @@ description: Resources on knitr and related tools.
 
 This tutorial is minimal.  It's probably considerably less than
 minimal.  But there are lots of great tutorials and other resources
-for learning to use [knitr](http://yihui.name/knitr/), [markdown](http://daringfireball.net/projects/markdown/),
-and [asciidoc](http://www.methods.co.nz/asciidoc/), and I'm not even trying to cover [latex](http://www.latex-project.org)
+for learning to use [knitr](https://yihui.name/knitr/), [markdown](https://daringfireball.net/projects/markdown/),
+and [asciidoc](http://www.methods.co.nz/asciidoc/), and I'm not even trying to cover [latex](https://www.latex-project.org)
 properly.
 
 Here are some examples.
 
 ### knitr
 
-- The [knitr](http://yihui.name/knitr/) web site
-- [knitr demos](http://yihui.name/knitr/demos)
-- [knitr showcase](http://yihui.name/knitr/demo/showcase/): Examples
+- The [knitr](https://yihui.name/knitr/) web site
+- [knitr demos](https://yihui.name/knitr/demos)
+- [knitr showcase](https://yihui.name/knitr/demo/showcase/): Examples
   from users
 - [Dynamic Documents with R and knitr (book)](https://www.amazon.com/gp/product/1498716962?ie=UTF8&tag=7210-20)
 - [Getting started with R Markdown and Knitr](http://jeromyanglim.blogspot.com/2012/05/getting-started-with-r-markdown-knitr.html)
-- [KnitR graphics manual](http://yihui.name/knitr/demo/graphics/)
-- [knitrBootstrap](http://jimhester.github.io/knitrBootstrap/) for nice-looking reports (see
-  [L. Collado-Torres's post](http://lcolladotor.github.io/2013/12/10/knitrBootstrap/#.UuntzXddXVQ))
+- [KnitR graphics manual](https://yihui.name/knitr/demo/graphics/)
+- [knitrBootstrap](https://jimhester.github.io/knitrBootstrap/) for nice-looking reports (see
+  [L. Collado-Torres's post](https://lcolladotor.github.io/2013/12/10/knitrBootstrap/#.UuntzXddXVQ))
 - [Troubleshooting](http://stat545-ubc.github.io/block007_first-use-rmarkdown.html#troubleshooting)
   from [Stat 545](http://stat545-ubc.github.io)
 
 ### Markdown
 
-- [Markdown](http://daringfireball.net/projects/markdown/) main page
-- [Markdown tutorial](http://www.markdowntutorial.com/)
+- [Markdown](https://daringfireball.net/projects/markdown/) main page
+- [Markdown tutorial](https://www.markdowntutorial.com/)
 - [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ### R Markdown
 
-- [R Markdown](http://rmarkdown.rstudio.com/) main page
-- [R Markdown Quick Tour (video)](http://rmarkdown.rstudio.com/authoring_quick_tour.html)
+- [R Markdown](https://rmarkdown.rstudio.com/) main page
+- [R Markdown Quick Tour (video)](https://rmarkdown.rstudio.com/authoring_quick_tour.html)
 - [Tips for images and figures in R Markdown](https://www.zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/)
 
 ### AsciiDoc
 
 - [AsciiDoc](http://www.methods.co.nz/asciidoc/) main page
-- [AsciiDoc cheat sheet](http://powerman.name/doc/asciidoc)
+- [AsciiDoc cheat sheet](https://powerman.name/doc/asciidoc)
 - [AsciiDoc user guide](http://www.methods.co.nz/asciidoc/userguide.html)
-- [AsciiDoc writers' guide](http://asciidoctor.org/docs/asciidoc-writers-guide/)
+- [AsciiDoc writers' guide](https://asciidoctor.org/docs/asciidoc-writers-guide/)
 - [ascii package for R](http://eusebe.github.io/ascii/)
 
 ### LaTeX
 
-- [LaTeX project page](http://www.latex-project.org)
-- [LyX](http://www.lyx.org/), a graphical front-end for LaTeX
-- [Using knitr with LyX](http://yihui.name/knitr/demo/lyx/)
+- [LaTeX project page](https://www.latex-project.org)
+- [LyX](https://www.lyx.org/), a graphical front-end for LaTeX
+- [Using knitr with LyX](https://yihui.name/knitr/demo/lyx/)
 
 ### Related things
 
-- [xtable](http://cran.r-project.org/web/packages/xtable/index.html),
-  an [R](http://www.r-project.org) package for creating LaTeX and html tables
-- [pandoc](http://pandoc.org), for converting
+- [xtable](https://cran.r-project.org/package=xtable),
+  an [R](https://www.r-project.org) package for creating LaTeX and html tables
+- [pandoc](https://pandoc.org), for converting
   among markup formats, including markdown to PDF
-- [pander](http://rapporter.github.io/pander/), an R package with
+- [pander](https://rapporter.github.io/pander/), an R package with
   helper functions for creating pandoc's markdown format
 - [Reproducible Research with R and RStudio](https://www.amazon.com/gp/product/1498715370?ie=UTF8&tag=7210-20)
   (book)

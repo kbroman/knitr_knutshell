@@ -19,7 +19,7 @@ findings in the body of the email. That was cumbersome for me and for
 the collaborator. ("Which figure are we talking about, again?")
 
 I moved towards writing formal reports in
-[LaTeX](http://www.latex-project.org) and sending my collaborator a
+[LaTeX](https://www.latex-project.org) and sending my collaborator a
 PDF. But that was a lot of work, and if I later wanted to re-run
 things (e.g., if additional data were added), it was a real hassle.
 
@@ -38,18 +38,18 @@ biggest one, for me, was figuring out how to reference that critical
 `Sweave.sty` file; I ended up just putting a local copy in every
 project directory. Yeah, I can be an idiot.
 
-[Knitr](http://yihui.name/knitr/) is Sweave
-reborn. [Yihui Xie](http://yihui.name/) took the Sweave idea and
+[Knitr](https://yihui.name/knitr/) is Sweave
+reborn. [Yihui Xie](https://yihui.name/) took the Sweave idea and
 started over, removing the annoyances and making something even
 better. With knitr, you can mix basically any kind of text with
 basically any kind of code. This is a really big deal, as lots of
 people who should be writing these sorts of
-[literate programming](http://en.wikipedia.org/wiki/Literate_programming)
+[literate programming](https://en.wikipedia.org/wiki/Literate_programming)
 documents (e.g., many statistics graduate students)
 are completely turned off by LaTeX and just skip the whole business.
 
 Now, I deliver my informal reports to collaborators as
-[html](http://en.wikipedia.org/wiki/HTML) documents that can be viewed
+[html](https://en.wikipedia.org/wiki/HTML) documents that can be viewed
 in a browser. A big advantage to this is that I don't have to worry
 about page breaks. For example, I can have very tall figures, with say
 30 panels. That makes it easy to show the results in detail, and you
@@ -57,7 +57,7 @@ don't have to worry about how to get figures to fit nicely into a
 page.
 
 But I'm not writing _html_ for this. I use
-[Markdown](http://daringfireball.net/projects/markdown/) or
+[Markdown](https://daringfireball.net/projects/markdown/) or
 [AsciiDoc](http://www.methods.co.nz/asciidoc/). These are two systems
 for writing simple, readable text, with the sort of marks that you'd
 use in an email message (for example, `**bold**` for **bold** or
@@ -67,20 +67,20 @@ html document, so you only need to email the one file to your
 collaborator.
 
 Technically, I'm not using
-[Markdown](http://daringfireball.net/projects/markdown/) but rather
-[R Markdown](http://www.rstudio.com/ide/docs/r_markdown), a variant of
-Markdown developed by the folks at [RStudio](http://www.rstudio.com).
+[Markdown](https://daringfireball.net/projects/markdown/) but rather
+[R Markdown](https://rmarkdown.rstudio.com), a variant of
+Markdown developed by the folks at [RStudio](https://www.rstudio.com).
 
 Enough blather; now how does this work?
 
 ### Code chunks
 
 The basic idea in knitr (and sweave before that, and
-[literate programming](http://en.wikipedia.org/wiki/Literate_programming)
+[literate programming](https://en.wikipedia.org/wiki/Literate_programming)
 more generally) is that your regular text document will be interrupted
 by chunks of code delimited in a special way.
 
-Here's an example with [R Markdown](http://www.rstudio.com/ide/docs/r_markdown):
+Here's an example with [R Markdown](https://rmarkdown.rstudio.com):
 
     We see that this is an intercross with `r nind(sug)` individuals.
     There are `r nphe(sug)` phenotypes, and genotype data at
@@ -142,7 +142,7 @@ In [AsciiDoc](http://www.methods.co.nz/asciidoc/), the above would be written as
     plot(sug)
     //end.rcode
 
-In [LaTeX](http://www.latex-project.org), it would be:
+In [LaTeX](https://www.latex-project.org), it would be:
 
     We see that this is an intercross with \Sexpr{nind(sug)} individuals.
     There are \Sexpr{nphe(sug)} phenotypes, and genotype data at
@@ -155,7 +155,7 @@ In [LaTeX](http://www.latex-project.org), it would be:
     plot(sug)
     @
 
-[Yihui](http://yihui.name/) would probably yell at me for the `{\tt }`
+[Yihui](https://yihui.name/) would probably yell at me for the `{\tt }`
 bit, but that seemed easiest for me.
 
 A knitr document will often have _many_ code chunks. They are
@@ -170,7 +170,7 @@ The examples above are taken from longer examples that you can find
 [its html product](../assets/knitr_example_asciidoc.html)), and a
 [LaTeX example](../assets/knitr_example.Rnw) (and
 [its pdf product](../assets/knitr_example.pdf)).
-All of these examples require installation of my [R/qtl](http://www.rqtl.org)
+All of these examples require installation of my [R/qtl](https://www.rqtl.org)
 package (sorry!). In R, type `install.packages("qtl")`.
 
 ### Compiling the document
@@ -179,17 +179,17 @@ Once you've created a knitr document (e.g., R Markdown with chunks of
 R code), how do you use knitr to process it, to create the final document?
 
 If you're creating an
-[R Markdown](http://www.rstudio.com/ide/docs/r_markdown) document
-in [RStudio](http://www.rstudio.com), it's dead easy: there's a
+[R Markdown](https://rmarkdown.rstudio.com) document
+in [RStudio](https://www.rstudio.com), it's dead easy: there's a
 button. And it's a particularly cute little button, with a ball of
 yarn and a knitting needle.
 
 More generally, you'd call R and use the `render()` function in the
 [rmarkdown](https://cran.r-project.org/package=rmarkdown) package.
 I prefer to create a
-[GNU make](http://www.gnu.org/software/make) file, like
+[GNU make](https://www.gnu.org/software/make) file, like
 [this one](../assets/Makefile), for the examples I'd mentioned above.
-(See also my [minimal make](http://kbroman.org/minimal_make) tutorial.)
+(See also my [minimal make](https://kbroman.org/minimal_make) tutorial.)
 
 ### What next?
 
@@ -207,5 +207,5 @@ Markdown useful, at least for short, informal reports.
 
 If you're an experienced
 [Sweave](http://leisch.userweb.mwn.de/Sweave/) user, you might look at
-my [Knitr from Sweave](sweave.html) page, or [Yihui](http://yihui.name/)'s page,
-[transition from Sweave to knitr](http://yihui.name/knitr/demo/sweave/).
+my [Knitr from Sweave](sweave.html) page, or [Yihui](https://yihui.name/)'s page,
+[transition from Sweave to knitr](https://yihui.name/knitr/demo/sweave/).

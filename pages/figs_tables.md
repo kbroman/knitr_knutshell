@@ -43,7 +43,7 @@ plus an
 For R Markdown, the default graphics device is `png`. You can choose
 a different device using the chunk option `dev`. For example, to use
 the `svg` device (for
-[Scalable Vector Graphics](http://en.wikipedia.org/wiki/Scalable_Vector_Graphics),
+[Scalable Vector Graphics](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics),
 which may look better in a web page as they can be scaled without loss
 of quality), you would use `dev='svg'`, as follows:
 
@@ -85,7 +85,7 @@ plus an
 [R Markdown file with just that chunk](../assets/short_examples/bunch_o_figs_pointsize.Rmd).
 
 For more information on graphics with KnitR, see the
-[Knitr graphics manual](http://yihui.name/knitr/demo/graphics/).
+[Knitr graphics manual](https://yihui.name/knitr/demo/graphics/).
 
 
 ### Tables
@@ -142,7 +142,7 @@ plus an
 
 If you want more precise control of the appearance of the table, use
 the `xtable` function in the
-[xtable package](http://cran.r-project.org/web/packages/xtable/index.html).
+[xtable package](https://cran.r-project.org/package=xtable).
 
 Here's the above example, using xtable:
 

@@ -5,8 +5,8 @@ description: Switch from Sweave to knitr.
 ---
 
 If you have experience using [Sweave](http://leisch.userweb.mwn.de/Sweave/) with
-[LaTeX](http://www.latex-project.org), you'll find that it will be an
-easy transition from Sweave to [KnitR](http://yihui.name/knitr/), and
+[LaTeX](https://www.latex-project.org), you'll find that it will be an
+easy transition from Sweave to [KnitR](https://yihui.name/knitr/), and
 one well worth making. A number of Sweave annoyances have been
 eliminated, but I think the big feature is that for less formal
 reports you can use [KnitR with R Markdown](Rmarkdown.html) or
@@ -14,8 +14,8 @@ reports you can use [KnitR with R Markdown](Rmarkdown.html) or
 LaTeX, and you don't have to deal with page breaks in the resulting
 web page.
 
-[Yihui Xie](http://yihui.name/) has written a great document on the
-[Transition from Sweave to knitr](http://yihui.name/knitr/demo/sweave/). Here,
+[Yihui Xie](https://yihui.name/) has written a great document on the
+[Transition from Sweave to knitr](https://yihui.name/knitr/demo/sweave/). Here,
 I'll just give a thumbnail sketch.
 
 Chunks are still delimited with `<<>>=` and `@`, and in-line code
@@ -33,7 +33,7 @@ Here are some of the new things in knitr:
 
 2. The chunk options `width` and `height` were changed to `fig.width`
    and `fig.height`, respectively. Again, see Yihui's page on
-   [Transition from Sweave to knitr](http://yihui.name/knitr/demo/sweave/).
+   [Transition from Sweave to knitr](https://yihui.name/knitr/demo/sweave/).
 
 3. Chunk names/labels must be distinct. In Sweave, I'd often have the
    problem of copy-pasting one chunk to create another, particularly for

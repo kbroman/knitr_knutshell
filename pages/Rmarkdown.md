@@ -5,23 +5,23 @@ overview: How to use knitr with R Markdown
 ---
 
 The simplest way to write a quick report, mixing in a bit of R, is to
-use [R Markdown](http://rmarkdown.rstudio.com), a
-variant of [Markdown](http://daringfireball.net/projects/markdown/)
-developed by the folks at [Rstudio](http://www.rstudio.com).
+use [R Markdown](https://rmarkdown.rstudio.com), a
+variant of [Markdown](https://daringfireball.net/projects/markdown/)
+developed by the folks at [Rstudio](https://www.rstudio.com).
 
 You should first read the [page about Markdown](markdown.html).
 
 ### R Markdown
 
-[R Markdown](http://rmarkdown.rstudio.com) is a
-variant of [Markdown](http://daringfireball.net/projects/markdown/)
-that has embedded [R](http://www.r-project.org) code chunks, to
-be used with [knitr](http://yihui.name/knitr/) to make it easy to
+[R Markdown](https://rmarkdown.rstudio.com) is a
+variant of [Markdown](https://daringfireball.net/projects/markdown/)
+that has embedded [R](https://www.r-project.org) code chunks, to
+be used with [knitr](https://yihui.name/knitr/) to make it easy to
 create reproducible web-based reports. The Markdown syntax has some
 enhancements (see the
-[R Markdown page](http://rmarkdown.rstudio.com)); for example,
+[R Markdown page](https://rmarkdown.rstudio.com)); for example,
 you can include LaTeX equations (see
-[Equations in R Markdown](http://www.rstudio.com/ide/docs/authoring/using_markdown_equations)).
+[Equations in R Markdown](https://www.rstudio.com/ide/docs/authoring/using_markdown_equations)).
 
 Here's an [example R Markdown document](../assets/knitr_example.Rmd),
 and the [html document it produces](../assets/knitr_example.html).
@@ -62,7 +62,7 @@ various variables in one code chunk are preserved in future
 chunks. It's as if you'd pulled out all of the R code as a single file
 (and you can do
 that, using the `purl` command in knitr) and then
-[source](http://stat.ethz.ch/R-manual/R-devel/library/base/html/source.html)d
+[source](https://stat.ethz.ch/R-manual/R-devel/library/base/html/source.html)
 it into R.
 
 
@@ -113,7 +113,7 @@ will be hidden but figures will still be shown. To hide the figures,
 use `fig.show="hide"`.
 
 There are
-[lots of different possible "chunk options"](http://yihui.name/knitr/options#chunk_options).
+[lots of different possible "chunk options"](https://yihui.name/knitr/options#chunk_options).
 Each must be real R code, as R will be used to evaluate them. So
 `results=hide` is wrong; you need `results="hide"`.
 
@@ -168,7 +168,7 @@ loaded the knitr package with `library(knitr)`). As we'll discuss
 below, we'll use the
 [rmarkdown package](https://github.com/rstudio/rmarkdown) to process
 the document, first with knitr and then with
-[pandoc](http://pandoc.org), and
+[pandoc](https://pandoc.org), and
 `rmarkdown::render()` will use `knitr::knit()` but won't load
 the knitr package.
 
@@ -176,7 +176,7 @@ the knitr package.
 #### Package options
 
 In addition to the chunk options, there are also
-[package options](http://yihui.name/knitr/options#package_options),
+[package options](https://yihui.name/knitr/options#package_options),
 set with something like:
 
     ```{r package_options, include=FALSE}
@@ -194,7 +194,7 @@ chunk options defined via `opts_chunk$set`. So mostly **ignore**
 #### In-line code
 
 A key motivation for knitr is
-[reproducible research](http://en.wikipedia.org/wiki/Reproducibility#Reproducible_research):
+[reproducible research](https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research):
 that our results are accompanied by the data and code needed to
 produce them.
 
@@ -233,7 +233,7 @@ following:
 The final document will then contain a nicely formated title, along
 with the author name and date. You can include hyperlinks in there:
 
-    author: "[Karl Broman](http://kbroman.org)"
+    author: "[Karl Broman](https://kbroman.org)"
 
 and even R code:
 
@@ -288,7 +288,7 @@ and it would give `0.90` or `0.00` in the way that I want.
 
 #### Via RStudio
 
-If you use [RStudio](http://www.rstudio.com), the simplest way to
+If you use [RStudio](https://www.rstudio.com), the simplest way to
 convert an R Markdown document to html is to open the document within
 RStudio. (And really, you probably want to _create_ the document in
 RStudio: click File &rarr; New File &rarr; R Markdown.)
@@ -306,12 +306,12 @@ viewable by _anyone_).
 
 Another a nice feature in RStudio: when you open an R Markdown
 document, you'll see a little question mark button, with links to
-"[Using R Markdown](http://rmarkdown.rstudio.com)" and to a Markdown
+"[Using R Markdown](https://rmarkdown.rstudio.com)" and to a Markdown
 Quick Reference.  convenient "Markdown Quick Reference" document: a
 cheat-sheet on the Markdown syntax. Like
 [@StrictlyStat](https://twitter.com/StrictlyStat/status/423178160968970240),
 I seem to visit the
-[Markdown](http://daringfireball.net/projects/markdown) website almost
+[Markdown](https://daringfireball.net/projects/markdown) website almost
 every time I'm writing a Markdown document. If I used RStudio, I'd
 have easier access to this information.
 
@@ -324,14 +324,14 @@ and you have access to that Markdown Quick Reference.
 To process an R Markdown document, you need the
 [rmarkdown package](https://github.com/rstudio/rmarkdown) (which in
 turn will make use of the
-[knitr package](http://cran.r-project.org/web/packages/knitr/) plus a
+[knitr package](https://cran.r-project.org/package=knitr) plus a
 bunch of other packages), as well as
-[pandoc](http://pandoc.org).
+[pandoc](https://pandoc.org).
 
 To install the rmarkdown package, use `install.packages(rmarkdown)`.
 
 The simplest way to install pandoc is to just install the
-[RStudio Desktop software](http://www.rstudio.com/products/rstudio/#Desk),
+[RStudio Desktop software](https://www.rstudio.com/products/rstudio/#Desk),
 which includes pandoc, and then include pandoc without your `PATH`.
 On a Mac, you'd use:
 
@@ -339,7 +339,7 @@ On a Mac, you'd use:
 
 In Windows, you'd include `"c:\Program Files\RStudio\bin\pandoc"` in
 your `Path` system environment variable. (For example, see
-[this page](http://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/),
+[this page](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/),
 though it's a bit ad-heavy.)
 
 To convert your Markdown document to HTML, you'd then use
@@ -350,16 +350,16 @@ To convert your Markdown document to HTML, you'd then use
 outside and single-quotes inside, rather than the other way around.)
 
 Rather than actually type that line, I include it within a
-[GNU make](http://www.gnu.org/software/make) file, like
+[GNU make](https://www.gnu.org/software/make) file, like
 [this one](https://github.com/kbroman/knitr_knutshell/blob/gh-pages/assets/Makefile).
-(Also see my [minimal make](http://kbroman.org/minimal_make/)
+(Also see my [minimal make](https://kbroman.org/minimal_make/)
 tutorial.)
 
 ### Up next
 
 At this point, I'd recommend going off and playing with R Markdown for
 a while. Write your next report with R Markdown, even if it takes you
-a bit longer. Write it using [RStudio](http://www.rstudio.com), where
+a bit longer. Write it using [RStudio](https://www.rstudio.com), where
 the knitting process is easy and you have easy access to that
 "Markdown Quick Reference".
 

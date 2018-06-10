@@ -1,15 +1,15 @@
 ## knitr in a knutshell
 
-[Knitr](http://yihui.name/knitr/) is a really important tool for
+[Knitr](https://yihui.name/knitr/) is a really important tool for
 reproducible research.
 
 This is a brief guide to knitr, covering the fundamentals of
 its use with
-[Markdown](http://daringfireball.net/projects/markdown/),
+[Markdown](https://daringfireball.net/projects/markdown/),
 [AsciiDoc](http://www.methods.co.nz/asciidoc/), and
-[LaTeX](http://www.latex-project.org).
+[LaTeX](https://www.latex-project.org).
 
-View the thing [here](http://kbroman.org/knitr_knutshell).
+View the thing [here](https://kbroman.org/knitr_knutshell).
 
 If you find knitr useful, consider buying
 [Yihui's book](https://www.amazon.com/gp/product/1498716962?ie=UTF8&tag=7210-20).
@@ -18,6 +18,6 @@ If you find knitr useful, consider buying
 ---
 
 My parts of this web site are licensed under
-[CC BY](http://creativecommons.org/licenses/by/3.0/).
+[CC BY](https://creativecommons.org/licenses/by/3.0/).
 
-[![CC BY](http://i.creativecommons.org/l/by/3.0/88x31.png)](http://creativecommons.org/licenses/by/3.0/)
+[![CC BY](https://i.creativecommons.org/l/by/3.0/88x31.png)](https://creativecommons.org/licenses/by/3.0/)

@@ -5,25 +5,25 @@ tagline: a minimal tutorial
 description: A minimal tutorial on the literate programming tool, knitr
 ---
 
-[KnitR](http://yihui.name/knitr/) is a really important tool for
+[KnitR](https://yihui.name/knitr/) is a really important tool for
 reproducible research. You create documents that are a mixture of
 text and code; when processed through KnitR, the code is replaced by
 the results and/or figures produced.
 
-[Yihui Xie](http://yihui.name/), the developer of KnitR, has written
-clear and thorough [documentation](http://yihui.name/knitr/), many
+[Yihui Xie](https://yihui.name/), the developer of KnitR, has written
+clear and thorough [documentation](https://yihui.name/knitr/), many
 useful
 [examples](https://github.com/yihui/knitr/tree/master/vignettes) and
-[demos](http://yihui.name/knitr/demos), and a very nice
+[demos](https://yihui.name/knitr/demos), and a very nice
 [book](https://www.amazon.com/gp/product/1498716962?ie=UTF8&tag=7210-20).
 Nevertheless, I thought it might be useful to have some of the basic things
 explained again a bit differently.
 
 And so, here is a brief guide to KnitR, covering the fundamentals of
 its use with
-[Markdown](http://daringfireball.net/projects/markdown/),
+[Markdown](https://daringfireball.net/projects/markdown/),
 [AsciiDoc](http://www.methods.co.nz/asciidoc/), and
-[LaTeX](http://www.latex-project.org).
+[LaTeX](https://www.latex-project.org).
 
 - [Overview](pages/overview.html)
 - [Markdown](pages/markdown.html)
@@ -40,14 +40,14 @@ If you find KnitR useful, consider buying
 
 ---
 
-The source for this tutorial is [here](http://github.com/kbroman/knitr_knutshell).
+The source for this tutorial is [here](https://github.com/kbroman/knitr_knutshell).
 If you have suggestions or corrections,
 please [submit an issue](https://github.com/kbroman/knitr_knutshell/issues).
 
-Also see my [tutorials](http://kbroman.org/pages/tutorials) on
-[git/github](http://kbroman.org/github_tutorial),
-[GNU make](http://kbroman.org/minimal_make),
-[R packages](http://kbroman.org/pkg_primer),
-[making a web site with GitHub Pages](http://kbroman.org/simple_site),
-[data organization](http://kbroman.org/dataorg),
-and [reproducible research](http://kbroman.org/steps2rr).
+Also see my [tutorials](https://kbroman.org/pages/tutorials) on
+[git/github](https://kbroman.org/github_tutorial),
+[GNU make](https://kbroman.org/minimal_make),
+[R packages](https://kbroman.org/pkg_primer),
+[making a web site with GitHub Pages](https://kbroman.org/simple_site),
+[data organization](https://kbroman.org/dataorg),
+and [reproducible research](https://kbroman.org/steps2rr).
