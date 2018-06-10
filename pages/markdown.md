@@ -258,7 +258,7 @@ To convert your Markdown document to HTML, you'd then use
 to the use of the [rmarkdown](https://github.com/rstudio/rmarkdown)
 package and [pandoc](https://pandoc.org); the output
 file is **a lot** larger with the latter. But it's best to follow the
-RStudio folks on this.
+RStudio folks on this.)
 
 
 ### Up next
