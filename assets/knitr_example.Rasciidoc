@@ -1,11 +1,11 @@
 An example Knitr/Asciidoc document
 ==================================
-link:http://kbroman.org[Karl W Broman]
+link:https://kbroman.org[Karl W Broman]
 :toc2:
 :numbered:
 :data-uri:
 
-This is a portion of the "link:http://www.rqtl.org/rqtltour2.pdf[A shorter tour of R/qtl]"
+This is a portion of the "link:https://rqtl.org/rqtltour2.pdf[A shorter tour of R/qtl]"
 tutorial, developed here in multiple formats to illustrate the use of knitr.
 This particular document is written with link:http://www.methods.co.nz/asciidoc/[asciidoc].
 (See the link:http://powerman.name/doc/asciidoc[asciidoc cheat sheet].)
@@ -14,7 +14,7 @@ This particular document is written with link:http://www.methods.co.nz/asciidoc/
 opts_chunk$set(fig.width=12, fig.height=4, fig.path='AsciidocFigs/', warning=FALSE, message=FALSE)
 set.seed(53079239)
 # install R/qtl package if necessary:
-if(!require("qtl")) install.packages("qtl", repos="http://cran.us.r-project.org")
+if(!require("qtl")) install.packages("qtl", repos="https://cran.us.r-project.org")
 //end.rcode
 
 == Preliminaries ==
@@ -44,11 +44,11 @@ help(read.cross)
 
 == Data import ==
 
-We will consider data from link:http://www.ncbi.nlm.nih.gov/pubmed/12118100[Sugiyama et al., Physiol Genomics 10:5&ndash;12,
+We will consider data from links:https://www.ncbi.nlm.nih.gov/pubmed/12118100[Sugiyama et al., Physiol Genomics 10:5&ndash;12,
 2002]. Load the data into R/qtl as follows.
 
 //begin.rcode load_cross
-sug <- read.cross("csv", "http://www.rqtl.org", "sug.csv",
+sug <- read.cross("csv", "https://rqtl.org", "sug.csv",
                   genotypes=c("CC", "CB", "BB"), alleles=c("C", "B"))
 //end.rcode
 
@@ -77,7 +77,7 @@ The data object +sug+ is complex; it contains the genotype
 data, phenotype data and genetic map.  R has a certain amount of
 "object oriented" facilities, so that calls to functions like
 +summary+ and +plot+ are interpreted appropriately for the object
-considered.  
+considered.
 
 The object +sug+ has "class" +"cross"+, and so calls to
 +summary+ and +plot+ are actually sent to the functions
@@ -91,7 +91,7 @@ summary(sug)
 //end.rcode
 
 We see that this is an intercross with +r nind(sug)+ individuals.
-There are +r nphe(sug)+ phenotypes, and genotype data at 
+There are +r nphe(sug)+ phenotypes, and genotype data at
 +r totmar(sug)+ markers across the +r nchr(sug)+ autosomes.  The genotype
 data is quite complete.
 
@@ -110,7 +110,7 @@ histograms or bar plots for the six phenotypes.  The last two
 
 == Single-QTL analysis ==
 
-Let's now proceed to QTL mapping via a single-QTL model.  
+Let's now proceed to QTL mapping via a single-QTL model.
 
 We first calculate the QTL genotype probabilities, given the
 observed marker data, via the function +calc.genoprob+.  This is
@@ -159,7 +159,7 @@ plot(out.em)
 //end.rcode
 
 We can do the genome scan via Haley-Knott regression by calling
-+scanone+ with the argument +method="hk"+.  
++scanone+ with the argument +method="hk"+.
 
 //begin.rcode scanone_hk
 out.hk <- scanone(sug, method="hk")
@@ -176,7 +176,7 @@ Alternatively, we could do the following (figure not included, for brevity):
 
 //begin.rcode plot_em_and_hk_alt, eval=FALSE
 plot(out.em, col="blue")
-plot(out.hk, col="red", add=TRUE) 
+plot(out.hk, col="red", add=TRUE)
 //end.rcode
 
 It's perhaps more informative to plot the differences:
@@ -184,7 +184,7 @@ It's perhaps more informative to plot the differences:
 //begin.rcode plot_diff
 plot(out.hk - out.em, ylim=c(-0.3, 0.3), ylab="LOD(HK)-LOD(EM)")
 //end.rcode
- 
+
 == Permutation tests ==
 
 To perform a permutation test, to get a genome-wide significance
@@ -228,7 +228,7 @@ chromosomes 7 and 15.  Interval estimates of the location of QTL are
 commonly obtained via 1.5-LOD support intervals, which may be
 calculated via the function +lodint+.  Alternatively, an
 approximate Bayes credible interval may be obtained with
-+bayesint+.  
++bayesint+.
 
 To obtain the 1.5-LOD support interval and 95% Bayes interval
 for the QTL on chromosome 7, type the following.

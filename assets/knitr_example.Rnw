@@ -22,9 +22,9 @@
 
 {\sffamily \textbf{An example Knitr/R Markdown document}}
 
-\href{http://kbroman.org}{Karl W Broman}
+\href{https://kbroman.org}{Karl W Broman}
 
-This is a portion of the ``\href{http://www.rqtl.org/rqtltour2.pdf}{A shorter tour of R/qtl}''
+This is a portion of the ``\href{https://rqtl.org/rqtltour2.pdf}{A shorter tour of R/qtl}''
 tutorial, developed here in multiple formats to illustrate the use of knitr.
 This particular document is written with \href{http://www.latex-project.org}{LaTeX}.
 
@@ -34,7 +34,7 @@ opts_chunk$set(fig.width=12, fig.height=4, fig.path='RnwFigs/',
 options(width=60)
 set.seed(53079239)
 # install R/qtl package if necessary:
-if(!require("qtl")) install.packages("qtl", repos="http://cran.us.r-project.org")
+if(!require("qtl")) install.packages("qtl", repos="https://cran.us.r-project.org")
 @
 
 \bigskip
@@ -69,12 +69,12 @@ help(read.cross)
 \nopagebreak
 
 We will consider data from
-\href{http://www.ncbi.nlm.nih.gov/pubmed/12118100}{Sugiyama et al.,
+\href{https://www.ncbi.nlm.nih.gov/pubmed/12118100}{Sugiyama et al.,
 Physiol Genomics 10:5--12, 2002}. Load the data into R/qtl as
 follows.
 
 <<load_cross>>=
-sug <- read.cross("csv", "http://www.rqtl.org", "sug.csv",
+sug <- read.cross("csv", "https://rqtl.org", "sug.csv",
                   genotypes=c("CC", "CB", "BB"),
                   alleles=c("C", "B"))
 @

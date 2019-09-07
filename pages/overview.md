@@ -170,7 +170,7 @@ The examples above are taken from longer examples that you can find
 [its html product](../assets/knitr_example_asciidoc.html)), and a
 [LaTeX example](../assets/knitr_example.Rnw) (and
 [its pdf product](../assets/knitr_example.pdf)).
-All of these examples require installation of my [R/qtl](https://www.rqtl.org)
+All of these examples require installation of my [R/qtl](https://rqtl.org)
 package (sorry!). In R, type `install.packages("qtl")`.
 
 ### Compiling the document

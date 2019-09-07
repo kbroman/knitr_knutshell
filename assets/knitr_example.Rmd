@@ -1,12 +1,12 @@
 ---
 title: "An example Knitr/R Markdown document"
-author: "[Karl W Broman](http://kbroman.org)"
+author: "[Karl W Broman](https://kbroman.org)"
 output: html_document
 ---
 
-This is a portion of the "[A shorter tour of R/qtl](http://www.rqtl.org/rqtltour2.pdf)"
+This is a portion of the "[A shorter tour of R/qtl](https://rqtl.org/rqtltour2.pdf)"
 tutorial, developed here in multiple formats to illustrate the use of knitr.
-This particular document is written with [R Markdown](http://www.rstudio.com/ide/docs/r_markdown).
+This particular document is written with [R Markdown](https://rmarkdown.rstudio.com).
 (Also see the [Markdown](http://daringfireball.net/projects/markdown/)
 site.)
 
@@ -16,7 +16,7 @@ opts_chunk$set(fig.width=12, fig.height=4, fig.path='RmdFigs/',
                warning=FALSE, message=FALSE)
 set.seed(53079239)
 # install R/qtl package if necessary:
-if(!require("qtl")) install.packages("qtl", repos="http://cran.us.r-project.org")
+if(!require("qtl")) install.packages("qtl", repos="https://cran.us.r-project.org")
 ```
 
 ### Preliminaries
@@ -47,10 +47,10 @@ help(read.cross)
 ### Data import
 
 We will consider data from [Sugiyama et al., Physiol Genomics 10:5&ndash;12,
-2002](http://www.ncbi.nlm.nih.gov/pubmed/12118100). Load the data into R/qtl as follows.
+2002](https://www.ncbi.nlm.nih.gov/pubmed/12118100). Load the data into R/qtl as follows.
 
 ```{r load_cross}
-sug <- read.cross("csv", "http://www.rqtl.org", "sug.csv",
+sug <- read.cross("csv", "https://rqtl.org", "sug.csv",
                   genotypes=c("CC", "CB", "BB"), alleles=c("C", "B"))
 ```
 
