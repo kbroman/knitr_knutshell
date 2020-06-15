@@ -11,7 +11,7 @@ This particular document is written with link:http://www.methods.co.nz/asciidoc/
 (See the link:http://powerman.name/doc/asciidoc[asciidoc cheat sheet].)
 
 //begin.rcode knitr_options, include=FALSE
-opts_chunk$set(fig.width=12, fig.height=4, fig.path='AsciidocFigs/', warning=FALSE, message=FALSE)
+knitr::opts_chunk$set(fig.width=12, fig.height=4, fig.path='AsciidocFigs/', warning=FALSE, message=FALSE)
 set.seed(53079239)
 # install R/qtl package if necessary:
 if(!require("qtl")) install.packages("qtl", repos="https://cran.us.r-project.org")
