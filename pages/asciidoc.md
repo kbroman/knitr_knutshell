@@ -40,7 +40,7 @@ chunks are delimited differently. Here's an example:
 
     Use +plot()+ to get a summary plot of the data.
 
-    //begin.rcode summary_plot, fig.height=8
+    //begin.rcode summary-plot, fig.height=8
     plot(sug)
     //end.rcode
 
