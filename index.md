@@ -35,8 +35,8 @@ its use with
 - [Moving from Sweave to KnitR](pages/sweave.html)
 - [Resources](pages/resources.html)
 
-If you find KnitR useful, consider buying
-[Yihui's book](https://www.amazon.com/gp/product/1498716962?ie=UTF8&tag=7210-20).
+If you find knitr useful, consider buying
+[R Markdown: The Definitive Guide](https://www.amazon.com/gp/product/1138359335?ie=UTF8&tag=7210-20).
 
 ---
 
