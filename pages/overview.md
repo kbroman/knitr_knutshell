@@ -89,7 +89,7 @@ Here's an example with [R Markdown](https://rmarkdown.rstudio.com):
 
     Use `plot()` to get a summary plot of the data.
 
-    ```{r summary_plot, fig.height=8}
+    ```{r summary-plot, fig.height=8}
     plot(sug)
     ```
 
@@ -112,9 +112,9 @@ which will then be inserted at that point in the final document.
 
 In R Markdown, code chunks start with a line like
 
-    ```{r chunk_name, options}
+    ```{r chunk-name, options}
 
-The chunk name (here, `chunk_name`) is optional; if included it needs
+The chunk name (here, `chunk-name`) is optional; if included it needs
 to be distinct from that for another chunk. Then there are a bunch of
 chunk options, here `fig.height=8` indicates the height of the figure.
 
@@ -138,7 +138,7 @@ In [AsciiDoc](http://www.methods.co.nz/asciidoc/), the above would be written as
 
     Use +plot()+ to get a summary plot of the data.
 
-    //begin.rcode summary_plot, fig.height=8
+    //begin.rcode summary-plot, fig.height=8
     plot(sug)
     //end.rcode
 
@@ -151,7 +151,7 @@ In [LaTeX](https://www.latex-project.org), it would be:
 
     Use {\tt plot()} to get a summary plot of the data.
 
-    <<summary_plot, fig.height=8>>=
+    <<summary-plot, fig.height=8>>=
     plot(sug)
     @
 

@@ -40,7 +40,7 @@ put the code inside the curly braces).  Here's a bit from
 
     Use {\tt plot()} to get a summary plot of the data.
 
-    <<summary_plot, fig.height=8>>=
+    <<summary-plot, fig.height=8>>=
     plot(sug)
     @
 

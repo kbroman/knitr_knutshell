@@ -72,7 +72,7 @@ them to be able to run it and get the same output.
    following; I include the options so that we're absolutely sure that
    it will be shown.
 
-       ```{r session_info, include=TRUE, echo=TRUE, results='markup'}
+       ```{r session-info, include=TRUE, echo=TRUE, results='markup'}
        devtools::session_info()
        ```
 
