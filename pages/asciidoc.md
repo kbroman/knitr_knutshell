@@ -107,9 +107,9 @@ To use AsciiDoc, you'll need to _install_ AsciiDoc; see
 On Mac OSX, I recommend using [Homebrew](https://brew.sh/); then you
 just type `brew install asciidoc`.
 
-A key point: you'll need Python 2 and _not Python 3_.
-On my computer, `python` is Python 3; I have to switch to Python 2
-before running AsciiDoc. If I forget to switch, I get the following
+For older versions of asciidoc, you needed Python 2 and _not Python 3_.
+On my computer, `python` is Python 3; I used to have to switch to Python 2
+before running AsciiDoc. If I forgot to switch, I would get the following
 error message:
 
     File "/usr/local/bin/asciidoc", line 101
