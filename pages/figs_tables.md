@@ -4,14 +4,14 @@ title: Figures and tables
 description: Figures and tables with knitr and R Markdown.
 ---
 
-Figures are really easy in KnitR. Tables are not quite so easy, but
+Figures are really easy in knitr. Tables are not quite so easy, but
 the ability to produce fully reproducible tables is really
 important. You should never be copy-pasting or retyping data summaries
 into a table.
 
 ### Figures
 
-Figures are super easy in KnitR. For the most part, you don't need to
+Figures are super easy in knitr. For the most part, you don't need to
 do anything. If a code chunk produces a figure, it will automatically
 be produced and inserted into the final document. If a code chunk
 produces a bunch of figures, then a bunch of image files will be
@@ -84,7 +84,7 @@ Here's
 plus an
 [R Markdown file with just that chunk](../assets/short_examples/bunch-o-figs-pointsize.Rmd).
 
-For more information on graphics with KnitR, see the
+For more information on graphics with knitr, see the
 [Knitr graphics manual](https://yihui.name/knitr/demo/graphics/).
 
 

@@ -319,7 +319,7 @@ I seem to visit the
 every time I'm writing a Markdown document. If I used RStudio, I'd
 have easier access to this information.
 
-RStudio is especially useful when you're first learning KnitR and R
+RStudio is especially useful when you're first learning knitr and R
 Markdown, as it's easy to create and view the corresponding html file,
 and you have access to that Markdown Quick Reference.
 

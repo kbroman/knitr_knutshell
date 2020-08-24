@@ -18,7 +18,7 @@ with markdown, study LaTeX elsewhere (I like
 but it's maybe not for beginners),
 and then coming back to this.
 
-The first thing to note, with KnitR and LaTeX, is that the file that
+The first thing to note, with knitr and LaTeX, is that the file that
 mixes R code chunks and LaTeX should have the extension `.Rnw`. That
 stands for "R noweb". [Noweb](https://www.cs.tufts.edu/~nr/noweb/) was
 an early system (still used) for
@@ -79,7 +79,7 @@ it with `type="html"`.
     xtable(summary(out)$coef, digits=c(0, 2, 2, 1, 2))
     @
 
-### Converting KnitR/LaTeX to PDF
+### Converting knitr/LaTeX to PDF
 
 #### RStudio
 

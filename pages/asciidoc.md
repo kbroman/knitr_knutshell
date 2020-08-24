@@ -30,7 +30,7 @@ different; I'm always getting confused between the two, and look at
 
 ### Code chunk delimiters
 
-KnitR-wise, the main difference when you use asciidoc is that the code
+knitr-wise, the main difference when you use asciidoc is that the code
 chunks are delimited differently. Here's an example:
 
     We see that this is an intercross with +r nind(sug)+ individuals.
@@ -125,7 +125,7 @@ I'd also recommend installing the [ascii package]((https://cran.r-project.org/pa
 [RStudio](https://www.rstudio.org) has no facilities for AsciiDoc;
 you'll need to use command-line tools.
 
-You first use `knit` in the knitr package to process the asciidoc/KnitR
+You first use `knit` in the knitr package to process the asciidoc/knitr
 document:
 
     R -e 'library(knitr);knit("knitr_example.Rasciidoc", "knitr_example.asciidoc")'

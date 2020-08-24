@@ -5,12 +5,12 @@ tagline: a minimal tutorial
 description: A minimal tutorial on the literate programming tool, knitr
 ---
 
-[KnitR](https://yihui.name/knitr/) is a really important tool for
+[knitr](https://yihui.name/knitr/) is a really important tool for
 reproducible research. You create documents that are a mixture of
-text and code; when processed through KnitR, the code is replaced by
+text and code; when processed through knitr, the code is replaced by
 the results and/or figures produced.
 
-[Yihui Xie](https://yihui.name/), the developer of KnitR, has written
+[Yihui Xie](https://yihui.name/), the developer of knitr, has written
 clear and thorough [documentation](https://yihui.name/knitr/), many
 useful
 [examples](https://github.com/yihui/knitr/tree/master/vignettes) and
@@ -19,7 +19,7 @@ useful
 Nevertheless, I thought it might be useful to have some of the basic things
 explained again a bit differently.
 
-And so, here is a brief guide to KnitR, covering the fundamentals of
+And so, here is a brief guide to knitr, covering the fundamentals of
 its use with
 [Markdown](https://daringfireball.net/projects/markdown/),
 [AsciiDoc](http://www.methods.co.nz/asciidoc/), and
@@ -27,12 +27,12 @@ its use with
 
 - [Overview](pages/overview.html)
 - [Markdown](pages/markdown.html)
-- [KnitR with R Markdown](pages/Rmarkdown.html)
+- [knitr with R Markdown](pages/Rmarkdown.html)
 - [Figures and tables](pages/figs_tables.html)
 - [Comments on reproducibility](pages/reproducible.html)
-- [KnitR with AsciiDoc](pages/asciidoc.html)
-- [KnitR with LaTeX](pages/latex.html)
-- [Moving from Sweave to KnitR](pages/sweave.html)
+- [knitr with AsciiDoc](pages/asciidoc.html)
+- [knitr with LaTeX](pages/latex.html)
+- [Moving from Sweave to knitr](pages/sweave.html)
 - [Resources](pages/resources.html)
 
 If you find knitr useful, consider buying
