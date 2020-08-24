@@ -44,8 +44,8 @@ After the code, there'll be a line with just three backticks.
 
     ```
 
-It's usually best to give each code chunk a name, like `simulate_data`
-and `chunk_name` above. The name is optional; if included, each code
+It's usually best to give each code chunk a name, like `simulate-data`
+and `chunk-name` above. The name is optional; if included, each code
 chunk needs a distinct name. The advantage of giving each chunk a name
 is that it will be easier to understand where to look for errors,
 should they occur. Also, any figures that are created will be given
