@@ -30,7 +30,7 @@ and the [html document it produces](../assets/knitr_example.html).
 
 The key thing for us to focus on are the code chunks, which look like this:
 
-    ```{r simulate_data}
+    ```{r simulate-data}
     x <- rnorm(100)
     y <- 2*x + rnorm(100)
     ```
@@ -38,18 +38,22 @@ The key thing for us to focus on are the code chunks, which look like this:
 In the midst of an otherwise plain Markdown document, you'll have a
 bit of R code that is initiated by a line like this:
 
-    ```{r chunk_name}
+    ```{r chunk-name}
 
 After the code, there'll be a line with just three backticks.
 
     ```
 
-It's usually best to give each code chunk a name, like `simulate_data`
-and `chunk_name` above. The name is optional; if included, each code
+It's usually best to give each code chunk a name, like `simulate-data`
+and `chunk-name` above. The name is optional; if included, each code
 chunk needs a distinct name. The advantage of giving each chunk a name
 is that it will be easier to understand where to look for errors,
 should they occur. Also, any figures that are created will be given
-names based on the name of the code chunk that produced them.
+names based on the name of the code chunk that produced them. As
+[discussed in R Markdown: The Definitive
+Guide](https://bookdown.org/yihui/rmarkdown/r-code.html), it is best
+for the the chunk labels to use just letters, numbers, and dashes, and
+no other special characters.
 
 When you process the R Markdown document with knitr, each of the code
 chunks will be evaluated, and then the code and/or output will be
@@ -72,7 +76,7 @@ The initial line in a code chunk may include various options. For
 example, `echo=FALSE` indicates that the code will not be shown in the
 final document (though any results/output would still be displayed).
 
-    ```{r chunk_name, echo=FALSE}
+    ```{r chunk-name, echo=FALSE}
     x <- rnorm(100)
     y <- 2*x + rnorm(100)
     cor(x, y)
@@ -81,7 +85,7 @@ final document (though any results/output would still be displayed).
 You use `results="hide"` to hide the results/output (but here the code
 would still be displayed).
 
-    ```{r chunk_name, results="hide"}
+    ```{r chunk-name, results="hide"}
     x <- rnorm(100)
     y <- 2*x + rnorm(100)
     cor(x, y)
@@ -90,7 +94,7 @@ would still be displayed).
 You use `include=FALSE` to have the chunk _evaluated_, but neither the
 code nor its output displayed.
 
-    ```{r chunk_name, include=FALSE}
+    ```{r chunk-name, include=FALSE}
     x <- rnorm(100)
     y <- 2*x + rnorm(100)
     cor(x, y)
@@ -130,7 +134,7 @@ and `fig.height=6` if I generally want those sizes for my figures.
 
 I'd set such options by having an initial code chunk like this:
 
-    ```{r global_options, include=FALSE}
+    ```{r global-options, include=FALSE}
     knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/',
                           echo=FALSE, warning=FALSE, message=FALSE)
     ```
@@ -150,7 +154,7 @@ document. Then if you want a particular chunk to have a different
 behavior, for example, to have a different figure height, you'd
 specify a different option within that chunk. For example:
 
-    ```{r a_taller_figure, fig.height=32}
+    ```{r a-taller-figure, fig.height=32}
     par(mfrow=c(8,2))
     for(i in 1:16)
       plot(x[,i], y[,i])
@@ -179,7 +183,7 @@ In addition to the chunk options, there are also
 [package options](https://yihui.name/knitr/options#package_options),
 set with something like:
 
-    ```{r package_options, include=FALSE}
+    ```{r package-options, include=FALSE}
     knitr::opts_knit$set(progress = TRUE, verbose = TRUE)
     ```
 
@@ -277,7 +281,7 @@ in my [R/broman](https://github.com/kbroman/broman) package.
 
 At the start of my R Markdown document, I'd include:
 
-    ```{r load_packages, include=FALSE}
+    ```{r load-packages, include=FALSE}
     library(broman)
     ```
 
@@ -315,7 +319,7 @@ I seem to visit the
 every time I'm writing a Markdown document. If I used RStudio, I'd
 have easier access to this information.
 
-RStudio is especially useful when you're first learning KnitR and R
+RStudio is especially useful when you're first learning knitr and R
 Markdown, as it's easy to create and view the corresponding html file,
 and you have access to that Markdown Quick Reference.
 

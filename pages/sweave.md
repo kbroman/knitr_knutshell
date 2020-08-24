@@ -6,10 +6,10 @@ description: Switch from Sweave to knitr.
 
 If you have experience using [Sweave](http://leisch.userweb.mwn.de/Sweave/) with
 [LaTeX](https://www.latex-project.org), you'll find that it will be an
-easy transition from Sweave to [KnitR](https://yihui.name/knitr/), and
+easy transition from Sweave to [knitr](https://yihui.name/knitr/), and
 one well worth making. A number of Sweave annoyances have been
 eliminated, but I think the big feature is that for less formal
-reports you can use [KnitR with R Markdown](Rmarkdown.html) or
+reports you can use [knitr with R Markdown](Rmarkdown.html) or
 [with AsciiDoc](asciidoc.html), which are a lot easier to write than
 LaTeX, and you don't have to deal with page breaks in the resulting
 web page.

@@ -1,4 +1,4 @@
-```{r bunch_o_figs, fig.height=4, fig.width=8}
+```{r bunch-o-figs-2, fig.height=4, fig.width=8, dev.args=list(pointsize=18)}
 n <- 100
 x <- rnorm(n)
 par(mfrow=c(1,2), las=1)

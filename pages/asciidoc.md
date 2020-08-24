@@ -30,7 +30,7 @@ different; I'm always getting confused between the two, and look at
 
 ### Code chunk delimiters
 
-KnitR-wise, the main difference when you use asciidoc is that the code
+knitr-wise, the main difference when you use asciidoc is that the code
 chunks are delimited differently. Here's an example:
 
     We see that this is an intercross with +r nind(sug)+ individuals.
@@ -40,7 +40,7 @@ chunks are delimited differently. Here's an example:
 
     Use +plot()+ to get a summary plot of the data.
 
-    //begin.rcode summary_plot, fig.height=8
+    //begin.rcode summary-plot, fig.height=8
     plot(sug)
     //end.rcode
 
@@ -107,9 +107,9 @@ To use AsciiDoc, you'll need to _install_ AsciiDoc; see
 On Mac OSX, I recommend using [Homebrew](https://brew.sh/); then you
 just type `brew install asciidoc`.
 
-A key point: you'll need Python 2 and _not Python 3_.
-On my computer, `python` is Python 3; I have to switch to Python 2
-before running AsciiDoc. If I forget to switch, I get the following
+For older versions of asciidoc, you needed Python 2 and _not Python 3_.
+On my computer, `python` is Python 3; I used to have to switch to Python 2
+before running AsciiDoc. If I forgot to switch, I would get the following
 error message:
 
     File "/usr/local/bin/asciidoc", line 101
@@ -125,7 +125,7 @@ I'd also recommend installing the [ascii package]((https://cran.r-project.org/pa
 [RStudio](https://www.rstudio.org) has no facilities for AsciiDoc;
 you'll need to use command-line tools.
 
-You first use `knit` in the knitr package to process the asciidoc/KnitR
+You first use `knit` in the knitr package to process the asciidoc/knitr
 document:
 
     R -e 'library(knitr);knit("knitr_example.Rasciidoc", "knitr_example.asciidoc")'

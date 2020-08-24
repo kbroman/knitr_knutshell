@@ -4,14 +4,14 @@ title: Figures and tables
 description: Figures and tables with knitr and R Markdown.
 ---
 
-Figures are really easy in KnitR. Tables are not quite so easy, but
+Figures are really easy in knitr. Tables are not quite so easy, but
 the ability to produce fully reproducible tables is really
 important. You should never be copy-pasting or retyping data summaries
 into a table.
 
 ### Figures
 
-Figures are super easy in KnitR. For the most part, you don't need to
+Figures are super easy in knitr. For the most part, you don't need to
 do anything. If a code chunk produces a figure, it will automatically
 be produced and inserted into the final document. If a code chunk
 produces a bunch of figures, then a bunch of image files will be
@@ -19,7 +19,7 @@ produced and inserted into the final document.
 
 Consider this example:
 
-    ```{r bunch_o_figs, fig.height=4, fig.width=8}
+    ```{r bunch-o-figs, fig.height=4, fig.width=8}
     n <- 100
     x <- rnorm(n)
     par(mfrow=c(1,2), las=1)
@@ -36,9 +36,9 @@ side-by-side. All four will appear, one by one, in the
 final document.
 
 Here's
-[what that chunk would produce](../assets/short_examples/bunch_o_figs.html),
+[what that chunk would produce](../assets/short_examples/bunch-o-figs.html),
 plus an
-[R Markdown file with just that chunk](../assets/short_examples/bunch_o_figs.Rmd).
+[R Markdown file with just that chunk](../assets/short_examples/bunch-o-figs.Rmd).
 
 For R Markdown, the default graphics device is `png`. You can choose
 a different device using the chunk option `dev`. For example, to use
@@ -47,7 +47,7 @@ the `svg` device (for
 which may look better in a web page as they can be scaled without loss
 of quality), you would use `dev='svg'`, as follows:
 
-    ```{r bunch_o_figs_svg, fig.height=4, fig.width=8, dev='svg'}
+    ```{r bunch-o-figs-svg, fig.height=4, fig.width=8, dev='svg'}
     n <- 100
     x <- rnorm(n)
     par(mfrow=c(1,2), las=1)
@@ -58,14 +58,14 @@ of quality), you would use `dev='svg'`, as follows:
     ```
 
 Here's
-[what that chunk would produce](../assets/short_examples/bunch_o_figs_svg.html),
+[what that chunk would produce](../assets/short_examples/bunch-o-figs-svg.html),
 plus an
-[R Markdown file with just that chunk](../assets/short_examples/bunch_o_figs_svg.Rmd).
+[R Markdown file with just that chunk](../assets/short_examples/bunch-o-figs-svg.Rmd).
 
 You can pass arguments to the graphics device using the chunk option
 `dev.args`, which takes a list.  For example:
 
-    ```{r bunch_o_figs_pointsize, fig.height=4, fig.width=8, dev.args=list(pointsize=18)}
+    ```{r bunch-o-figs-pointsize, fig.height=4, fig.width=8, dev.args=list(pointsize=18)}
     n <- 100
     x <- rnorm(n)
     par(mfrow=c(1,2), las=1)
@@ -80,11 +80,11 @@ to the `png()` device. This is equivalent to, in R, using
 `png("myfile.png", pointsize=18)`.
 
 Here's
-[what that chunk would produce](../assets/short_examples/bunch_o_figs_pointsize.html),
+[what that chunk would produce](../assets/short_examples/bunch-o-figs-pointsize.html),
 plus an
-[R Markdown file with just that chunk](../assets/short_examples/bunch_o_figs_pointsize.Rmd).
+[R Markdown file with just that chunk](../assets/short_examples/bunch-o-figs-pointsize.Rmd).
 
-For more information on graphics with KnitR, see the
+For more information on graphics with knitr, see the
 [Knitr graphics manual](https://yihui.name/knitr/demo/graphics/).
 
 

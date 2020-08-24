@@ -28,7 +28,7 @@ This is a portion of the ``\href{https://rqtl.org/rqtltour2.pdf}{A shorter tour 
 tutorial, developed here in multiple formats to illustrate the use of knitr.
 This particular document is written with \href{http://www.latex-project.org}{LaTeX}.
 
-<<knitr_options, include=FALSE>>=
+<<knitr-options, include=FALSE>>=
 knitr::opts_chunk$set(fig.width=12, fig.height=4, fig.path='RnwFigs/',
                       warning=FALSE, message=FALSE, tidy=FALSE)
 options(width=60)
@@ -47,7 +47,7 @@ Type (within R) {\tt install.packages("qtl")}
 
 You then load the R/qtl package using the {\tt library} function:
 
-<<load_qtl>>=
+<<load-qtl>>=
 library(qtl)
 @
 
@@ -73,7 +73,7 @@ We will consider data from
 Physiol Genomics 10:5--12, 2002}. Load the data into R/qtl as
 follows.
 
-<<load_cross>>=
+<<load-cross>>=
 sug <- read.cross("csv", "https://rqtl.org", "sug.csv",
                   genotypes=c("CC", "CB", "BB"),
                   alleles=c("C", "B"))
@@ -114,7 +114,7 @@ The object {\tt sug} has ``class'' {\tt "cross"}, and so calls to
 Use {\tt summary()} to get a quick summary of the data.  (This also
 performs a variety of checks of the integrity of the data.)
 
-<<summary_cross>>=
+<<summary-cross>>=
 summary(sug)
 @
 
@@ -125,7 +125,7 @@ data is quite complete.
 
 Use {\tt plot()} to get a summary plot of the data.
 
-<<summary_plot, fig.height=8>>=
+<<summary-plot, fig.height=8>>=
 plot(sug)
 @
 
@@ -148,7 +148,7 @@ done at the markers and at a grid along the chromosomes.  The argument
 {\tt step} is the density of the grid (in cM), and defines the
 density of later QTL analyses.
 
-<<calc_genoprob>>=
+<<calc-genoprob>>=
 sug <- calc.genoprob(sug, step=1)
 @
 
@@ -171,47 +171,47 @@ The output has ``class'' {\tt "scanone"}.  The {\tt summary}
 function is passed to the function {\tt summary.scanone}, and gives
 the maximum LOD score on each chromosome.
 
-<<summary_scanone>>=
+<<summary-scanone>>=
 summary(out.em)
 @
 
 Alternatively, we can give a threshold, e.g., to only see those
 chromosomes with LOD $>$ 3.
 
-<<summary_w_threshold>>=
+<<summary-w-threshold>>=
 summary(out.em, threshold=3)
 @
 
 We can plot the results as follows.
 
-<<plot_scanone>>=
+<<plot-scanone>>=
 plot(out.em)
 @
 
 We can do the genome scan via Haley-Knott regression by calling
 {\tt scanone} with the argument {\tt method="hk"}.
 
-<<scanone_hk>>=
+<<scanone-hk>>=
 out.hk <- scanone(sug, method="hk")
 @
 
 We may plot the two sets of LOD curves together in a single call
 to {\tt plot}.
 
-<<plot_em_and_hk>>=
+<<plot-em-and-hk>>=
 plot(out.em, out.hk, col=c("blue", "red"))
 @
 
 Alternatively, we could do the following (figure not included, for brevity):
 
-<<plot_em_and_hk_alt, eval=FALSE>>=
+<<plot-em-and-hk-alt, eval=FALSE>>=
 plot(out.em, col="blue")
 plot(out.hk, col="red", add=TRUE)
 @
 
 It's perhaps more informative to plot the differences:
 
-<<plot_diff>>=
+<<plot-diff>>=
 plot(out.hk - out.em, ylim=c(-0.3, 0.3),
      ylab="LOD(HK)-LOD(EM)")
 @
@@ -226,21 +226,21 @@ before, but with an additional argument, {\tt n.perm}, indicating the
 number of permutation replicates.  It's quickest to use Haley-Knott
 regression.
 
-<<scanone_perm>>=
+<<scanone-perm>>=
 operm <- scanone(sug, method="hk", n.perm=1000)
 @
 
 A histogram of the results (the 1000 genome-wide maximum LOD
 scores) is obtained as follows:
 
-<<plot_perm>>=
+<<plot-perm>>=
 plot(operm)
 @
 
 Significance thresholds may be obtained via the {\tt summary}
 function:
 
-<<summary_perm>>=
+<<summary-perm>>=
 summary(operm)
 summary(operm, alpha=c(0.05, 0.2))
 @
@@ -249,7 +249,7 @@ The permutation results may be used along with
 the {\tt scanone} results to have significance thresholds and
 p-values calculated automatically:
 
-<<summary_scanone_w_perm>>=
+<<summary-scanone-w-perm>>=
 summary(out.hk, perms=operm, alpha=0.2, pvalues=TRUE)
 @
 
@@ -269,7 +269,7 @@ for the QTL on chromosome 7, type the following.
 The first and last rows define the ends of the intervals; the middle
 row is the estimated QTL location.
 
-<<lodint_bayesint>>=
+<<lodint-bayesint>>=
 lodint(out.hk, chr=7)
 bayesint(out.hk, chr=7)
 @
@@ -285,14 +285,14 @@ bayesint(out.hk, chr=7, expandtomarkers=TRUE)
 We can calculate the 2-LOD support interval and the 99\% Bayes
 interval as follows.
 
-<<lodint_2>>=
+<<lodint-2>>=
 lodint(out.hk, chr=7, drop=2)
 bayesint(out.hk, chr=7, prob=0.99)
 @
 
 The intervals for the chr 15 locus may be calculated as follows.
 
-<<lodint_chr15>>=
+<<lodint-chr15>>=
 lodint(out.hk, chr=15)
 bayesint(out.hk, chr=15)
 @
