@@ -52,7 +52,7 @@ should they occur. Also, any figures that are created will be given
 names based on the name of the code chunk that produced them. As
 [discussed in R Markdown: The Definitive
 Guide](https://bookdown.org/yihui/rmarkdown/r-code.html), it is best
-for the the chunk labels to use just letters, numbers, and dashes, and
+for the chunk labels to use just letters, numbers, and dashes, and
 no other special characters.
 
 When you process the R Markdown document with knitr, each of the code
