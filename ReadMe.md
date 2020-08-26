@@ -12,8 +12,8 @@ its use with
 View the thing [here](https://kbroman.org/knitr_knutshell).
 
 If you find knitr useful, consider buying
-[R Markdown: The Definitive Guide](https://www.amazon.com/gp/product/1138359335?ie=UTF8&tag=7210-20).
-
+[R Markdown: The Definitive Guide](https://www.amazon.com/gp/product/1138359335?ie=UTF8&tag=7210-20)
+by Yihui Xie, JJ Allaire, and Garrett Grolemund.
 
 ---
 
