@@ -45,7 +45,7 @@ The source for this tutorial is [here](https://github.com/kbroman/knitr_knutshel
 If you have suggestions or corrections,
 please [submit an issue](https://github.com/kbroman/knitr_knutshell/issues).
 
-Also see my [tutorials](https://kbroman.org/pages/tutorials) on
+Also see my [tutorials](https://kbroman.org/tutorials) on
 [git/github](https://kbroman.org/github_tutorial),
 [GNU make](https://kbroman.org/minimal_make),
 [R packages](https://kbroman.org/pkg_primer),
