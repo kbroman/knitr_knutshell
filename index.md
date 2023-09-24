@@ -13,7 +13,7 @@ the results and/or figures produced.
 **Note**: people are moving from [R
 Markdown](https://rmarkdown.rstudio.com/) to
 [Quarto](https://quarto.org/), so maybe stop reading this and go look
-at Quarto.
+at [Quarto](https://quarto.org/).
 
 [Yihui Xie](https://yihui.name/), the developer of knitr, has written
 clear and thorough [documentation](https://yihui.name/knitr/), many
