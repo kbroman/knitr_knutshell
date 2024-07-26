@@ -23,7 +23,7 @@ I moved towards writing formal reports in
 PDF. But that was a lot of work, and if I later wanted to re-run
 things (e.g., if additional data were added), it was a real hassle.
 
-[Sweave](http://leisch.userweb.mwn.de/Sweave/) was a big help.
+[Sweave](https://stat.ethz.ch/R-manual/R-devel/library/utils/doc/Sweave.pdf) was a big help.
 Your LaTeX document could contain chunks of R code, and when processed
 through Sweave, the R code would be replaced by the results of the
 analysis or by the figures generated. Then, if new data were added or
@@ -206,6 +206,6 @@ in the other two pages. Plus, I think you'll find Knitr with R
 Markdown useful, at least for short, informal reports.
 
 If you're an experienced
-[Sweave](http://leisch.userweb.mwn.de/Sweave/) user, you might look at
+[Sweave](https://stat.ethz.ch/R-manual/R-devel/library/utils/doc/Sweave.pdf) user, you might look at
 my [Knitr from Sweave](sweave.html) page, or [Yihui](https://yihui.name/)'s page,
 [transition from Sweave to knitr](https://yihui.name/knitr/demo/sweave/).

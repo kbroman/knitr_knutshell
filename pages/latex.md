@@ -88,7 +88,7 @@ to PDF and preview the result, in the same way you worked with R
 Markdown.
 
 But the default in RStudio is still to use
-[Sweave](http://leisch.userweb.mwn.de/Sweave/), so you first need to
+[Sweave](https://stat.ethz.ch/R-manual/R-devel/library/utils/doc/Sweave.pdf), so you first need to
 [change that default](https://www.rstudio.com/ide/docs/authoring/rnw_weave).
 Go to the RStudio (on menu bar) &rarr; Preferences and select Sweave on the left. Then
 change the selection for "Weave Rnw files using:" from Sweave to

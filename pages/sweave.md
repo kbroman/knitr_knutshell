@@ -4,7 +4,7 @@ title: Knitr from Sweave
 description: Switch from Sweave to knitr.
 ---
 
-If you have experience using [Sweave](http://leisch.userweb.mwn.de/Sweave/) with
+If you have experience using [Sweave](https://stat.ethz.ch/R-manual/R-devel/library/utils/doc/Sweave.pdf) with
 [LaTeX](https://www.latex-project.org), you'll find that it will be an
 easy transition from Sweave to [knitr](https://yihui.name/knitr/), and
 one well worth making. A number of Sweave annoyances have been
