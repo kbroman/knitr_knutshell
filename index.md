@@ -27,7 +27,7 @@ explained again a bit differently.
 And so, here is a brief guide to knitr, covering the fundamentals of
 its use with
 [Markdown](https://daringfireball.net/projects/markdown/),
-[AsciiDoc](http://www.methods.co.nz/asciidoc/), and
+[AsciiDoc](https://asciidoc.org), and
 [LaTeX](https://www.latex-project.org).
 
 - [Overview](pages/overview.html)
