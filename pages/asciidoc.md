@@ -4,7 +4,7 @@ title: Knitr with asciidoc
 description: How to use knitr with asciidoc
 ---
 
-[AsciiDoc](http://www.methods.co.nz/asciidoc/) is similar to
+[AsciiDoc](https://asciidoc.org) is similar to
 [Markdown](https://daringfireball.net/projects/markdown/): a simple,
 readable text markup that can be converted to [html](https://en.wikipedia.org/wiki/HTML).
 
