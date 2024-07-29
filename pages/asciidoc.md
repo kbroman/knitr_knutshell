@@ -21,7 +21,7 @@ simple marks. But sometimes you want just a little bit extra, like
 subscripts (e.g., in describing an F<sub>1</sub> hybrid). You can
 insert a bit of html code, but it's even better to use a similar
 system with a more rich syntax, like
-[AsciiDoc](http://www.methods.co.nz/asciidoc/).
+[AsciiDoc](https://asciidoc.org).
 
 The syntax for AsciiDoc is similar in style to that of Markdown, but a bit
 different; I'm always getting confused between the two, and look at
