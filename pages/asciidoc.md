@@ -102,7 +102,7 @@ plus an
 ### Installing AsciiDoc
 
 To use AsciiDoc, you'll need to _install_ AsciiDoc; see
-[this installation page](http://www.methods.co.nz/asciidoc/INSTALL.html).
+[this installation page](https://asciidoc-py.github.io/INSTALL.html).
 
 On Mac OSX, I recommend using [Homebrew](https://brew.sh/); then you
 just type `brew install asciidoc`.
