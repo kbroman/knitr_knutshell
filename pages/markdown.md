@@ -12,7 +12,7 @@ Web pages are written in
 [html](https://en.wikipedia.org/wiki/HTML). But html is cumbersome to
 write directly, and so for analysis reports, I'll generally use either
 [Markdown](https://daringfireball.net/projects/markdown/) or
-[AsciiDoc](http://www.methods.co.nz/asciidoc/). These are two systems
+[AsciiDoc](https://asciidoc.org). These are two systems
 for writing simple, readable text, with the sort of marks that you'd
 use in an email message (for example, `**bold**` for **bold** or
 `_italics_` for _italics_), that can be easily converted to html.
