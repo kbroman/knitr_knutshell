@@ -129,7 +129,7 @@ knitr is basically doing a search-and-replace for these chunks
 and depending on the type of text, different patterns will be easier
 to find.
 
-In [AsciiDoc](http://www.methods.co.nz/asciidoc/), the above would be written as follows:
+In [AsciiDoc](https://asciidoc.org), the above would be written as follows:
 
     We see that this is an intercross with +r nind(sug)+ individuals.
     There are +r nphe(sug)+ phenotypes, and genotype data at
