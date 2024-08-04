@@ -7,7 +7,7 @@ description: Resources on knitr and related tools.
 This tutorial is minimal.  It's probably considerably less than
 minimal.  But there are lots of great tutorials and other resources
 for learning to use [knitr](https://yihui.name/knitr/), [markdown](https://daringfireball.net/projects/markdown/),
-and [asciidoc](http://www.methods.co.nz/asciidoc/), and I'm not even trying to cover [latex](https://www.latex-project.org)
+and [asciidoc](https://asciidoc.org), and I'm not even trying to cover [latex](https://www.latex-project.org)
 properly.
 
 Here are some examples.
