@@ -41,7 +41,7 @@ Here are some examples.
 
 ### AsciiDoc
 
-- [AsciiDoc](http://www.methods.co.nz/asciidoc/) main page
+- [AsciiDoc](https://asciidoc.org) main page
 - [AsciiDoc cheat sheet](https://powerman.name/doc/asciidoc)
 - [AsciiDoc user guide](http://www.methods.co.nz/asciidoc/userguide.html)
 - [AsciiDoc writers' guide](https://asciidoctor.org/docs/asciidoc-writers-guide/)
