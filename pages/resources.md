@@ -43,7 +43,7 @@ Here are some examples.
 
 - [AsciiDoc](https://asciidoc.org) main page
 - [AsciiDoc cheat sheet](https://powerman.name/doc/asciidoc)
-- [AsciiDoc user guide](http://www.methods.co.nz/asciidoc/userguide.html)
+- [AsciiDoc user guide](https://asciidoc-py.github.io/userguide.html)
 - [AsciiDoc writers' guide](https://asciidoctor.org/docs/asciidoc-writers-guide/)
 - [ascii package for R](http://eusebe.github.io/ascii/)
 
