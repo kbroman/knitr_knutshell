@@ -117,7 +117,7 @@ plus an
 #### pander
 
 Another good option is the
-[pander package](http://rapporter.github.io/pander/).
+[pander package](https://rapporter.github.io/pander/).
 It allows more customization, and if you give it the output of `lm()`,
 it will automatically produce the table of regression coefficients
 that we're interested in.
