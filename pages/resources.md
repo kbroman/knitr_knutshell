@@ -20,7 +20,7 @@ Here are some examples.
   from users
 - [R Markdown: The Definitive Guide (book)](https://www.amazon.com/gp/product/1138359335?ie=UTF8&tag=7210-20)
 - [Dynamic Documents with R and knitr (book)](https://www.amazon.com/gp/product/1498716962?ie=UTF8&tag=7210-20)
-- [Getting started with R Markdown and Knitr](http://jeromyanglim.blogspot.com/2012/05/getting-started-with-r-markdown-knitr.html)
+- [Getting started with R Markdown and Knitr](https://jeromyanglim.blogspot.com/2012/05/getting-started-with-r-markdown-knitr.html)
 - [knitr graphics manual](https://yihui.name/knitr/demo/graphics/)
 - [knitrBootstrap](https://jimhester.github.io/knitrBootstrap/) for nice-looking reports (see
   [L. Collado-Torres's post](https://lcolladotor.github.io/2013/12/10/knitrBootstrap/#.UuntzXddXVQ))
