@@ -24,8 +24,8 @@ Here are some examples.
 - [knitr graphics manual](https://yihui.name/knitr/demo/graphics/)
 - [knitrBootstrap](https://jimhester.github.io/knitrBootstrap/) for nice-looking reports (see
   [L. Collado-Torres's post](https://lcolladotor.github.io/2013/12/10/knitrBootstrap/#.UuntzXddXVQ))
-- [Troubleshooting](http://stat545-ubc.github.io/block007_first-use-rmarkdown.html#troubleshooting)
-  from [Stat 545](http://stat545-ubc.github.io)
+- [RMarkdown Troubleshooting](https://happygitwithr.com/rmd-test-drive.html#rmd-troubleshooting)
+
 
 ### Markdown
 
