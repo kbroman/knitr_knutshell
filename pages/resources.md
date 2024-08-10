@@ -45,7 +45,7 @@ Here are some examples.
 - [AsciiDoc cheat sheet](https://powerman.name/doc/asciidoc)
 - [AsciiDoc user guide](https://asciidoc-py.github.io/userguide.html)
 - [AsciiDoc writers' guide](https://asciidoctor.org/docs/asciidoc-writers-guide/)
-- [ascii package for R](http://eusebe.github.io/ascii/)
+- [ascii package for R](https://eusebe.github.io/ascii/)
 
 ### LaTeX
 
