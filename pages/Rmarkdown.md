@@ -243,7 +243,7 @@ and even R code:
 
     date: "`r Sys.Date()`"
 
-This is called the [YAML](http://www.yaml.org) header. YAML is a
+This is called the [YAML](https://yaml.org) header. YAML is a
 simple text-based format for specifying data, sort of like
 [JSON](http://www.json.org) but more human-readable.
 
