@@ -245,7 +245,7 @@ and even R code:
 
 This is called the [YAML](https://yaml.org) header. YAML is a
 simple text-based format for specifying data, sort of like
-[JSON](http://www.json.org) but more human-readable.
+[JSON](https://www.json.org/json-en.html) but more human-readable.
 
 You can leave off the author and date if you want; you can leave off
 the title, too. Actually, you don't need to include any of this. But
