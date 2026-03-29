@@ -15,7 +15,7 @@ Here are some examples.
 ### knitr
 
 - The [knitr](https://yihui.name/knitr/) web site
-- [knitr demos](https://yihui.name/knitr/demos)
+- [knitr demos](https://web.archive.org/web/20190715124706/https://yihui.name/knitr/demos)
 - [knitr showcase](https://yihui.name/knitr/demo/showcase/): Examples
   from users
 - [R Markdown: The Definitive Guide (book)](https://www.amazon.com/gp/product/1138359335?ie=UTF8&tag=7210-20)
