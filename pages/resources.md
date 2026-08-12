@@ -8,9 +8,10 @@ This tutorial is minimal.  It's probably considerably less than
 minimal.  But there are lots of great tutorials and other resources
 for learning to use [knitr](https://yihui.name/knitr/), [markdown](https://daringfireball.net/projects/markdown/),
 and [asciidoc](https://asciidoc.org), and I'm not even trying to cover [latex](https://www.latex-project.org)
-properly.
+properly. Here are some examples.
 
-Here are some examples.
+Also consider [Quarto](https://quarto.org); many people have switched from R Markdown to Quarto.
+
 
 ### knitr
 
